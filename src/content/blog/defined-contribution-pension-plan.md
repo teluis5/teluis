@@ -3,11 +3,11 @@ title: "【新卒社会人向けお金のはなし】確定拠出年金編"
 pubDate: 2022-05-11
 categories: 
   - "life"
-heroImage: "/images/35efa23d85a37268575f210b28dccf8b.png"
-description: "会社から確定拠出年金の説明を聞いたけどよくわからない。"
+heroImage: "../../assets/images/35efa23d85a37268575f210b28dccf8b.png"
+description: ""
 ---
 
-![](/images/b-man.png)
+![](../../assets/images/b-man.png)
 
 会社から確定拠出年金の説明を聞いたけどよくわからない。
 
@@ -69,11 +69,11 @@ description: "会社から確定拠出年金の説明を聞いたけどよくわ
 
 ## 新卒社員が確定拠出年金に加入すべきなのか？
 
-![新卒社会人](/images/b-man.png)
+![新卒社会人](../../assets/images/b-man.png)
 
 新卒社会人
 
-![](/images/gE_cS3DT_400x400-150x150.jpg)
+![](../../assets/images/gE_cS3DT_400x400-150x150.jpg)
 
 新卒社員には**確定拠出年金はおススメできません**  
 理由を説明していきます
@@ -84,7 +84,7 @@ description: "会社から確定拠出年金の説明を聞いたけどよくわ
 引越しや結婚などの不意な支出やコロナなどで収入が減少するリスクがあります。  
 もし。不測の事態が起こっても、日々の生活に困らないように貯金しておく必要があります
 
-![新卒社会人](/images/b-man.png)
+![新卒社会人](../../assets/images/b-man.png)
 
 新卒社会人
 

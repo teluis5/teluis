@@ -3,8 +3,8 @@ title: "収益だけじゃない！ブログを始めるメリット７選"
 pubDate: 2022-01-14
 categories: 
   - "blog"
-heroImage: "/images/513f3a0811e53a7de868b7f72fa4eb1d.png"
-description: "筆者は大学院2年、今年度卒業し就職します。"
+heroImage: "../../assets/images/513f3a0811e53a7de868b7f72fa4eb1d.png"
+description: ""
 ---
 
 筆者は大学院2年、今年度卒業し就職します。  

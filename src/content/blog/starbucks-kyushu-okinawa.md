@@ -8,8 +8,8 @@ tags:
   - "九州"
   - "旅行"
   - "沖縄"
-heroImage: "/images/6f56b5bea9d901cb7f52f7396e84735a.jpg"
-description: "おいしいコーヒーやフラペチーノ、ラテなどを楽しめるスターバックスコーヒー。"
+heroImage: "../../assets/images/6f56b5bea9d901cb7f52f7396e84735a.jpg"
+description: ""
 ---
 
 おいしいコーヒーやフラペチーノ、ラテなどを楽しめるスターバックスコーヒー。  
@@ -24,7 +24,7 @@ description: "おいしいコーヒーやフラペチーノ、ラテなどを楽
 
 そんな駅舎内にスターバックスが入居しています。店内は大正ロマンを感じる和洋折衷造りの建物にスターバックスの洗練されたモダンなインテリアアイテムが散りばめられた空間だ。
 
-![](/images/DSC_4275-1024x683.jpg)
+![](../../assets/images/DSC_4275-1024x683.jpg)
 
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d211828.13802230512!2d130.81569833495465!3d33.945894839752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354397e086a681f9%3A0x451d4ff116adcbef!2z44K544K_44O844OQ44OD44Kv44K5IOOCs-ODvOODkuODvCDploDlj7jmuK_pp4Xlupc!5e0!3m2!1sja!2sjp!4v1687184252125!5m2!1sja!2sjp" width="840" height="400" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
@@ -64,13 +64,13 @@ description: "おいしいコーヒーやフラペチーノ、ラテなどを楽
 
 大濠公園店は福岡市中心部の大濠公園の池のほとりにある店舗。大濠公園は江戸時代に福岡城の外堀として造成された池を、昭和4年に福岡県が都市公園として整備し誕生した。
 
-![](/images/20220321_093936-1024x768.jpg)
+![](../../assets/images/20220321_093936-1024x768.jpg)
 
-![](/images/20220321_094336-1024x768.jpg)
+![](../../assets/images/20220321_094336-1024x768.jpg)
 
 大濠公園店は環境に配慮した店舗となっている。店内には木材をふんだんに使い、インテリアにはコーヒー殼を再利用した椅子などが使われている。
 
-![](/images/20220321_0942172751130696936789016-768x1024.jpg)
+![](../../assets/images/20220321_0942172751130696936789016-768x1024.jpg)
 
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53173.97112105016!2d130.35368810046785!3d33.59562018385344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354193cd2e0b9787%3A0xf89fe305e334ad19!2z44K544K_44O844OQ44OD44Kv44K5IOOCs-ODvOODkuODvCDnpo_lsqHlpKfmv6DlhazlnJLlupc!5e0!3m2!1sja!2sjp!4v1687184600249!5m2!1sja!2sjp" width="840" height="400" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
@@ -82,11 +82,11 @@ description: "おいしいコーヒーやフラペチーノ、ラテなどを楽
 
 太宰府天満宮表参道店は建築士の隈研吾氏が設計した。格子に組まれた木材の外観が特徴的だ。
 
-![](/images/DSC_4551-1-1024x683.jpg)
+![](../../assets/images/DSC_4551-1-1024x683.jpg)
 
 木組みの格子は店内の壁や天井にも続いている。寺社建築に見られる千木・鰹木をイメージさせる。
 
-![](/images/DSC_4558-1024x683.jpg)
+![](../../assets/images/DSC_4558-1024x683.jpg)
 
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3326.2708843698524!2d130.53191965929454!3d33.520342092838156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35419b989b610001%3A0x7659019bcd949d0f!2z44K544K_44O844OQ44OD44Kv44K5IOOCs-ODvOODkuODvCDlpKrlrrDlupzlpKnmuoDlrq7ooajlj4LpgZPlupc!5e0!3m2!1sja!2sjp!4v1687185747918!5m2!1sja!2sjp" width="840" height="400" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
@@ -194,7 +194,7 @@ description: "おいしいコーヒーやフラペチーノ、ラテなどを楽
 
 仙厳園は江戸時代の薩摩藩の藩主が約350年前の大名庭園です。スターバックスはその中の洋館建築の店舗です。
 
-![](/images/20211107_083559-1024x766.jpg)
+![](../../assets/images/20211107_083559-1024x766.jpg)
 
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108703.79163195589!2d130.67070546042817!3d31.63402866470035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x353e5e5e3fda0aab%3A0x123a8bd1c8151013!2z44K544K_44O844OQ44OD44Kv44K5IOOCs-ODvOODkuODvCDpub_lhZDls7bku5nlt4zlnJLlupc!5e0!3m2!1sja!2sjp!4v1690242484623!5m2!1sja!2sjp" width="800" height="400" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 

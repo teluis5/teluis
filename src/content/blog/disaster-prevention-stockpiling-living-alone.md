@@ -3,8 +3,8 @@ title: "【実録】特別な備蓄専用品は一切なし、１人暮らしの
 pubDate: 2022-01-19
 categories: 
   - "life"
-heroImage: "/images/e53f31dc4f27863ac3ed0f2661f0cc61.png"
-description: "地震のみならず、災害が多様化する現代において、災害に備えた準備をしておく必要があります。"
+heroImage: "../../assets/images/e53f31dc4f27863ac3ed0f2661f0cc61.png"
+description: ""
 ---
 
 地震のみならず、災害が多様化する現代において、災害に備えた準備をしておく必要があります。

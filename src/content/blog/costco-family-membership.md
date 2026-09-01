@@ -3,8 +3,8 @@ title: "コストコ家族会員になったら超お得だった"
 pubDate: 2022-01-17
 categories: 
   - "life"
-heroImage: "/images/94c99b9ed4934bd43d518fc20eac42f5.png"
-description: "近年流行りの会員制倉庫型スーパーの[COSTCO](https://www.costco.co.jp/)"
+heroImage: "../../assets/images/94c99b9ed4934bd43d518fc20eac42f5.png"
+description: ""
 ---
 
 近年流行りの会員制倉庫型スーパーの[COSTCO](https://www.costco.co.jp/)  
@@ -12,7 +12,7 @@ description: "近年流行りの会員制倉庫型スーパーの[COSTCO](https:
 
 コストコの年会費は最も安いゴールドスター会員でも 年間4400円（税抜）とちょっと手痛い出費です。
 
-![よぴお](/images/gE_cS3DT_400x400-150x150.jpg)
+![よぴお](../../assets/images/gE_cS3DT_400x400-150x150.jpg)
 
 よぴお
 
@@ -25,7 +25,7 @@ description: "近年流行りの会員制倉庫型スーパーの[COSTCO](https:
 
 ### 主会員がいなくても入場可能
 
-![よぴお](/images/gE_cS3DT_400x400-150x150.jpg)
+![よぴお](../../assets/images/gE_cS3DT_400x400-150x150.jpg)
 
 よぴお
 
@@ -35,7 +35,7 @@ description: "近年流行りの会員制倉庫型スーパーの[COSTCO](https:
 
 会員がいないと同居家族でも、入場できないのです。
 
-![](/images/34a4269fa9337c1c718be9866e11aa08.png)
+![](../../assets/images/34a4269fa9337c1c718be9866e11aa08.png)
 
 ところが、家族会員カードを作成すれば、主会員がいなくても入場することができます。
 
@@ -50,7 +50,7 @@ description: "近年流行りの会員制倉庫型スーパーの[COSTCO](https:
 
 <figure>
 
-![](/images/d59c86fb40fc61fcdae456cf0111ae62.png)
+![](../../assets/images/d59c86fb40fc61fcdae456cf0111ae62.png)
 
 <figcaption>
 
@@ -62,7 +62,7 @@ description: "近年流行りの会員制倉庫型スーパーの[COSTCO](https:
 
 家族会員カードを発行すれば、最大6名で入場することができます。
 
-![よぴお](/images/gE_cS3DT_400x400-150x150.jpg)
+![よぴお](../../assets/images/gE_cS3DT_400x400-150x150.jpg)
 
 よぴお
 
@@ -109,7 +109,7 @@ description: "近年流行りの会員制倉庫型スーパーの[COSTCO](https:
 ・それぞれ単独で入場できる  
 ・入場可能人数を倍にできる
 
-![よぴりん](/images/gE_cS3DT_400x400-150x150.jpg)
+![よぴりん](../../assets/images/gE_cS3DT_400x400-150x150.jpg)
 
 よぴりん
 

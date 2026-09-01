@@ -3,14 +3,14 @@ title: "AQUOS sense4　半年使用レビュー"
 pubDate: 2022-01-18
 categories: 
   - "gadget"
-heroImage: "/images/e5b038fbde67a3801b17b5f5b1ef5e7b.png"
-description: "2020年12月に発売されたシャープの AQUOS sense4。"
+heroImage: "../../assets/images/e5b038fbde67a3801b17b5f5b1ef5e7b.png"
+description: ""
 ---
 
 2020年12月に発売されたシャープの AQUOS sense4。  
 最も売れているSIMフリースマホとして人気の高いAQUOS senseシリーズの2021年春モデル。
 
-![](/images/gE_cS3DT_400x400-150x150.jpg)
+![](../../assets/images/gE_cS3DT_400x400-150x150.jpg)
 
 AQUOS senseシリーズは低価格ながら、国内メーカーのシャープが製造していることもあって人気です。
 
@@ -23,7 +23,7 @@ AQUOS senseシリーズは低価格ながら、国内メーカーのシャープ
 
 <figure>
 
-![](/images/20210703_172355-768x1024.jpg)
+![](../../assets/images/20210703_172355-768x1024.jpg)
 
 <figcaption>
 
@@ -82,7 +82,7 @@ AQUOS sense4 ブラック
 
 3万円台のミドルスペックスマホでありながら、標準・広角・望遠の三眼カメラを搭載しています。
 
-![](/images/20210703_172409-1024x1024.jpg)
+![](../../assets/images/20210703_172409-1024x1024.jpg)
 
 ## AQUOS sense4のよくないところ
 

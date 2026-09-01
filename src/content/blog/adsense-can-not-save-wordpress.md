@@ -3,15 +3,15 @@ title: "【対処法】GoogleAdsense 審査コードが保存できません"
 pubDate: 2022-01-16
 categories: 
   - "blog"
-heroImage: "/images/d774a3eb7e4f88607c8c53b357b5b3a4.png"
-description: "収益化に必須のGoogleアドセンス！"
+heroImage: "../../assets/images/d774a3eb7e4f88607c8c53b357b5b3a4.png"
+description: ""
 ---
 
 収益化に必須のGoogleアドセンス！  
 審査を受けるためには、審査用コードを張り付ける必要があります。  
 しかし、ここ数か月アドセンスの審査コードをサイト上に保存しようとするとエラーが発生する事象が多発しています。
 
-![](/images/gE_cS3DT_400x400-150x150.jpg)
+![](../../assets/images/gE_cS3DT_400x400-150x150.jpg)
 
 私も保存できずにびっくりしたので、実体験をもとに解決方法をお伝えします。
 
@@ -21,13 +21,13 @@ cocoonでは、
 Wordpress管理メニュー >cocoon設定 > アクセス解析・認証 > その他アクセス解析・認証コード設定  
 からヘッド用コードに、Googleアドセンスのコードをコピペ、保存します。
 
-![](/images/image-18-1024x396.png)
+![](../../assets/images/image-18-1024x396.png)
 
-![](/images/image-19-1024x228.png)
+![](../../assets/images/image-19-1024x228.png)
 
 ここにアドセンス用コードを張り付けて、保存を押します！
 
-![](/images/gE_cS3DT_400x400-150x150.jpg)
+![](../../assets/images/gE_cS3DT_400x400-150x150.jpg)
 
 ここで問題が！！！
 
@@ -35,7 +35,7 @@ Wordpress管理メニュー >cocoon設定 > アクセス解析・認証 > その
 
 私も張り付けて、保存を押したところこんな表示が！
 
-![](/images/image-3.png)
+![](../../assets/images/image-3.png)
 
 閲覧できません（Forbidden access）  
 指定したウェブページを表示することができません。入力したURLや値が正しくない可能性がございますのでご確認ください。  
@@ -43,7 +43,7 @@ Powered by SiteGuard Lite
 
 使用している、テーマやサーバーによっては別の表示になるようです。
 
-![](/images/gE_cS3DT_400x400-150x150.jpg)
+![](../../assets/images/gE_cS3DT_400x400-150x150.jpg)
 
 私はConoHa × cocoonの組み合わせです。
 
@@ -55,11 +55,11 @@ Powered by SiteGuard Lite
 \> サイト管理 > サイトセキュリティ > WAF  
 から　WAF利用設定をOFFにする　か　**対象の攻撃を除外**して 無効化します
 
-![](/images/image-1024x591.png)
+![](../../assets/images/image-1024x591.png)
 
-![](/images/image-1-edited.png)
+![](../../assets/images/image-1-edited.png)
 
-![](/images/image-2-edited.png)
+![](../../assets/images/image-2-edited.png)
 
 このように左下に除外解除に成功となっていれOKです。
 

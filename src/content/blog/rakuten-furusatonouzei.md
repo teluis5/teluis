@@ -3,8 +3,8 @@ title: "楽天ふるさと納税・確定申告の方法"
 pubDate: 2022-02-05
 categories: 
   - "life"
-heroImage: "/images/94c99b9ed4934bd43d518fc20eac42f5.png"
-description: "ふるさと納税にはワンストップ特例制度があり、原則確定申告の必要がありません。"
+heroImage: "../../assets/images/94c99b9ed4934bd43d518fc20eac42f5.png"
+description: ""
 ---
 
 ## 確定申告申告が必要な人
@@ -23,13 +23,13 @@ description: "ふるさと納税にはワンストップ特例制度があり、
 
 各自治体から送られてくる証明書を保管しておいて、確定申告の際に添付する必要がありました。
 
-![](/images/6f56b5bea9d901cb7f52f7396e84735a.png)
+![](../../assets/images/6f56b5bea9d901cb7f52f7396e84735a.png)
 
 ### これから
 
 楽天ふるさと納税が、昨年一年間の納税履歴を一括して「寄附金控除に関する証明書」として交付してくれます。
 
-![](/images/e53f31dc4f27863ac3ed0f2661f0cc61.png)
+![](../../assets/images/e53f31dc4f27863ac3ed0f2661f0cc61.png)
 
 自治体からの証明書を保管しておく必要がありません。  
 証明書を無くした時や、多くの自治体にふるさと納税した場合は便利なサービスです。
@@ -38,22 +38,22 @@ description: "ふるさと納税にはワンストップ特例制度があり、
 
 ## 手順
 
-![](/images/image-14.png)
+![](../../assets/images/image-14.png)
 
 ### 楽天ふるさと納税から「寄付金控除に関する証明書」のデータを取得する
 
 楽天ふるさと納税のマイページの左のメニューバーから確定申告について > 確定申告に伴うお手続きをクリックします。
 
-![](/images/afacef6555f2f5ea65553497c96a7abe-edited.jpg)
+![](../../assets/images/afacef6555f2f5ea65553497c96a7abe-edited.jpg)
 
 すると、の画面に移行します。下にスクロールします
 
-![](/images/0edb8e532c8eca909a6b4a535cb435c3-1024x576.png)
+![](../../assets/images/0edb8e532c8eca909a6b4a535cb435c3-1024x576.png)
 
 さらに下へスクロールして、楽天会員の情報を確認の上  
 確定申告をする年を選び、交付手続きへをクリックします。
 
-![](/images/image-16.png)
+![](../../assets/images/image-16.png)
 
 ### 確定申告書の作成
 

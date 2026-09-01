@@ -3,8 +3,8 @@ title: "【paypayボーナス運用活用法】テクノロジーコース追加
 pubDate: 2022-01-28
 categories: 
   - "家計管理・資産運用"
-heroImage: "/images/f3e00ef59a12fe9bd55456192acc1a59.png"
-description: "paypayで決済した際に還元される、paypayボーナスを株式に投資して増やすことがでます。"
+heroImage: "../../assets/images/f3e00ef59a12fe9bd55456192acc1a59.png"
+description: ""
 ---
 
 ## paypayボーナス運用とは
@@ -16,7 +16,7 @@ paypayで決済した際に還元される、paypayボーナスを株式に投�
 
 私はスイングトレードに活用していますが、見ての通り赤字です、、、
 
-![](/images/Screenshot_20220128-171346_PayPay-1024x682.jpg)
+![](../../assets/images/Screenshot_20220128-171346_PayPay-1024x682.jpg)
 
 ## テクノロジーコースが連動するETFはQQQ
 
@@ -69,7 +69,7 @@ IT関連銘柄が多く、疫病ショックからも立ち直りが早かった
 
 <figure>
 
-[![](/images/image-5.png)](https://www.google.com/finance/quote/QQQ:NASDAQ?sa=X&ved=2ahUKEwj_tZuwjeb1AhXVA94KHV-uB20Q3ecFegQIFBAc&window=MAX)
+[![](../../assets/images/image-5.png)](https://www.google.com/finance/quote/QQQ:NASDAQ?sa=X&ved=2ahUKEwj_tZuwjeb1AhXVA94KHV-uB20Q3ecFegQIFBAc&window=MAX)
 
 <figcaption>
 
@@ -81,7 +81,7 @@ Google financeより
 
 一方、直近6か月では低調な値動きです。
 
-![](/images/image-7.png)
+![](../../assets/images/image-7.png)
 
 ## テクノロジーコースの活用法
 
@@ -97,7 +97,7 @@ Google financeより
 
 筆者はテクノロジーコースは利用しません。
 
-![筆者](/images/gE_cS3DT_400x400-150x150.jpg)
+![筆者](../../assets/images/gE_cS3DT_400x400-150x150.jpg)
 
 筆者
 

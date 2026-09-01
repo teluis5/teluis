@@ -4,8 +4,8 @@ pubDate: 2022-04-20
 categories: 
   - "gadget"
   - "life"
-heroImage: "/images/57850d2db5de36b6623b158106ce3379.png"
-description: "入社してからはやくも2週間が経過しました！！"
+heroImage: "../../assets/images/57850d2db5de36b6623b158106ce3379.png"
+description: ""
 ---
 
 ### 入社2週間で出社はたったの2日

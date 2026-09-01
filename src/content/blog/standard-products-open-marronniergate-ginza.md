@@ -3,8 +3,8 @@ title: "【開店日予想】ダイソー新業態Standard Productsがマロニ�
 pubDate: 2022-02-07
 categories: 
   - "life"
-heroImage: "/images/e5b038fbde67a3801b17b5f5b1ef5e7b.png"
-description: "100円ショップのダイソーを運営する大創産業の新ブランドStandard Products"
+heroImage: "../../assets/images/e5b038fbde67a3801b17b5f5b1ef5e7b.png"
+description: ""
 ---
 
 100円ショップのダイソーを運営する大創産業の新ブランドStandard Products  
@@ -13,7 +13,7 @@ description: "100円ショップのダイソーを運営する大創産業の新
 
 ## マロニエゲート銀座に4中旬OPEN
 
-![よぴりん](/images/gE_cS3DT_400x400-150x150.jpg)
+![よぴりん](../../assets/images/gE_cS3DT_400x400-150x150.jpg)
 
 よぴりん
 
@@ -21,7 +21,7 @@ Standard Productsの運営会社ダイソーの求人サイトにこんな募集
 
 <figure>
 
-[![](/images/image-8-1024x420.png)](https://recruit-daiso.com/jobfind-pc/job/All/48663)
+[![](../../assets/images/image-8-1024x420.png)](https://recruit-daiso.com/jobfind-pc/job/All/48663)
 
 <figcaption>
 
@@ -31,7 +31,7 @@ Standard Productsの運営会社ダイソーの求人サイトにこんな募集
 
 </figure>
 
-![よぴりん](/images/gE_cS3DT_400x400-150x150.jpg)
+![よぴりん](../../assets/images/gE_cS3DT_400x400-150x150.jpg)
 
 よぴりん
 
@@ -80,9 +80,9 @@ Standard Productsの運営会社ダイソーの求人サイトにこんな募集
 ・300円ショップのTHREEPY  
 も同時オープンするようです。
 
-![](/images/image-10.png)
+![](../../assets/images/image-10.png)
 
-![よぴりん](/images/gE_cS3DT_400x400-150x150.jpg)
+![よぴりん](../../assets/images/gE_cS3DT_400x400-150x150.jpg)
 
 よぴりん
 
@@ -90,7 +90,7 @@ Standard Productsの運営会社ダイソーの求人サイトにこんな募集
 
 同じテナントに入ることは初めてのことです！
 
-![](/images/image-13-1024x257.png)
+![](../../assets/images/image-13-1024x257.png)
 
 ## OPEN予想は4月15日！
 
@@ -100,7 +100,7 @@ Standard Products1号店は3/26**(金)**、2号店は10/22**(金)**オープン�
 
 4月中旬OPEN予定とされているので、**4月15日(金)**が候補となります
 
-[![](/images/bgt)](https://px.a8.net/svt/ejp?a8mat=3N3YJX+BOC3EQ+2FDU+TYBG1) ![](/images/0.gif) 
+[![](../../assets/images/bgt)](https://px.a8.net/svt/ejp?a8mat=3N3YJX+BOC3EQ+2FDU+TYBG1) ![](../../assets/images/0.gif) 
 
 ## マロニエゲート銀座の詳細
 
@@ -114,7 +114,7 @@ Standard Products1号店は3/26**(金)**、2号店は10/22**(金)**オープン�
 
 <figure>
 
-![](/images/image-11.png)
+![](../../assets/images/image-11.png)
 
 <figcaption>
 
@@ -135,7 +135,7 @@ Standard Productsの他の店舗の売り場面積は
 
 <figure>
 
-![](/images/image-12-1024x404.png)
+![](../../assets/images/image-12-1024x404.png)
 
 <figcaption>
 
@@ -156,7 +156,7 @@ Standard Products三号店がマロニエゲート銀座2にオープンする
 オープン日予想は2022年4月15日  
 売り場面積は三店舗合計で約1,500平方メートルと巨大
 
-![よぴお](/images/gE_cS3DT_400x400-150x150.jpg)
+![よぴお](../../assets/images/gE_cS3DT_400x400-150x150.jpg)
 
 よぴお
 

@@ -3,7 +3,7 @@ title: "NotionのデータベースをGASでSpreadSheetに出力する方法"
 pubDate: 2024-10-06
 categories: 
   - "it-skill"
-description: "手軽さと多様なビューで便利なNotionのデータベース。しかし関数などの面でExcelやSpreadSheetなどの表計算ソフトには劣ってしまいます。"
+description: ""
 ---
 
 手軽さと多様なビューで便利なNotionのデータベース。しかし関数などの面でExcelやSpreadSheetなどの表計算ソフトには劣ってしまいます。  
@@ -35,16 +35,16 @@ Notionの設定からを「コネクト > インテグレーションを作成�
 
 または、このリンク「[https://www.notion.so/profile/integrations](https://www.notion.so/profile/integrations)」も使用できます
 
-![](/images/image-1024x637.png)
+![](../../assets/images/image-1024x637.png)
 
 すると、ブラウザでNotionのインテグレーションのページが開くので、新しいインテグレーションを開きます。
 
-![](/images/image-1-1024x290.png)
+![](../../assets/images/image-1-1024x290.png)
 
 「インテグレーション名」、「関連ワークスペース」、「種類」を記入し、保存を押下します。  
 個人利用が目的なので、種類は内部(internal)でよいです。
 
-![](/images/image-2-1024x395.png)
+![](../../assets/images/image-2-1024x395.png)
 
 すると新しいインテグレーションが作成されます。
 
@@ -56,7 +56,7 @@ APIKeyとは、プログラムのための合鍵のようなもので、これ�
 
 「ユーザー機能」は情報なしで困らないと思います。
 
-![](/images/image-4-1024x536.png)
+![](../../assets/images/image-4-1024x536.png)
 
 #### 1-2.データベース・ページにインテグレーションを適応する
 
@@ -65,14 +65,14 @@ APIKeyとは、プログラムのための合鍵のようなもので、これ�
 適応したいページ・データベースを開き右上の設定から、「コネクト > 接続先」を選択します。  
 コネクトを探すの検索ボックスに先ほど作成したインテグレーション名を入力し、選択します。
 
-![](/images/image-7.png)
+![](../../assets/images/image-7.png)
 
 すると以下のようなダイアログが表示されるので、「はい」を選択し続行します。
 
-![](/images/image-6.png)
+![](../../assets/images/image-6.png)
 
 次のように表示されていれば成功です。
 
-![](/images/image-8.png)
+![](../../assets/images/image-8.png)
 
 ### 2.SpreadSheetにAppScriptを追加する

@@ -1,7 +1,7 @@
 ---
 title: "ダイソー新業態Standard Productsがついに大阪・梅田へ！梅田エストにオープン予定"
 pubDate: 2022-02-28
-description: "100円ショップのダイソーを運営する大創産業の新ブランドStandard Products"
+description: ""
 ---
 
 100円ショップのダイソーを運営する大創産業の新ブランドStandard Products  
@@ -12,7 +12,7 @@ https://yomileeblog.com/standard-products-open-marronniergate-ginza/697/
 
 ## 梅田ESTにOPEN予定
 
-![](/images/image-20.png)
+![](../../assets/images/image-20.png)
 
 ### e☆イヤホン梅田エスト店跡にオープン
 
@@ -21,7 +21,7 @@ e☆イヤホン 梅田EST店が2022年2月13日に閉店しました。
 
 <figure>
 
-[![](/images/image-20-1024x664.jpg)](https://www.e-earphone.jp/user_data/shop_umd/)
+[![](../../assets/images/image-20-1024x664.jpg)](https://www.e-earphone.jp/user_data/shop_umd/)
 
 <figcaption>
 
