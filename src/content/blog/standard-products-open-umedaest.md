@@ -21,7 +21,7 @@ e☆イヤホン 梅田EST店が2022年2月13日に閉店しました。
 
 <figure>
 
-[![](../../assets/images/image-20-1024x664.jpg)](https://www.e-earphone.jp/user_data/shop_umd/)
+[![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)](https://www.e-earphone.jp/user_data/shop_umd/)
 
 <figcaption>
 

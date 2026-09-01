@@ -8,7 +8,7 @@ tags:
   - "おすすめ"
   - "大学生"
   - "拡張機能"
-heroImage: "../../assets/images/6a9499cc629e84e6cc459efc24b646ff.png"
+
 description: ""
 ---
 
@@ -54,7 +54,7 @@ YouTubeなどで当たり前となった倍速再生。
 
 <figure>
 
-[![](../../assets/images/5aoc5CzYDnoG0UkF6GkAmn9BKf_qCk3d4jEDFIaGXIlN51k7GrL83aW1zHzFX0dfq2fOtrK92JKRS-5C4yUe5lkz=w640-h400-e365-rj-sc0x00ffffff)](https://chrome.google.com/webstore/detail/video-speed-controller/nffaoalbilbmmfgbnbgppjihopabppdk)
+[![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)](https://chrome.google.com/webstore/detail/video-speed-controller/nffaoalbilbmmfgbnbgppjihopabppdk)
 
 <figcaption>
 
@@ -81,7 +81,7 @@ Evernoteは、無料で使用できる最も有名なノートアプリの一つ
 
 <figure>
 
-![](../../assets/images/uLOnrr2pVfTj6IcYxG_N1ZMwLYwGyZPBnTtks-nXAKWiDpAhA07-5itxYf5qynOVlfBa_KsfFclMNsbQ-nx9ffnhHA=w640-h400-e365-rj-sc0x00ffffff)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
 <figcaption>
 
@@ -101,7 +101,7 @@ Microsoftが提供しているメモアプリ「OneNote」の拡張機能です�
 
 <figure>
 
-![](../../assets/images/rpFDclPHHRKi4wagoroPYR2unQhHyN6i9QFeeZrE0QLJdQbVVCtW70UY50WLokhu5JxJF0r-YaJhrct8KKt8Ggn3VQ=w640-h400-e365-rj-sc0x00ffffff)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
 <figcaption>
 
@@ -129,7 +129,7 @@ DeepL翻訳ではそのようなことはありません。
 
 逆に、日本語で書いた文章を英語や中国語に変換することも可能です。
 
-![](../../assets/images/ZJAbyNflr61lMbcNQKNBnpB9d5b7XsalLBglm8Pup4L97l7v7uuu7FmCJclCig64anS7szt6tE3qMKytzNGip6MGOg=w640-h400-e365-rj-sc0x00ffffff)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
 拡張機能を使用すれば、コピー＆ペーストを使用しなくても簡単に翻訳することができます。
 
@@ -140,7 +140,7 @@ DeepL翻訳ではそのようなことはありません。
 DeepL翻訳では、ページ全体の翻訳を行うことができません。  
 そこで、サブの翻訳ツールとしてGoogle翻訳を使用しています。
 
-![](../../assets/images/84DirTRGNPW-k3Ijs0mXnuee-FV6ebk_hVWZiAy4cOYXKJW716qFmOxt_jB8goCoJtzWqumw-PGNUxQpWtikCKEMy-Y=w640-h400-e365-rj-sc0x00ffffff)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
 ## Web屋向けツール
 
@@ -150,7 +150,7 @@ DeepL翻訳では、ページ全体の翻訳を行うことができません。
 
 サイト上に表示されているコンテンツのカラーコードを読み取ることができます。
 
-![](../../assets/images/UKyzH2qVcaoNkCmx8gXtv0A9pjJa5UB7cDlIyMvGGX2IX5BfGTPQxNVncDkYXFKdvi1AyKH2XUTx4j9_-OGUO4-5jQ=w640-h400-e365-rj-sc0x00ffffff)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
 インストールは[こちら](https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp)
 
@@ -164,7 +164,7 @@ PDFファイルが見つかれば、同時に保存してくれます。
 
 <figure>
 
-![](../../assets/images/YRr4zbkKvI6KMQjkN66b4v0JnmcaDXszeG1MdRHrFOctrYUay4Exopa4WWK4y3gsG8DRCjBijVQEspR6V_DN-CE4yB4=w640-h400-e365-rj-sc0x00ffffff)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
 <figcaption>
 
@@ -186,7 +186,7 @@ chromeウェブストアより
 Amazonの価格推移を確認することができます。  
 Amazonでは、各種セールの度に大きな値引きが行われていますが、元値を高く表記するなどの不正が行われているとの情報もあります。
 
-![](../../assets/images/image-1024x763.png)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
 インストールは[こちら](https://chrome.google.com/webstore/detail/keepa-amazon-price-tracke/neebplgakaahbhdphmkckjjcegoiijjo)
 
@@ -194,7 +194,7 @@ Amazonでは、各種セールの度に大きな値引きが行われていま�
 
 Amazonだけでなく、楽天やYahooなどから価格を取得し、比較を行うことができます。
 
-![](../../assets/images/image-1-1024x733.jpg)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
 インストールは[こちら](https://chrome.google.com/webstore/detail/monosearch/eadklkgmejdhldgchbmegmljdkchcdbd)
 

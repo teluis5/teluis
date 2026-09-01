@@ -3,7 +3,7 @@ title: "【paypayボーナス運用活用法】テクノロジーコース追加
 pubDate: 2022-01-28
 categories: 
   - "家計管理・資産運用"
-heroImage: "../../assets/images/f3e00ef59a12fe9bd55456192acc1a59.png"
+
 description: ""
 ---
 
@@ -16,7 +16,7 @@ paypayで決済した際に還元される、paypayボーナスを株式に投�
 
 私はスイングトレードに活用していますが、見ての通り赤字です、、、
 
-![](../../assets/images/Screenshot_20220128-171346_PayPay-1024x682.jpg)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
 ## テクノロジーコースが連動するETFはQQQ
 

@@ -7,7 +7,7 @@ tags:
   - "イルミネーション"
   - "旅行"
   - "鳥取"
-heroImage: "../../assets/images/5ad2093cf1166a537f91b988bb22d361.jpg"
+
 description: ""
 ---
 
@@ -15,9 +15,9 @@ description: ""
 
 鳥取県が運営する
 
-![](../../assets/images/20211225_182943.jpg)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
-![](../../assets/images/20211225_183416.jpg)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
 東京ドーム約11個分の広さを誇る国内屈指のお花畑です。
 
@@ -29,30 +29,30 @@ description: ""
 
 ## イルミネーション
 
-![](../../assets/images/20211225_1952142768963862761862052.jpg)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
-![](../../assets/images/20211225_195727.jpg)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
-![](../../assets/images/20211225_195521.jpg)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
-![](../../assets/images/20211225_1846034888043686324948634.jpg)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
 約100万級のイルミネーション
 
-![](../../assets/images/20211225_1952521445595733970063343-1024x768.jpg)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
 ## 温室で温まれる
 
-![](../../assets/images/20211225_184329.jpg)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
-![](../../assets/images/man.png)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
 イルミネーションは寒いですが  
 温室で温まることができます
 
 ## 400発の花火
 
-![](../../assets/images/DSC_7140-2-683x1024.jpg)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
 期間中の金土日祝と年末年始(12/29~1/3)
 

@@ -35,16 +35,16 @@ Notionの設定からを「コネクト > インテグレーションを作成�
 
 または、このリンク「[https://www.notion.so/profile/integrations](https://www.notion.so/profile/integrations)」も使用できます
 
-![](../../assets/images/image-1024x637.png)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
 すると、ブラウザでNotionのインテグレーションのページが開くので、新しいインテグレーションを開きます。
 
-![](../../assets/images/image-1-1024x290.png)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
 「インテグレーション名」、「関連ワークスペース」、「種類」を記入し、保存を押下します。  
 個人利用が目的なので、種類は内部(internal)でよいです。
 
-![](../../assets/images/image-2-1024x395.png)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
 すると新しいインテグレーションが作成されます。
 
@@ -56,7 +56,7 @@ APIKeyとは、プログラムのための合鍵のようなもので、これ�
 
 「ユーザー機能」は情報なしで困らないと思います。
 
-![](../../assets/images/image-4-1024x536.png)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
 #### 1-2.データベース・ページにインテグレーションを適応する
 

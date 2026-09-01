@@ -3,7 +3,7 @@ title: "【宿泊レビュー】夕景の宿 海のゆりかご 萩小町 部屋
 pubDate: 2022-02-02
 categories: 
   - "travel"
-heroImage: "../../assets/images/c9b15f006c5de1268f5fd77c67c3ed33.jpg"
+
 description: ""
 ---
 
@@ -62,12 +62,12 @@ description: ""
 和室10畳のお部屋に、広縁・洗面所・トイレがついています。おまかせ客室では、部屋にお風呂がありません。  
 部屋には、金庫、冷蔵庫、ドライヤーなどの設備があります。
 
-![](../../assets/images/20220108_164142.jpg)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
 広間からの眺めです。  
 日本海がすぐそこまで迫っています。
 
-![](../../assets/images/20220108_164157.jpg)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
 日本海を一望することができます。  
 客室の約8割が海に面しているそうです。  
@@ -102,33 +102,33 @@ description: ""
 最もスタンドなプランを選択しました。  
 それでも、この豪華さ！！数品下げられてしまった後ですが、ボリュームは問題なし！
 
-![](../../assets/images/20220108_183502-1024x481.jpg)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
 前菜の小鉢。なにか忘れた、、、けどまぁ完食
 
-![](../../assets/images/image_editor_output_image164136482-1643787005826.jpg)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
 お刺身は、歯ごたえがよく、美味しい！新鮮なんでしょう
 
-![](../../assets/images/20220108_181827.jpg)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
 ふぐのお刺身の別腹別皿で用意されていました。  
 山口は下関の名物！山口に来たからには食べたい一品です。
 
-![](../../assets/images/20220108_181829.jpg)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
 ふぐの唐揚げは、骨が多くて食べずらかった。味はいいだけどな、、、
 
-![](../../assets/images/20220108_183602.jpg)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
 メインの牛肉は赤身と脂のバランスがよく、付け合わせの野菜にも肉の脂とバターが香りgood！
 
-![](../../assets/images/20220108_1819544723157216361909044-edited.jpg)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
 締めのデザート！洋ナシのゼリーと大福、大学芋、みかんでした。  
 サッパリとした洋ナシのゼリーが、よかったです。
 
-![](../../assets/images/20220108_190628.jpg)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
 どうやら、夕食の会場は数か所あるようで、館内で見かけた子ども連れの家族を見かけることはありませんでした。  
 旅館側の配慮で、子ども連れは１か所の会場に集約されているのだと思います。  
@@ -136,7 +136,7 @@ description: ""
 
 お食事の間に、お部屋にお布団を敷いていただきました。事前にお部屋をキレイにしておきましょう。
 
-[![](../../assets/images/000000000629.gif)](//af.moshimo.com/af/c/click?a_id=3191851&p_id=55&pc_id=55&pl_id=629&guid=ON)![](../../assets/images/impression) [![](../../assets/images/bgt)](https://px.a8.net/svt/ejp?a8mat=3BFNHH+3K09DU+14CS+6GZCH)
+[![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)](//af.moshimo.com/af/c/click?a_id=3191851&p_id=55&pc_id=55&pl_id=629&guid=ON)![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found) [![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)](https://px.a8.net/svt/ejp?a8mat=3BFNHH+3K09DU+14CS+6GZCH)
 
 ## 売店
 
@@ -150,13 +150,13 @@ description: ""
 
 目覚めると朝日が昇っていました！
 
-![](../../assets/images/20220109_0821326424500384051374199.jpg)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
-![](../../assets/images/20220109_0834391507748114224772882.jpg)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
 夜は暗くて、あまりわからなかったのですが、食事会場の見晴らしはとても良い！！
 
-![](../../assets/images/20220109_090315-1024x577.jpg)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
 ## 宿泊プラン
 

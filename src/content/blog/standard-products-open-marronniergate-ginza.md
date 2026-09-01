@@ -21,7 +21,7 @@ Standard Productsの運営会社ダイソーの求人サイトにこんな募集
 
 <figure>
 
-[![](../../assets/images/image-8-1024x420.png)](https://recruit-daiso.com/jobfind-pc/job/All/48663)
+[![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)](https://recruit-daiso.com/jobfind-pc/job/All/48663)
 
 <figcaption>
 
@@ -90,7 +90,7 @@ Standard Productsの運営会社ダイソーの求人サイトにこんな募集
 
 同じテナントに入ることは初めてのことです！
 
-![](../../assets/images/image-13-1024x257.png)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
 ## OPEN予想は4月15日！
 
@@ -100,7 +100,7 @@ Standard Products1号店は3/26**(金)**、2号店は10/22**(金)**オープン�
 
 4月中旬OPEN予定とされているので、**4月15日(金)**が候補となります
 
-[![](../../assets/images/bgt)](https://px.a8.net/svt/ejp?a8mat=3N3YJX+BOC3EQ+2FDU+TYBG1) ![](../../assets/images/0.gif) 
+[![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)](https://px.a8.net/svt/ejp?a8mat=3N3YJX+BOC3EQ+2FDU+TYBG1) ![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found) 
 
 ## マロニエゲート銀座の詳細
 
@@ -135,7 +135,7 @@ Standard Productsの他の店舗の売り場面積は
 
 <figure>
 
-![](../../assets/images/image-12-1024x404.png)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
 <figcaption>
 

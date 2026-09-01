@@ -3,13 +3,13 @@ title: "【開通編】povo 2.0契約した。MCC,APN設定方法も解説。"
 pubDate: 2022-01-26
 categories: 
   - "life"
-heroImage: "../../assets/images/309301440d5d60cc3af875bcb091475a.png"
+
 description: ""
 ---
 
 ## povo2.0とは
 
-![](../../assets/images/20211002_175520.jpg)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
 povo2.0は、auを運営する通信大手KDDIのネット契約専用プランです。物理SIM eSIMに対応しています。povo2.0は、基本料金無料で、データを使いたい時に使いたいだけ契約することができる新しい形態です。プリペイドSIM+通話といったところでしょうか。格安で電話番号を維持できることが魅力的ですね。  
 私は、SMS認証用や旅行や出張時に短期間大容量通信用として、新規契約しました。
@@ -20,7 +20,7 @@ https://yomileeblog.com/povo2-application/154/
 
 9/30日申し込み、その2日後の10/2にヤマト運輸の宅急便コンパクトで送られてきました。申込開始で遅延が公式から案内がありましたが、迅速に配送していただきました。
 
-![](../../assets/images/20211002_115218-1024x768.jpg)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
 同梱物はSIMカード、SIMピン、スタートアップガイドpovoのロゴシールの4つです。  
 ロゴシールにはあとから気づきました。使い道は見当たりませんが、、、  
@@ -30,17 +30,17 @@ SIMピンが同梱されているのはうれしいですね！無くしがち�
 
 povo2.0のアプリからSIMカードの有効化を行います。
 
-![](../../assets/images/Screenshot_20211002-120224_povo20-1024x839.jpg)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
 ログインした最初の画面にSIMカード有効化のバナーがあります。  
 クリックする、到着したことの確認か、SIMカードがくっついてるカード(名前がわからない)の裏面にあるバーコードをカメラで読み取ります。
 
-![](../../assets/images/Screenshot_20211002-120249_povo20-720x1024.jpg)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
 バーコードをスキャンすると、有効化が完了します。  
 有効化は9時から21時の間におこなわれます。21時を過ぎると、翌9時以降、順次有効化されます。
 
-![](../../assets/images/Screenshot_20211002-120545_povo20-1024x486.jpg)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
 ## MCC設定・端末にSIMカードを挿入
 

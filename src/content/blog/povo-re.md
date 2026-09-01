@@ -6,11 +6,11 @@ categories:
   - "life"
 tags: 
   - "povo2-0"
-heroImage: "../../assets/images/12d97cd9de79a7e37f9c2c38e4b6ce3d.jpg"
+
 description: ""
 ---
 
-![](../../assets/images/20211002_175520.jpg)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
 auが運営する格安通信サービスのpovo。月額基本料金0円で利用でき、必要なときに必要なだけデータを購入することができ非常に人気のサービスです。
 
@@ -36,7 +36,7 @@ povoのホームページにはこのように書かれています。
 
 利用開始から7ヶ月を過ぎた頃に解約予告がされ、8ヶ月で利用停止、9ヶ月半で契約解除となりました。
 
-![](../../assets/images/Screenshot_20221214-231205-623x1024.jpg)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8011635154814608" crossorigin="anonymous"></script>
 
@@ -48,7 +48,7 @@ povoのホームページにはこのように書かれています。
 
 私は10/14にGooglePixel7Proを購入した際についてきたプロモーションコードを利用して、povo2.0を再び契約することができますした。
 
-![](../../assets/images/Screenshot_20221215-000247-1024x962.jpg)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
 どうやら、強制解約だけではブラックリストに載ることはないようです。
 

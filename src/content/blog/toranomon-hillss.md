@@ -6,7 +6,7 @@ description: ""
 
 2023年10月6日にオープンしたばかりの虎ノ門ヒルズに早速遊びに行ってきました
 
-![](../../assets/images/PXL_20231007_053645134-1024x771.jpg)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
 ## 日比谷線　虎ノ門ヒルズ駅直結
 
@@ -14,7 +14,7 @@ description: ""
 
 <figure>
 
-![](../../assets/images/PXL_20231007_034855621-1-1024x771.jpg)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
 <figcaption>
 
@@ -26,13 +26,13 @@ description: ""
 
 ホームからエスカレーターを下るとモダンなコンコース。黒基調で落ち着いた雰囲気。
 
-![](../../assets/images/PXL_20231007_0623568567E3-1024x767.jpg)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
 B2階の改札を出るとデジタルサイネージと配管むき出しの天井がカッコいい改札前広場！
 
 <figure>
 
-![](../../assets/images/PXL_20231007_034954048-1024x771.jpg)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
 <figcaption>
 
@@ -57,7 +57,7 @@ B2階の改札を出るとデジタルサイネージと配管むき出しの天
 
 <figure>
 
-![](../../assets/images/PXL_20231007_0350165187E2-1024x771.jpg)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
 <figcaption>
 
@@ -75,7 +75,7 @@ B2にはフードコートのT-MARKETがある。
 
 <figure>
 
-![](../../assets/images/PXL_20231007_0355416647E2-1024x771.jpg)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
 <figcaption>
 
@@ -87,7 +87,7 @@ T-MARKET
 
 寿司・日本料理から中華・イタリアン・バー・居酒屋まで、様々なジャンルの27店舗が共存している。
 
-![](../../assets/images/PXL_20231007_0354069967E2-1024x771.jpg)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
   
 緑・光・音・アートがエリアの特性に合わせてデザインされていて、歩いていて飽きない。
@@ -97,7 +97,7 @@ T-MARKET
 
 <figure>
 
-![](../../assets/images/PXL_20231011_133700566-1024x771.jpg)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
 <figcaption>
 
@@ -107,13 +107,13 @@ T-Marketの店舗一覧
 
 </figure>
 
-![](../../assets/images/PXL_20231007_040203508-771x1024.jpg)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
 ### 7,8階　オフィスとショップ
 
 <figure>
 
-![](../../assets/images/image_editor_output_image170620919-1697029304418-1024x771.jpg)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
 <figcaption>
 
@@ -127,7 +127,7 @@ T-Marketの店舗一覧
 
 <figure>
 
-![](../../assets/images/PXL_20231007_0523475057E2-1024x771.jpg)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
 <figcaption>
 
@@ -143,7 +143,7 @@ T-Marketの店舗一覧
 
 <figure>
 
-![](../../assets/images/PXL_20231007_041424216-edited-1024x768.jpg)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
 <figcaption>
 
@@ -161,13 +161,13 @@ T-Marketの店舗一覧
 
 45階からの眺めは素晴らしい。北側（東京駅方面）にはステーションタワー以上に高いビルがなく皇居や丸の内上野方面の眺望を楽しめます
 
-![](../../assets/images/PXL_20231007_041545245-1024x771.jpg)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
 レストランも充実しており、45階には「TOKYO NODE DINNING」、49階にはミシュランで星を獲得したシェフが腕を振るう「KEI COLLECTION PARIS」、「apothéose」がある。
 
 <figure>
 
-![](../../assets/images/PXL_20231007_0417457437E2-1024x771.jpg)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
 <figcaption>
 
@@ -181,34 +181,34 @@ TOKYO NODE DINNING
 
 8階にあるNODE CAFEでお昼ごはん
 
-![](../../assets/images/PXL_20231007_045837191-1024x771.jpg)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
-![](../../assets/images/PXL_20231007_045922018.PORTRAIT-1024x771.jpg)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
 ## Tデッキ
 
 ステーションタワーとビジネスタワーを結ぶTデッキへ
 
-![](../../assets/images/PXL_20231007_035918937-1024x771.jpg)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
 ステーションタワーからTデッキへ向かう通。青のガラス張りでめっちゃカッコイ！！
 
-![](../../assets/images/PXL_20231007_0543032457E2-1024x771.jpg)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
 うビジネスタワー前の芝生広場。この日は土日だけあってピクニックをしてる人が多かった。
 
 ## ビジネスタワー
 
-![](../../assets/images/PXL_20231007_055547910-1024x771.jpg)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
-![](../../assets/images/PXL_20231007_055924688-1024x771.jpg)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
-![](../../assets/images/PXL_20231007_0349355767E2-1024x771.jpg)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
-![](../../assets/images/PXL_20231007_0622536177E2-1024x771.jpg)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
-![](../../assets/images/PXL_20231007_053709182.PORTRAIT7E2-1024x771.jpg)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
-![](../../assets/images/PXL_20231007_0555393937E2-1-1024x771.jpg)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
-![](../../assets/images/PXL_20231007_0622536177E2-1-1024x771.jpg)
+![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
