@@ -4,6 +4,7 @@ pubDate: 2022-01-26
 categories: 
   - "travel"
 heroImage: "/images/88031f854012584b7f032ff094a16407.jpg"
+description: "○○のはなしとはJR西日本が運転する**観光列車**です。"
 ---
 
 ## 山口県の観光列車　○○のはなしとは

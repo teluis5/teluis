@@ -4,6 +4,7 @@ pubDate: 2022-02-05
 categories: 
   - "life"
 heroImage: "/images/94c99b9ed4934bd43d518fc20eac42f5.png"
+description: "ふるさと納税にはワンストップ特例制度があり、原則確定申告の必要がありません。"
 ---
 
 ## 確定申告申告が必要な人

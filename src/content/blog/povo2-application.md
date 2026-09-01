@@ -5,6 +5,7 @@ categories:
   - "gadget"
   - "life"
 heroImage: "/images/6f56b5bea9d901cb7f52f7396e84735a.png"
+description: "povo2.0は、auを運営する通信大手KDDIのネット契約専用プランです。物理SIM eSIMに対応しています。povo2.0は、基本料金無料で、データを使いたい時に使いたいだけ契約することができる"
 ---
 
 ## povo2.0とは

@@ -4,6 +4,7 @@ pubDate: 2022-01-17
 categories: 
   - "life"
 heroImage: "/images/94c99b9ed4934bd43d518fc20eac42f5.png"
+description: "近年流行りの会員制倉庫型スーパーの[COSTCO](https://www.costco.co.jp/)"
 ---
 
 近年流行りの会員制倉庫型スーパーの[COSTCO](https://www.costco.co.jp/)  

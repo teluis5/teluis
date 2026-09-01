@@ -4,6 +4,7 @@ pubDate: 2022-02-07
 categories: 
   - "life"
 heroImage: "/images/e5b038fbde67a3801b17b5f5b1ef5e7b.png"
+description: "100円ショップのダイソーを運営する大創産業の新ブランドStandard Products"
 ---
 
 100円ショップのダイソーを運営する大創産業の新ブランドStandard Products  

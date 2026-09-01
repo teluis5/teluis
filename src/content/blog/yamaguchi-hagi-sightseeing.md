@@ -4,6 +4,7 @@ pubDate: 2022-02-03
 categories: 
   - "travel"
 heroImage: "/images/77fd093a7c76f0b594f1f67486753f76.jpg"
+description: "下関駅から観光列車で萩駅に到着！"
 ---
 
 ## 観光列車「○○のはなし」で萩駅に到着！

@@ -4,6 +4,7 @@ pubDate: 2022-01-18
 categories: 
   - "gadget"
 heroImage: "/images/e5b038fbde67a3801b17b5f5b1ef5e7b.png"
+description: "2020年12月に発売されたシャープの AQUOS sense4。"
 ---
 
 2020年12月に発売されたシャープの AQUOS sense4。  

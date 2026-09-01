@@ -9,6 +9,7 @@ tags:
   - "大学生"
   - "拡張機能"
 heroImage: "/images/6a9499cc629e84e6cc459efc24b646ff.png"
+description: "chrome拡張機能とは、Google提供するPC向けブラウザchrome向けに開発されたアプリです。"
 ---
 
 ## chrome拡張機能とは

@@ -3,6 +3,7 @@ title: "NotionのデータベースをGASでSpreadSheetに出力する方法"
 pubDate: 2024-10-06
 categories: 
   - "it-skill"
+description: "手軽さと多様なビューで便利なNotionのデータベース。しかし関数などの面でExcelやSpreadSheetなどの表計算ソフトには劣ってしまいます。"
 ---
 
 手軽さと多様なビューで便利なNotionのデータベース。しかし関数などの面でExcelやSpreadSheetなどの表計算ソフトには劣ってしまいます。  

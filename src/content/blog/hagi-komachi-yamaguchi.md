@@ -4,6 +4,7 @@ pubDate: 2022-02-02
 categories: 
   - "travel"
 heroImage: "/images/c9b15f006c5de1268f5fd77c67c3ed33.jpg"
+description: "萩市の旅館の7つでは東萩駅・明倫学舎から各旅館へ、無料で手荷物を配送してくれます。"
 ---
 
 ## 手ぶら萩観光サービスでラクラク市内観光

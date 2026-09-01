@@ -8,6 +8,7 @@ tags:
   - "旅行"
   - "鳥取"
 heroImage: "/images/5ad2093cf1166a537f91b988bb22d361.jpg"
+description: "鳥取県が運営する"
 ---
 
 ## とっとり花回廊はこんなところ

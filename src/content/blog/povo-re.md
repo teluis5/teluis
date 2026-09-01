@@ -7,6 +7,7 @@ categories:
 tags: 
   - "povo2-0"
 heroImage: "/images/12d97cd9de79a7e37f9c2c38e4b6ce3d.jpg"
+description: "auが運営する格安通信サービスのpovo。月額基本料金0円で利用でき、必要なときに必要なだけデータを購入することができ非常に人気のサービスです。"
 ---
 
 ![](/images/20211002_175520.jpg)

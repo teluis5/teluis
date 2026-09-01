@@ -4,6 +4,7 @@ pubDate: 2022-02-05
 categories: 
   - "travel"
 heroImage: "/images/ea0aa3287e8d74cfa56cdae53edc4a05.jpg"
+description: "UFOラインは愛媛県と高知県の県境付近にある尾根道です。"
 ---
 
 UFOラインは愛媛県と高知県の県境付近にある尾根道です。  

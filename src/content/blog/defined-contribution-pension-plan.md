@@ -4,6 +4,7 @@ pubDate: 2022-05-11
 categories: 
   - "life"
 heroImage: "/images/35efa23d85a37268575f210b28dccf8b.png"
+description: "会社から確定拠出年金の説明を聞いたけどよくわからない。"
 ---
 
 ![](/images/b-man.png)

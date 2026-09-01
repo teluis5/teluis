@@ -4,6 +4,7 @@ pubDate: 2022-01-17
 categories: 
   - "life"
 heroImage: "/images/b2fc223fd7929e016180b7d9b9edad7c.png"
+description: "ブログやppt資料の色使い、何となく決めていませか？"
 ---
 
 ブログやppt資料の色使い、何となく決めていませか？  

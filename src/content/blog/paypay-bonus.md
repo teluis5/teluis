@@ -4,6 +4,7 @@ pubDate: 2022-01-28
 categories: 
   - "家計管理・資産運用"
 heroImage: "/images/f3e00ef59a12fe9bd55456192acc1a59.png"
+description: "paypayで決済した際に還元される、paypayボーナスを株式に投資して増やすことがでます。"
 ---
 
 ## paypayボーナス運用とは

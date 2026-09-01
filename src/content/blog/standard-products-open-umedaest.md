@@ -1,6 +1,7 @@
 ---
 title: "ダイソー新業態Standard Productsがついに大阪・梅田へ！梅田エストにオープン予定"
 pubDate: 2022-02-28
+description: "100円ショップのダイソーを運営する大創産業の新ブランドStandard Products"
 ---
 
 100円ショップのダイソーを運営する大創産業の新ブランドStandard Products  
