@@ -21,7 +21,7 @@ Standard Productsの運営会社ダイソーの求人サイトにこんな募集
 
 <figure>
 
-[![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)](https://recruit-daiso.com/jobfind-pc/job/All/48663)
+[![](../../assets/images/image-8-1024x420.png)](https://recruit-daiso.com/jobfind-pc/job/All/48663)
 
 <figcaption>
 
@@ -90,7 +90,7 @@ Standard Productsの運営会社ダイソーの求人サイトにこんな募集
 
 同じテナントに入ることは初めてのことです！
 
-![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
+![](../../assets/images/image-13-1024x257.png)
 
 ## OPEN予想は4月15日！
 
@@ -135,7 +135,7 @@ Standard Productsの他の店舗の売り場面積は
 
 <figure>
 
-![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
+![](../../assets/images/image-12-1024x404.png)
 
 <figcaption>
 

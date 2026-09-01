@@ -47,7 +47,7 @@ BlogMapでは、気に入ったブログの更新通知を受け取ることが�
 カテゴリは、新着順、購読者数順、いいね数順 の順に表示されるので、  
 新規参入者にも十分にチャンスがあります。
 
-![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
+![](../../assets/images/image-3-1024x626.png)
 
 テーマ選びがポイントです！
 

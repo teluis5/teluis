@@ -186,7 +186,7 @@ chromeウェブストアより
 Amazonの価格推移を確認することができます。  
 Amazonでは、各種セールの度に大きな値引きが行われていますが、元値を高く表記するなどの不正が行われているとの情報もあります。
 
-![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
+![](../../assets/images/image-1024x763.png)
 
 インストールは[こちら](https://chrome.google.com/webstore/detail/keepa-amazon-price-tracke/neebplgakaahbhdphmkckjjcegoiijjo)
 
@@ -194,7 +194,7 @@ Amazonでは、各種セールの度に大きな値引きが行われていま�
 
 Amazonだけでなく、楽天やYahooなどから価格を取得し、比較を行うことができます。
 
-![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
+![](../../assets/images/image-1-1024x733.jpg)
 
 インストールは[こちら](https://chrome.google.com/webstore/detail/monosearch/eadklkgmejdhldgchbmegmljdkchcdbd)
 
