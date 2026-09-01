@@ -3,7 +3,7 @@ title: "【リストランテ・ゾーナ・フォルトゥナート】瀬戸内
 pubDate: 2022-01-30
 categories: 
   - "gourmet"
-
+heroImage: "../../assets/images/e41bdd921d7b8265b2d80323476907f9.jpg"
 description: ""
 ---
 
@@ -13,7 +13,7 @@ description: ""
 
 <figure>
 
-![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
+![](../../assets/images/s-20210704_132631.jpg)
 
 <figcaption>
 
@@ -31,11 +31,11 @@ description: ""
 
 ## メニュー
 
-![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
+![](../../assets/images/s-20210704_141222-1.jpg)
 
-![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
+![](../../assets/images/s-20210704_141222-3.jpg)
 
-![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
+![](../../assets/images/s-20210704_141222-2.jpg)
 
 ワンプレートランチセットに加え、パスタやリゾット、肉料理がいただけます。  
 瀬戸内の柑橘類を使ったドリングもおススメです。  
@@ -43,7 +43,7 @@ description: ""
 
 ### おまかせランチ
 
-![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
+![](../../assets/images/s-20210704_133801.jpg)
 
 おまかせランチ ￥1,980レストランのすぐ目の前を通る国道185号線沿いの地元（三原,竹原,安芸津,呉）の食材をふんだんに使用したワンプレートランチ。訪れている人の半数以上が注文していました。  
 ローストビーフや熟成鳥の香草焼きタコやローストハム、など様々な料理が楽しめます。プレートの中で、牡蠣のトーストが1番好きです。ミルキーな牡蠣とガーリックの効いたソースがトーストされてとっても美味しかったです。  
@@ -51,7 +51,7 @@ description: ""
 
 ### カルボナーラ　パンサラダセット
 
-![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
+![](../../assets/images/s-20210704_134000.jpg)
 
 カルボナーラ　パン・サラダセット　￥1,850生パスタを使用した、こだわりの一品。モチモチのパスタと濃厚なソース、香り高いベーコンが絶妙なマッチ。  
 麺は太めでモチモチ！ソースとよく絡みます。  

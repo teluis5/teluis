@@ -3,7 +3,7 @@ title: "【ブロガー向け】BlogMapの使い方 - noteと徹底比較 -"
 pubDate: 2022-02-04
 categories: 
   - "blog"
-
+heroImage: "../../assets/images/d4c36cf8571e19a0603ef491705d2034.png"
 description: ""
 ---
 
@@ -42,7 +42,7 @@ BlogMapでは、気に入ったブログの更新通知を受け取ることが�
 
 カテゴリの種類は100を越えます。
 
-![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
+![](../../assets/images/image-2-1024x447.jpg)
 
 カテゴリは、新着順、購読者数順、いいね数順 の順に表示されるので、  
 新規参入者にも十分にチャンスがあります。
@@ -64,7 +64,7 @@ PROFILE欄におすすめ記事を記載することができます。
 
 私がblog集客ツールとして使用しているnoteとの比較をしてきます。
 
-![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
+![](../../assets/images/b8510f81d2e15035a0b3bec2772dba96.png)
 
 ### noteは記事、BlogMapはヒト
 

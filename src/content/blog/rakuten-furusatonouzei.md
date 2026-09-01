@@ -23,7 +23,7 @@ description: ""
 
 各自治体から送られてくる証明書を保管しておいて、確定申告の際に添付する必要がありました。
 
-![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
+![](../../assets/images/6f56b5bea9d901cb7f52f7396e84735a.png)
 
 ### これから
 
@@ -44,11 +44,11 @@ description: ""
 
 楽天ふるさと納税のマイページの左のメニューバーから確定申告について > 確定申告に伴うお手続きをクリックします。
 
-![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
+![](../../assets/images/afacef6555f2f5ea65553497c96a7abe-edited.jpg)
 
 すると、の画面に移行します。下にスクロールします
 
-![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
+![](../../assets/images/0edb8e532c8eca909a6b4a535cb435c3-1024x576.png)
 
 さらに下へスクロールして、楽天会員の情報を確認の上  
 確定申告をする年を選び、交付手続きへをクリックします。

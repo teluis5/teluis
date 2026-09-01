@@ -3,7 +3,7 @@ title: "【530円で乗れる観光列車】○○のはなし乗車記（下関
 pubDate: 2022-01-26
 categories: 
   - "travel"
-
+heroImage: "../../assets/images/88031f854012584b7f032ff094a16407.jpg"
 description: ""
 ---
 
@@ -27,7 +27,7 @@ description: ""
 
 そこで、大丸下関の地下にあるお惣菜コーナーでお弁当を調達してきました！
 
-![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
+![](../../assets/images/20220108_105241-1024x768.jpg)
 
 ![](../../assets/images/20220108_105107-edited.jpg)
 
@@ -42,14 +42,14 @@ description: ""
 
 大丸下関のから歩くこと5分下関駅に到着！
 
-![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
+![](../../assets/images/20220108_101533-1024x768.jpg)
 
 下関駅では、ふく提灯がお出迎え  
 大丸まで行く自信がない方は中国地方のスーパーゆめマートが改札すぐにあります。
 
 時間もないのでホームに急ぐと、そこには
 
-![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
+![](../../assets/images/20220108_101759-1024x768.jpg)
 
 今回乗車する"○○のはなし"です。  
 繊細な装飾が美しいですね
@@ -58,9 +58,9 @@ description: ""
 
 ## 車内の様子
 
-![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
+![](../../assets/images/20220108_114902-1024x768.jpg)
 
-![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
+![](../../assets/images/20220108_104130-1024x768.jpg)
 
 ## 11:02 ビュースポット1 小串の海岸線
 
@@ -68,7 +68,7 @@ description: ""
 
 <figure>
 
-![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
+![](../../assets/images/20220108_110247-1024x768.jpg)
 
 <figcaption>
 
@@ -83,7 +83,7 @@ description: ""
 
 ## 11:13 ビュースポット2 二見夫婦岩
 
-![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
+![](../../assets/images/20220108_111443-1024x768.jpg)
 
 ## 12:11 ビュースポット3 長門市 只の浜海岸
 
@@ -94,24 +94,24 @@ description: ""
 
 ## 萩市に入る
 
-![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
+![](../../assets/images/20220108_124318-1024x768.jpg)
 
 萩市街に入ると指月山がお出迎え。  
 指月山には、かつて萩城がありました。
 
 ## 12:47 萩駅で下車
 
-![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
+![](../../assets/images/20220108_124744-1024x768.jpg)
 
 終点の一つ手前の萩駅で下車しました。  
 萩駅では、観光協会の方々が出迎えてくださりました。
 
-![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
+![](../../assets/images/20220108_125459-1024x768.jpg)
 
 萩駅は歴史的な駅舎が残るノスタルジックな駅です。  
 駅舎は国の登録有形文化財に登録されています。
 
-![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
+![](../../assets/images/20220108_125005-1024x768.jpg)
 
 昔使われた改札が残っています。
 
@@ -119,11 +119,11 @@ description: ""
 
 車両は赤青緑のグラデーション
 
-![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
+![](../../assets/images/20220109_140346-1024x768.jpg)
 
-![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
+![](../../assets/images/20220109_140207-1024x768.jpg)
 
-![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
+![](../../assets/images/20220109_140301-1-1024x768.jpg)
 
 青い部分の装飾がてもきれいです。
 

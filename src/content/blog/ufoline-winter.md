@@ -3,7 +3,7 @@ title: "【冬季閉鎖直前】霧氷と緑のコントラストが美しい冬
 pubDate: 2022-02-05
 categories: 
   - "travel"
-
+heroImage: "../../assets/images/ea0aa3287e8d74cfa56cdae53edc4a05.jpg"
 description: ""
 ---
 
@@ -34,15 +34,15 @@ UFOラインは愛媛県と高知県の県境付近にある尾根道です。
 UFOラインは標高が高く気温が低いことから、霧氷を見ることができます。  
 愛媛県側が霧氷で白く、高知県側は緑とコントラストを楽しめます。
 
-![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
+![](../../assets/images/20211128_101957-1024x768.jpg)
 
-![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
+![](../../assets/images/20211128_104022-1024x768.jpg)
 
 写真は東黒森周辺です。
 
 霧氷とは空気中の水分が冷却され、風により樹木などと衝突して凍り付く現象です。
 
-![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
+![](../../assets/images/20211128_103651.jpg)
 
 雪が積もるのとは違い、樹木の下側に氷が付着しています。
 
@@ -50,7 +50,7 @@ UFOラインは標高が高く気温が低いことから、霧氷を見るこ�
 
 道中には壁から浸み出した水滴が凍り付いた、壁一面のつららが見られました
 
-![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
+![](../../assets/images/20211128_094244-768x1024.jpg)
 
 ### 山荘しらさでの薪ストーブでまったり
 
@@ -58,20 +58,20 @@ UFOラインは標高が高く気温が低いことから、霧氷を見るこ�
 
 2021年4月にリニューアルオープンした
 
-![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
+![](../../assets/images/20211128_120308-1024x768.jpg)
 
 館内には、ロボットの形をした、薪ストーブがあります。しらさ暖吉と言うそうです。  
 
-![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
+![](../../assets/images/20211128_115528.jpg)
 
 オリジナルチーズケーキとカフェラテを頂きました。
 
-![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
+![](../../assets/images/20211128_113210-1024x768.jpg)
 
 疲れて凍えた身体に  
 濃厚なチーズと温かい室内での冬アイスが沁みます
 
-![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
+![](../../assets/images/20211128_113326-1024x768.jpg)
 
 他にもスープカレーやソフトクリームなど自慢の食事やスイーツを楽しめます。
 

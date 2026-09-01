@@ -56,7 +56,7 @@ APIKeyとは、プログラムのための合鍵のようなもので、これ�
 
 「ユーザー機能」は情報なしで困らないと思います。
 
-![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
+![](../../assets/images/image-4-1024x536.png)
 
 #### 1-2.データベース・ページにインテグレーションを適応する
 

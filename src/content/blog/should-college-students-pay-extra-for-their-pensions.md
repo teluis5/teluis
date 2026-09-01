@@ -3,7 +3,7 @@ title: "大学生の時に免除されていた国民年金保険料、追納す
 pubDate: 2022-01-26
 categories: 
   - "life"
-
+heroImage: "../../assets/images/d4c36cf8571e19a0603ef491705d2034.png"
 description: ""
 ---
 
