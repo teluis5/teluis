@@ -2,7 +2,7 @@
 title: "イルミ×花×雪×花火のコラボが美しい　とっとり花回廊"
 pubDate: 2022-12-14
 categories: ["ライフスタイル"]
-categories: 
+
 heroImage: "../../assets/images/5ad2093cf1166a537f91b988bb22d361.jpg"
 description: ""
 ---
