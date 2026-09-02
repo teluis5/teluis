@@ -93,10 +93,31 @@ const posts = (await getCollection('blog')).sort(
 					padding: 1rem;
 				}
 			}
+
+			/* ヒーローバナー */
+			.hero-banner {
+				width: 100%;
+				max-width: 1200px;
+				margin: 0 auto;
+				padding: 1rem 1rem 0;
+			}
+			.hero-banner img {
+				width: 100%;
+				height: auto;
+				border-radius: 8px;
+				object-fit: cover;
+				box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+			}
 		</style>
 	</head>
 	<body>
 		<Header />
+		
+		<!-- トップヒーローバナー -->
+		<div class="hero-banner">
+			<img src="/brand/テルイズヘッダ_トリミング.jpg" alt="TELUIS Blog Header" />
+		</div>
+
 		<main>
 			<div class="layout-container">
 				<!-- メインコンテンツ (左カラム) -->
@@ -128,10 +149,18 @@ const posts = (await getCollection('blog')).sort(
 				<aside class="layout-sidebar">
 					<div class="widget box">
 						<div class="widget-title">プロフィール</div>
-						<div class="profile-pic" style="width: 100px; height: 100px; border-radius: 50%; margin: 0 auto 1rem; background-color: var(--border-color); display: block;"></div>
+						<img class="profile-pic" src="/brand/teluis_avatar.jpg" alt="プロフィール画像" style="width: 100px; height: 100px; border-radius: 50%; margin: 0 auto 1rem; background-color: var(--border-color); display: block; object-fit: cover;" />
 						<p class="profile-desc" style="font-size: 0.9rem; color: var(--text-main); text-align: left; line-height: 1.6;">
 							<strong>ITエンジニア / コンサルタント</strong><br/>
 							日経大手企業でキャリアをスタートし、AIスタートアップでの開発経験を経て、現在はコンサルティングファームに勤務。ビジネスマンに必要なスキルや、日々の業務で得た実践的なエッセンスを発信しています。
+						</p>
+					</div>
+
+					<div class="widget box">
+						<div class="widget-title">TELUIS 妻</div>
+						<img class="profile-pic" src="/brand/テルイズ妻.png" alt="妻プロフィール" style="width: 100px; height: 100px; border-radius: 50%; margin: 0 auto 1rem; background-color: var(--border-color); display: block; object-fit: cover;" />
+						<p class="profile-desc" style="font-size: 0.9rem; color: var(--text-main); text-align: center; line-height: 1.6;">
+							共同運営者。<br/>時々記事を書いたりサポートしています。
 						</p>
 					</div>
 
