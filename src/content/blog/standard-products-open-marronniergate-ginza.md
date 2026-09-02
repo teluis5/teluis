@@ -1,7 +1,7 @@
 ---
 title: "【開店日予想】ダイソー新業態Standard Productsがマロニエゲート銀座にオープン予定！"
 pubDate: 2022-02-07
-categories: 
+categories: ["ライフスタイル"]
   - "life"
 heroImage: "../../assets/images/e5b038fbde67a3801b17b5f5b1ef5e7b.png"
 description: ""

@@ -1,7 +1,7 @@
 ---
 title: "【リストランテ・ゾーナ・フォルトゥナート】瀬戸内海を一望できるオシャレなイタリアンレストラン（広島・三原）"
 pubDate: 2022-01-30
-categories: 
+categories: ["ライフスタイル"]
   - "gourmet"
 heroImage: "../../assets/images/e41bdd921d7b8265b2d80323476907f9.jpg"
 description: ""

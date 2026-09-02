@@ -1,6 +1,7 @@
 ---
 title: "【現地レポ】10/6 開業のToranomon Hillssへ行ってきた"
 pubDate: 2023-10-07
+categories: ["お出かけ・ライフスタイル"]
 description: ""
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "【530円で乗れる観光列車】○○のはなし乗車記（下関→萩）2022年版"
 pubDate: 2022-01-26
-categories: 
+categories: ["ライフスタイル"]
   - "travel"
 heroImage: "../../assets/images/88031f854012584b7f032ff094a16407.jpg"
 description: ""

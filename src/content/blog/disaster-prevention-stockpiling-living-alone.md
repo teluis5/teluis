@@ -1,7 +1,7 @@
 ---
 title: "【実録】特別な備蓄専用品は一切なし、１人暮らしの防災備蓄"
 pubDate: 2022-01-19
-categories: 
+categories: ["ライフスタイル"]
   - "life"
 heroImage: "../../assets/images/e53f31dc4f27863ac3ed0f2661f0cc61.png"
 description: ""

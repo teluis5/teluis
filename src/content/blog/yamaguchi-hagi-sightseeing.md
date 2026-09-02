@@ -1,7 +1,7 @@
 ---
 title: "【旅行記】維新の町 萩を歩き歴史と文化に触れる旅"
 pubDate: 2022-02-03
-categories: 
+categories: ["お出かけ・ライフスタイル"]
   - "travel"
 heroImage: "../../assets/images/77fd093a7c76f0b594f1f67486753f76.jpg"
 description: ""

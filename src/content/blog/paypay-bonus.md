@@ -1,7 +1,7 @@
 ---
 title: "【paypayボーナス運用活用法】テクノロジーコース追加！連動するETFは？"
 pubDate: 2022-01-28
-categories: 
+categories: ["マネー・ビジネス"]
   - "家計管理・資産運用"
 heroImage: "../../assets/images/f3e00ef59a12fe9bd55456192acc1a59.png"
 description: ""

@@ -1,7 +1,7 @@
 ---
 title: "【冬季閉鎖直前】霧氷と緑のコントラストが美しい冬のUFOライン"
 pubDate: 2022-02-05
-categories: 
+categories: ["お出かけ・ライフスタイル"]
   - "travel"
 heroImage: "../../assets/images/ea0aa3287e8d74cfa56cdae53edc4a05.jpg"
 description: ""

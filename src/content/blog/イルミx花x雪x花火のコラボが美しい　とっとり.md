@@ -1,9 +1,9 @@
 ---
 title: "イルミ×花×雪×花火のコラボが美しい　とっとり花回廊"
 pubDate: 2022-12-14
-categories: 
+categories: ["ライフスタイル"]
   - "travel"
-tags: 
+categories: 
   - "イルミネーション"
   - "旅行"
   - "鳥取"

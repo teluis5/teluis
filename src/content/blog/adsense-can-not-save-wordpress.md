@@ -1,7 +1,7 @@
 ---
 title: "【対処法】GoogleAdsense 審査コードが保存できません"
 pubDate: 2022-01-16
-categories: 
+categories: ["ブログ運営"]
   - "blog"
 heroImage: "../../assets/images/d774a3eb7e4f88607c8c53b357b5b3a4.png"
 description: ""

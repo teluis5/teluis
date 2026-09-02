@@ -1,7 +1,7 @@
 ---
 title: "【色のバリアフリー】カラーユニバーサルデザイン"
 pubDate: 2022-01-17
-categories: 
+categories: ["ブログ運営"]
   - "life"
 heroImage: "../../assets/images/b2fc223fd7929e016180b7d9b9edad7c.png"
 description: ""

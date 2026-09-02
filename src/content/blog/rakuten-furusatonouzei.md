@@ -1,7 +1,7 @@
 ---
 title: "楽天ふるさと納税・確定申告の方法"
 pubDate: 2022-02-05
-categories: 
+categories: ["マネー・ビジネス"]
   - "life"
 heroImage: "../../assets/images/94c99b9ed4934bd43d518fc20eac42f5.png"
 description: ""

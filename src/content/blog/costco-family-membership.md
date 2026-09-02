@@ -1,7 +1,7 @@
 ---
 title: "コストコ家族会員になったら超お得だった"
 pubDate: 2022-01-17
-categories: 
+categories: ["マネー・ビジネス"]
   - "life"
 heroImage: "../../assets/images/94c99b9ed4934bd43d518fc20eac42f5.png"
 description: ""

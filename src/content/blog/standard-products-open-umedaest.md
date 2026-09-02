@@ -1,6 +1,7 @@
 ---
 title: "ダイソー新業態Standard Productsがついに大阪・梅田へ！梅田エストにオープン予定"
 pubDate: 2022-02-28
+categories: ["ライフスタイル"]
 description: ""
 ---
 

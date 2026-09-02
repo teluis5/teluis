@@ -1,7 +1,7 @@
 ---
 title: "【開通編】povo 2.0契約した。MCC,APN設定方法も解説。"
 pubDate: 2022-01-26
-categories: 
+categories: ["IT・ガジェット"]
   - "life"
 heroImage: "../../assets/images/309301440d5d60cc3af875bcb091475a.png"
 description: ""

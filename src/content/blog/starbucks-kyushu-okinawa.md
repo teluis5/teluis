@@ -1,9 +1,9 @@
 ---
 title: "オシャレなスタバ11選　九州・沖縄編"
 pubDate: 2023-06-19
-categories: 
+categories: ["お出かけ・ライフスタイル"]
   - "スタバ"
-tags: 
+categories: 
   - "スタバ"
   - "九州"
   - "旅行"

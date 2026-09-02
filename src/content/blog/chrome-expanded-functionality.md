@@ -1,9 +1,9 @@
 ---
 title: "【超快適】chromeブラウザの拡張機能おすすめ10選"
 pubDate: 2022-02-01
-categories: 
+categories: ["IT・ガジェット"]
   - "it-skill"
-tags: 
+categories: 
   - "chrome"
   - "おすすめ"
   - "大学生"

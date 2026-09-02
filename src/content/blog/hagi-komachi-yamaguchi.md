@@ -1,7 +1,7 @@
 ---
 title: "【宿泊レビュー】夕景の宿 海のゆりかご 萩小町 部屋おまかせ客室で宿泊(山口県萩市)"
 pubDate: 2022-02-02
-categories: 
+categories: ["お出かけ・ライフスタイル"]
   - "travel"
 heroImage: "../../assets/images/c9b15f006c5de1268f5fd77c67c3ed33.jpg"
 description: ""

@@ -1,7 +1,7 @@
 ---
 title: "AQUOS sense4　半年使用レビュー"
 pubDate: 2022-01-18
-categories: 
+categories: ["IT・ガジェット"]
   - "gadget"
 heroImage: "../../assets/images/e5b038fbde67a3801b17b5f5b1ef5e7b.png"
 description: ""
