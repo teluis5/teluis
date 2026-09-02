@@ -2,7 +2,6 @@
 title: "【超快適】chromeブラウザの拡張機能おすすめ10選"
 pubDate: 2022-02-01
 categories: ["IT・ガジェット"]
-categories: 
 heroImage: "../../assets/images/6a9499cc629e84e6cc459efc24b646ff.png"
 description: ""
 ---

@@ -9,7 +9,7 @@ import Ad from '../components/Ad.astro';
 
 type Props = CollectionEntry<'blog'>['data'];
 
-const { title, description, pubDate, updatedDate, heroImage, tags } = Astro.props;
+const { title, description, pubDate, updatedDate, heroImage, categories } = Astro.props;
 ---
 
 <html lang="ja">
@@ -112,10 +112,10 @@ const { title, description, pubDate, updatedDate, heroImage, tags } = Astro.prop
 							}
 						</div>
 						<h1>{title}</h1>
-						{tags && tags.length > 0 && (
+						{categories && categories.length > 0 && (
 							<div class="tags">
-								{tags.map((tag: string) => (
-									<a href={`/tags/${tag}`} class="tag">#{tag}</a>
+								{categories.map((category: string) => (
+									<a href={`/category/${category}`} class="tag">{category}</a>
 								))}
 							</div>
 						)}

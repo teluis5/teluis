@@ -8,18 +8,18 @@ import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
 	const allPosts = await getCollection('blog');
-	const uniqueTags = [...new Set(allPosts.flatMap((post) => post.data.tags || []))];
+	const uniqueCategories = [...new Set(allPosts.flatMap((post) => post.data.categories || []))];
 
-	return uniqueTags.map((tag) => {
-		const filteredPosts = allPosts.filter((post) => post.data.tags?.includes(tag));
+	return uniqueCategories.map((category) => {
+		const filteredPosts = allPosts.filter((post) => post.data.categories?.includes(category));
 		return {
-			params: { tag },
+			params: { category },
 			props: { posts: filteredPosts },
 		};
 	});
 }
 
-const { tag } = Astro.params;
+const { category } = Astro.params;
 const { posts } = Astro.props;
 
 // Sort by date desc
@@ -29,7 +29,7 @@ posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 <!doctype html>
 <html lang="ja">
 	<head>
-		<BaseHead title={`#${tag} の記事一覧 | ${SITE_TITLE}`} description={`${tag}に関する記事の一覧です。`} />
+		<BaseHead title={`【${category}】の記事一覧 | ${SITE_TITLE}`} description={`${category}に関する記事の一覧です。`} />
 		<style>
 			main {
 				max-width: 960px;
@@ -41,11 +41,11 @@ posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 				text-align: center;
 				color: var(--text-main);
 			}
-			.tag-badge {
+			.category-badge {
 				background-color: #e0f2fe;
 				color: #0369a1;
 				padding: 0.2rem 0.6rem;
-				border-radius: 9999px;
+				border-radius: 4px;
 				font-size: 1.2rem;
 			}
 			ul {
@@ -80,7 +80,7 @@ posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 	<body>
 		<Header />
 		<main>
-			<h2><span class="tag-badge">#{tag}</span> の記事一覧</h2>
+			<h2><span class="category-badge">{category}</span> の記事一覧</h2>
 			<section>
 				<ul>
 					{
