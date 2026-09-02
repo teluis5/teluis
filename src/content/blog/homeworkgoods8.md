@@ -2,8 +2,6 @@
 title: "新卒社員がテレワークで揃えたもの8選"
 pubDate: 2022-04-20
 categories: ["マネー・ビジネス"]
-  - "gadget"
-  - "life"
 heroImage: "../../assets/images/57850d2db5de36b6623b158106ce3379.png"
 description: ""
 ---

@@ -2,7 +2,6 @@
 title: "【ブロガー向け】BlogMapの使い方 - noteと徹底比較 -"
 pubDate: 2022-02-04
 categories: ["ブログ運営"]
-  - "blog"
 heroImage: "../../assets/images/d4c36cf8571e19a0603ef491705d2034.png"
 description: ""
 ---

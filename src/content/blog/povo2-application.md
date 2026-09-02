@@ -2,8 +2,6 @@
 title: "【申込編】povo2.0契約してみた。"
 pubDate: 2022-01-24
 categories: ["IT・ガジェット"]
-  - "gadget"
-  - "life"
 heroImage: "../../assets/images/6f56b5bea9d901cb7f52f7396e84735a.png"
 description: ""
 ---

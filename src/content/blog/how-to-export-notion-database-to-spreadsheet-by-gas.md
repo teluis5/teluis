@@ -2,7 +2,6 @@
 title: "NotionのデータベースをGASでSpreadSheetに出力する方法"
 pubDate: 2024-10-06
 categories: ["IT・ガジェット"]
-  - "it-skill"
 description: ""
 ---
 

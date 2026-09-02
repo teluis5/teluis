@@ -2,10 +2,7 @@
 title: "【体験談】povo2.0無課金でいつまで使える？強制解約されたら再契約できる？"
 pubDate: 2022-12-14
 categories: ["IT・ガジェット"]
-  - "gadget"
-  - "life"
 categories: 
-  - "povo2-0"
 heroImage: "../../assets/images/12d97cd9de79a7e37f9c2c38e4b6ce3d.jpg"
 description: ""
 ---

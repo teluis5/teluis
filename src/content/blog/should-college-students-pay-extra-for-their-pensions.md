@@ -2,7 +2,6 @@
 title: "大学生の時に免除されていた国民年金保険料、追納すべき？"
 pubDate: 2022-01-26
 categories: ["マネー・ビジネス"]
-  - "life"
 heroImage: "../../assets/images/d4c36cf8571e19a0603ef491705d2034.png"
 description: ""
 ---
