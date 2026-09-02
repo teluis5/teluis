@@ -5,7 +5,12 @@ import HeaderLink from './HeaderLink.astro';
 
 <header class="site-header">
 	<div class="header-inner">
-		<h2><a href="/">{SITE_TITLE}</a></h2>
+		<h2>
+			<a href="/" style="display: flex; align-items: center; gap: 10px;">
+				<img src="/logo.jpg" alt="TELUIS Logo" style="height: 40px; width: auto; border-radius: 4px;" />
+				{SITE_TITLE}
+			</a>
+		</h2>
 		<nav>
 			<div class="internal-links">
 				<HeaderLink href="/">Home</HeaderLink>
