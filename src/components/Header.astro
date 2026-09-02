@@ -14,7 +14,6 @@ import HeaderLink from './HeaderLink.astro';
 		<nav>
 			<div class="internal-links">
 				<HeaderLink href="/">Home</HeaderLink>
-				<HeaderLink href="/blog">Blog</HeaderLink>
 				<HeaderLink href="/category">Category</HeaderLink>
 				<HeaderLink href="/about">About</HeaderLink>
 				<HeaderLink href="/contact">Contact</HeaderLink>
@@ -48,6 +47,11 @@ import HeaderLink from './HeaderLink.astro';
 	nav {
 		display: flex;
 		align-items: center;
+	}
+	.internal-links {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
 	}
 	nav a {
 		padding: 1em 0.5em;
