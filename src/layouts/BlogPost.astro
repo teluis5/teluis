@@ -9,7 +9,7 @@ import Ad from '../components/Ad.astro';
 
 type Props = CollectionEntry<'blog'>['data'];
 
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const { title, description, pubDate, updatedDate, heroImage, tags } = Astro.props;
 ---
 
 <html lang="ja">
@@ -46,6 +46,25 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 				display: flex;
 				gap: 1em;
 				align-items: center;
+			}
+			.tags {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 0.5rem;
+				margin-bottom: 1rem;
+			}
+			.tag {
+				display: inline-block;
+				background-color: #e0f2fe;
+				color: #0369a1;
+				padding: 0.2rem 0.6rem;
+				border-radius: 9999px;
+				font-size: 0.85rem;
+				text-decoration: none;
+				font-weight: 600;
+			}
+			.tag:hover {
+				background-color: #bae6fd;
 			}
 			/* Sidebar Widgets */
 			.widget {
@@ -93,6 +112,13 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 							}
 						</div>
 						<h1>{title}</h1>
+						{tags && tags.length > 0 && (
+							<div class="tags">
+								{tags.map((tag: string) => (
+									<a href={`/tags/${tag}`} class="tag">#{tag}</a>
+								))}
+							</div>
+						)}
 					</div>
 					
 					<div class="hero-image">
