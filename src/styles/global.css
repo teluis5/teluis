@@ -133,7 +133,6 @@ thead th {
 }
 .table-scroll-wrapper table {
 	margin: 0;
-	min-width: 800px; /* Force minimum width so it triggers horizontal scroll for 5+ columns */
 }
 .table-scroll-hint {
 	text-align: right;

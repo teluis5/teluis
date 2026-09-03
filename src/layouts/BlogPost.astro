@@ -173,6 +173,12 @@ const { title, description, pubDate, updatedDate, heroImage, categories } = Astr
 					
 					// 比較対象が4つ以上（列数が5以上）の場合
 					if (firstRowCols >= 5) {
+						// 画面（コンテナ）の幅に「見出し1列＋対象3列＝計4列」がピッタリ収まるように計算
+						// 1列あたり 25% の幅となるため、表全体の幅は (列数 * 25)% に設定
+						const tableWidth = firstRowCols * 25;
+						table.style.width = `${tableWidth}%`;
+						table.style.tableLayout = 'fixed';
+						
 						// ラッパーを作成
 						const wrapper = document.createElement('div');
 						wrapper.className = 'table-scroll-wrapper';
