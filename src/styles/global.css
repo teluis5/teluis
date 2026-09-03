@@ -106,6 +106,12 @@ th, td {
 th {
 	background-color: var(--bg-main);
 	font-weight: bold;
+	font-size: 0.85rem;
+}
+tbody td:first-child {
+	font-weight: bold;
+	font-size: 0.85rem;
+	background-color: #fafafa;
 }
 thead th {
 	position: sticky;
