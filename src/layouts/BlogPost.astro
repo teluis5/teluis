@@ -200,13 +200,25 @@ const { title, description, pubDate, updatedDate, heroImage, categories } = Astr
 					// 最初の行の列数をカウント（DOMの table.rows を使用して正確に取得）
 					const firstRowCols = table.rows.length > 0 ? table.rows[0].cells.length : 0;
 					
-					// 比較対象が4つ以上（列数が5以上）の場合
-					if (firstRowCols >= 5) {
-						// 画面（コンテナ）の幅に「見出し1列＋対象3列＝計4列」がピッタリ収まるように計算
-						// 1列あたり 25% の幅となるため、表全体の幅は (列数 * 25)% に設定
-						const tableWidth = firstRowCols * 25;
-						table.style.width = `${tableWidth}%`;
+					// 比較対象の数（列数 - 1）
+					const targetCount = firstRowCols - 1;
+					
+					// 比較対象が3つ以上（全体で4列以上）の場合にロジックを適用
+					if (targetCount >= 3) {
+						// 1番左の列（比較項目）の幅を「1文字幅＋パディング」程度に固定
+						const leftColWidth = '3.5rem';
+						
+						const firstTh = table.querySelector('thead th:first-child');
+						if (firstTh) {
+							firstTh.style.width = leftColWidth;
+						}
+						
+						// 画面に「左端の列 ＋ 比較対象3つ」がピッタリ100%幅で収まるように計算
+						// 1対象あたりの幅 = (100% - 左端の幅) / 3
+						// 表全体の幅 = 左端の幅 + (対象数 * 1対象あたりの幅)
+						table.style.width = `calc(${leftColWidth} + ${targetCount} * ((100% - ${leftColWidth}) / 3))`;
 						table.style.tableLayout = 'fixed';
+						table.classList.add('table-fixed-left-col');
 						
 						// ラッパーを作成
 						const wrapper = document.createElement('div');

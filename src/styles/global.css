@@ -143,6 +143,13 @@ thead th {
 	left: 0; /* Keep it visible even when scrolling */
 }
 
+/* Force left column to be narrow and wrap by character */
+.table-fixed-left-col th:first-child,
+.table-fixed-left-col td:first-child {
+	word-break: break-all;
+	line-height: 1.3;
+}
+
 /* Two Column Layout */
 .layout-container {
 	display: flex;
