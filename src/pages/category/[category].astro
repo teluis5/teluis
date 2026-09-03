@@ -1,4 +1,5 @@
 ---
+import { Image } from 'astro:assets';
 import BaseHead from '../../components/BaseHead.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
@@ -36,7 +37,7 @@ posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 				margin: 0 auto;
 				padding: 2em;
 			}
-			h2 {
+			.page-header {
 				margin-bottom: 2em;
 				text-align: center;
 				color: var(--text-main);
@@ -48,55 +49,95 @@ posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 				border-radius: 4px;
 				font-size: 1.2rem;
 			}
-			ul {
-				list-style-type: none;
+			.entry-list {
+				display: flex;
+				flex-direction: column;
+				gap: 1rem;
+				list-style: none;
 				padding: 0;
+				margin: 0 0 2rem 0;
 			}
-			li {
-				margin-bottom: 2rem;
-				padding: 1.5rem;
+			.entry-card {
+				display: flex;
+				background-color: var(--bg-content);
 				border: 1px solid var(--border-color);
-				border-radius: 8px;
-				background-color: white;
-			}
-			li a {
+				border-radius: var(--radius);
+				overflow: hidden;
 				text-decoration: none;
 				color: var(--text-main);
+				transition: background-color 0.2s;
 			}
-			li h3 {
+			.entry-card:hover {
+				background-color: #fafafa;
+				text-decoration: none;
+			}
+			.entry-thumb {
+				flex: 0 0 300px;
+				aspect-ratio: 16/9;
+				overflow: hidden;
+				background-color: var(--border-color);
+			}
+			.entry-thumb img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+			.entry-content {
+				padding: 1.5rem;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+			}
+			.entry-title {
+				font-size: 1.25rem;
 				margin: 0 0 0.5rem 0;
-				color: var(--text-main);
+				line-height: 1.4;
 			}
-			li h3:hover {
-				color: var(--theme-accent);
-			}
-			.date {
+			.entry-date {
+				font-size: 0.9rem;
 				color: var(--text-light);
-				font-size: 0.9em;
-				margin-bottom: 1rem;
+				margin: 0;
+			}
+			@media (max-width: 720px) {
+				.entry-card {
+					flex-direction: column;
+				}
+				.entry-thumb {
+					flex: auto;
+					width: 100%;
+				}
+				.entry-content {
+					padding: 1rem;
+				}
 			}
 		</style>
 	</head>
 	<body>
 		<Header />
 		<main>
-			<h2><span class="category-badge">{category}</span> の記事一覧</h2>
+			<h2 class="page-header"><span class="category-badge">{category}</span> の記事一覧</h2>
 			<section>
-				<ul>
+				<div class="entry-list">
 					{
 						posts.map((post) => (
-							<li>
-								<a href={`/blog/${post.id}/`}>
-									<div class="date">
-										📅 <FormattedDate date={post.data.pubDate} />
-									</div>
-									<h3>{post.data.title}</h3>
-									<p>{post.data.description}</p>
-								</a>
-							</li>
+							<a href={`/blog/${post.id}/`} class="entry-card box">
+								<div class="entry-thumb">
+									{post.data.heroImage ? (
+										<Image width={720} height={405} src={post.data.heroImage} alt="" />
+									) : (
+										<div style="width:100%; height:100%; background:#e0e0e0;"></div>
+									)}
+								</div>
+								<div class="entry-content">
+									<h2 class="entry-title">{post.data.title}</h2>
+									<p class="entry-date">
+										<FormattedDate date={post.data.pubDate} />
+									</p>
+								</div>
+							</a>
 						))
 					}
-				</ul>
+				</div>
 			</section>
 		</main>
 		<Footer />
