@@ -17,7 +17,7 @@ body {
 	margin: 0;
 	padding: 0;
 	text-align: left;
-	background-color: var(--bg-main);
+	background-color: var(--bg-content);
 	color: var(--text-main);
 	font-size: 16px;
 	line-height: 1.8;
