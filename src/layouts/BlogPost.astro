@@ -168,8 +168,8 @@ const { title, description, pubDate, updatedDate, heroImage, categories } = Astr
 			document.addEventListener('DOMContentLoaded', () => {
 				const tables = document.querySelectorAll('.prose table');
 				tables.forEach(table => {
-					// 最初の行の列数をカウント（比較項目が左端なら、列数 - 1 = 比較対象数）
-					const firstRowCols = table.querySelectorAll('tr:first-child > *').length;
+					// 最初の行の列数をカウント（DOMの table.rows を使用して正確に取得）
+					const firstRowCols = table.rows.length > 0 ? table.rows[0].cells.length : 0;
 					
 					// 比較対象が4つ以上（列数が5以上）の場合
 					if (firstRowCols >= 5) {
