@@ -8,6 +8,7 @@ categories: ["IT・ガジェット", "ライフスタイル"]
 
 import { Icon } from 'astro-icon/components';
 import ProblemBox from '../../components/ProblemBox.astro';
+import ConclusionBox from '../../components/ConclusionBox.astro';
 
 <ProblemBox>
   「かき混ぜ機能」が必須なのは分かったけど、結局どのメーカーのモデルを買えばいいの？
@@ -64,13 +65,15 @@ import ProblemBox from '../../components/ProblemBox.astro';
 
 ## <Icon name="heroicons:check-badge" class="icon-inline" /> 結論：目的とキッチンの広さで選ぼう
 
-どれを選んでも、あなたの「料理とコンロ前に立っていた時間」を時給換算すれば、<b>数ヶ月でペイする最高の自己投資</b>になります。
-
-- 煮物重視・バランス型なら <b>ホットクック</b>
-- 炒め物特化・予算に余裕があるなら <b>ビストロ</b>
-- 揚げ物重視・スペースがあるなら <b>シェフドラム</b>
-
-ご自身のライフスタイルとキッチンの広さに合わせて、最高の1台を見つけてください！
+<ConclusionBox>
+  <p>どれを選んでも、あなたの「料理とコンロ前に立っていた時間」を時給換算すれば、<b>数ヶ月でペイする最高の自己投資</b>になります。</p>
+  <ul>
+    <li>煮物重視・バランス型なら <b>ホットクック</b></li>
+    <li>炒め物特化・予算に余裕があるなら <b>ビストロ</b></li>
+    <li>揚げ物重視・スペースがあるなら <b>シェフドラム</b></li>
+  </ul>
+  <p>ご自身のライフスタイルとキッチンの広さに合わせて、最高の1台を見つけてください！</p>
+</ConclusionBox>
 
 ---
 <b>関連記事:</b>
