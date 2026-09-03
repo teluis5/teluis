@@ -63,6 +63,8 @@ const sortedCategories = Object.keys(categoryCount).sort(
 			.category-name {
 				font-size: 1.2rem;
 				font-weight: bold;
+				line-height: 1.4;
+				word-break: break-word;
 			}
 			.category-count {
 				background-color: var(--theme-accent);
@@ -71,6 +73,9 @@ const sortedCategories = Object.keys(categoryCount).sort(
 				border-radius: 9999px;
 				font-size: 0.9rem;
 				font-weight: bold;
+				white-space: nowrap;
+				flex-shrink: 0;
+				margin-left: 1rem;
 			}
 		</style>
 	</head>
