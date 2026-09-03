@@ -223,8 +223,8 @@ const { title, description, pubDate, updatedDate, heroImage, categories } = Astr
 					
 					// 比較対象が3つ以上（全体で4列以上）の場合にロジックを適用
 					if (targetCount >= 3) {
-						// 1番左の列（比較項目）の幅を「1文字幅＋パディング」程度に固定
-						const leftColWidth = '3.5rem';
+						// 1番左の列（比較項目）の幅。「縦1文字幅＋パディング」程度に固定
+						const leftColWidth = '5.5rem';
 						
 						const firstTh = table.querySelector('thead th:first-child');
 						if (firstTh) {
