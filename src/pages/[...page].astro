@@ -7,9 +7,17 @@ import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 
-const posts = (await getCollection('blog')).sort(
-	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
-);
+export async function getStaticPaths({ paginate }) {
+	const allPosts = await getCollection('blog');
+	const sortedPosts = allPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+	return paginate(sortedPosts, { pageSize: 10 });
+}
+
+const { page } = Astro.props;
+
+// サイドバーの新着記事用に全記事を取得
+const allPosts = await getCollection('blog');
+const sortedPosts = allPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 ---
 
 <!doctype html>
@@ -23,7 +31,7 @@ const posts = (await getCollection('blog')).sort(
 				gap: 1rem;
 				list-style: none;
 				padding: 0;
-				margin: 0;
+				margin: 0 0 2rem 0;
 			}
 			.entry-card {
 				display: flex;
@@ -80,6 +88,32 @@ const posts = (await getCollection('blog')).sort(
 				border-left: 4px solid var(--theme-accent);
 				margin: -1.5rem -1.5rem 1.5rem -1.5rem;
 			}
+
+			/* Pagination */
+			.pagination {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				margin-top: 2rem;
+				padding-top: 1rem;
+				border-top: 1px solid var(--border-color);
+			}
+			.page-link {
+				padding: 0.5rem 1rem;
+				background-color: var(--theme-accent);
+				color: white;
+				border-radius: 4px;
+				text-decoration: none;
+				font-weight: bold;
+			}
+			.page-link:hover {
+				opacity: 0.8;
+				text-decoration: none;
+			}
+			.page-current {
+				font-size: 0.9rem;
+				color: var(--text-light);
+			}
 			
 			@media (max-width: 720px) {
 				.entry-card {
@@ -114,9 +148,11 @@ const posts = (await getCollection('blog')).sort(
 		<Header />
 		
 		<!-- トップヒーローバナー -->
-		<div class="hero-banner">
-			<img src="/brand/テルイズヘッダ_トリミング.jpg" alt="TELUIS Blog Header" />
-		</div>
+		{page.currentPage === 1 && (
+			<div class="hero-banner">
+				<img src="/brand/テルイズヘッダ_トリミング.jpg" alt="TELUIS Blog Header" />
+			</div>
+		)}
 
 		<main>
 			<div class="layout-container">
@@ -124,7 +160,7 @@ const posts = (await getCollection('blog')).sort(
 				<div class="layout-main">
 					<div class="entry-list">
 						{
-							posts.map((post) => (
+							page.data.map((post) => (
 								<a href={`/blog/${post.id}/`} class="entry-card box">
 									<div class="entry-thumb">
 										{post.data.heroImage ? (
@@ -143,6 +179,15 @@ const posts = (await getCollection('blog')).sort(
 							))
 						}
 					</div>
+
+					<!-- ページネーション -->
+					{page.lastPage > 1 && (
+						<div class="pagination">
+							{page.url.prev ? <a href={page.url.prev} class="page-link">&laquo; 前へ</a> : <div></div>}
+							<span class="page-current">{page.currentPage} / {page.lastPage} ページ</span>
+							{page.url.next ? <a href={page.url.next} class="page-link">次へ &raquo;</a> : <div></div>}
+						</div>
+					)}
 				</div>
 
 				<!-- サイドバー (右カラム) -->
@@ -167,7 +212,7 @@ const posts = (await getCollection('blog')).sort(
 					<div class="widget box">
 						<div class="widget-title">新着記事</div>
 						<ul style="list-style:none; padding:0; margin:0; font-size:0.95em;">
-							{posts.slice(0, 5).map((post) => (
+							{sortedPosts.slice(0, 5).map((post) => (
 								<li style="border-bottom: 1px dashed var(--border-color); padding: 0.5rem 0;">
 									<a href={`/blog/${post.id}/`} style="color:var(--text-main);">{post.data.title}</a>
 								</li>
