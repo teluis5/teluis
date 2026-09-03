@@ -49,6 +49,14 @@ a:hover {
 	opacity: 0.8;
 }
 
+/* SVG Icon alignment */
+.icon-inline {
+	display: inline-block;
+	vertical-align: text-bottom;
+	width: 1.2em;
+	height: 1.2em;
+}
+
 p { margin-bottom: 1.5em; }
 
 /* Cocoon-like Card Style */

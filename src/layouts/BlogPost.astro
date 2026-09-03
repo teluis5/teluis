@@ -6,6 +6,7 @@ import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
 import Ad from '../components/Ad.astro';
+import { Icon } from 'astro-icon/components';
 
 type Props = CollectionEntry<'blog'>['data'];
 
@@ -105,6 +106,9 @@ const { title, description, pubDate, updatedDate, heroImage, categories } = Astr
 				font-size: 0.85rem;
 				text-decoration: none;
 				font-weight: 600;
+				display: inline-flex;
+				align-items: center;
+				gap: 0.2rem;
 			}
 			.tag:hover {
 				background-color: #bae6fd;
@@ -147,10 +151,10 @@ const { title, description, pubDate, updatedDate, heroImage, categories } = Astr
 				<article class="layout-main">
 					<div class="title">
 						<div class="date">
-							<span>📅 <FormattedDate date={pubDate} /></span>
+							<span><Icon name="heroicons:calendar" class="icon-inline" /> <FormattedDate date={pubDate} /></span>
 							{
 								updatedDate && (
-									<span>🔄 <FormattedDate date={updatedDate} /></span>
+									<span><Icon name="heroicons:arrow-path" class="icon-inline" /> <FormattedDate date={updatedDate} /></span>
 								)
 							}
 						</div>
@@ -158,7 +162,7 @@ const { title, description, pubDate, updatedDate, heroImage, categories } = Astr
 						{categories && categories.length > 0 && (
 							<div class="tags">
 								{categories.map((category: string) => (
-									<a href={`/category/${category}`} class="tag">{category}</a>
+									<a href={`/category/${category}`} class="tag"><Icon name="heroicons:tag" class="icon-inline" /> {category}</a>
 								))}
 							</div>
 						)}
@@ -181,7 +185,7 @@ const { title, description, pubDate, updatedDate, heroImage, categories } = Astr
 				<!-- サイドバー (右カラム) -->
 				<aside class="layout-sidebar">
 					<div class="widget box">
-						<div class="widget-title">プロフィール</div>
+						<div class="widget-title"><Icon name="heroicons:user" class="icon-inline" /> プロフィール</div>
 						<img class="profile-pic" src="/brand/teluis_avatar.jpg" alt="プロフィール画像" style="width: 100px; height: 100px; border-radius: 50%; margin: 0 auto 1rem; background-color: var(--border-color); display: block; object-fit: cover;" />
 						<p class="profile-desc" style="font-size: 0.9rem; color: var(--text-main); text-align: left; line-height: 1.6;">
 							<strong>ITエンジニア / コンサルタント</strong><br/>
@@ -190,7 +194,7 @@ const { title, description, pubDate, updatedDate, heroImage, categories } = Astr
 					</div>
 
 					<div class="widget box">
-						<div class="widget-title">TELUIS 妻</div>
+						<div class="widget-title"><Icon name="heroicons:users" class="icon-inline" /> TELUIS 妻</div>
 						<img class="profile-pic" src="/brand/テルイズ妻.png" alt="妻プロフィール" style="width: 100px; height: 100px; border-radius: 50%; margin: 0 auto 1rem; background-color: var(--border-color); display: block; object-fit: cover;" />
 						<p class="profile-desc" style="font-size: 0.9rem; color: var(--text-main); text-align: center; line-height: 1.6;">
 							共同運営者。<br/>時々記事を書いたりサポートしています。

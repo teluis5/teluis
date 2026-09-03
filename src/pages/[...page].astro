@@ -6,6 +6,7 @@ import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import { Icon } from 'astro-icon/components';
 
 export async function getStaticPaths({ paginate }) {
 	const allPosts = await getCollection('blog');
@@ -172,7 +173,7 @@ const sortedPosts = allPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pu
 									<div class="entry-content">
 										<h2 class="entry-title">{post.data.title}</h2>
 										<p class="entry-date">
-											<FormattedDate date={post.data.pubDate} />
+											<Icon name="heroicons:calendar" class="icon-inline" /> <FormattedDate date={post.data.pubDate} />
 										</p>
 									</div>
 								</a>
@@ -193,7 +194,7 @@ const sortedPosts = allPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pu
 				<!-- サイドバー (右カラム) -->
 				<aside class="layout-sidebar">
 					<div class="widget box">
-						<div class="widget-title">プロフィール</div>
+						<div class="widget-title"><Icon name="heroicons:user" class="icon-inline" /> プロフィール</div>
 						<img class="profile-pic" src="/brand/teluis_avatar.jpg" alt="プロフィール画像" style="width: 100px; height: 100px; border-radius: 50%; margin: 0 auto 1rem; background-color: var(--border-color); display: block; object-fit: cover;" />
 						<p class="profile-desc" style="font-size: 0.9rem; color: var(--text-main); text-align: left; line-height: 1.6;">
 							<strong>ITエンジニア / コンサルタント</strong><br/>
@@ -202,7 +203,7 @@ const sortedPosts = allPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pu
 					</div>
 
 					<div class="widget box">
-						<div class="widget-title">TELUIS 妻</div>
+						<div class="widget-title"><Icon name="heroicons:users" class="icon-inline" /> TELUIS 妻</div>
 						<img class="profile-pic" src="/brand/テルイズ妻.png" alt="妻プロフィール" style="width: 100px; height: 100px; border-radius: 50%; margin: 0 auto 1rem; background-color: var(--border-color); display: block; object-fit: cover;" />
 						<p class="profile-desc" style="font-size: 0.9rem; color: var(--text-main); text-align: center; line-height: 1.6;">
 							共同運営者。<br/>時々記事を書いたりサポートしています。
@@ -210,7 +211,7 @@ const sortedPosts = allPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pu
 					</div>
 
 					<div class="widget box">
-						<div class="widget-title">新着記事</div>
+						<div class="widget-title"><Icon name="heroicons:sparkles" class="icon-inline" /> 新着記事</div>
 						<ul style="list-style:none; padding:0; margin:0; font-size:0.95em;">
 							{sortedPosts.slice(0, 5).map((post) => (
 								<li style="border-bottom: 1px dashed var(--border-color); padding: 0.5rem 0;">
