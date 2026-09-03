@@ -163,5 +163,32 @@ const { title, description, pubDate, updatedDate, heroImage, categories } = Astr
 			</div>
 		</main>
 		<Footer />
+
+		<script>
+			document.addEventListener('DOMContentLoaded', () => {
+				const tables = document.querySelectorAll('.prose table');
+				tables.forEach(table => {
+					// 最初の行の列数をカウント（比較項目が左端なら、列数 - 1 = 比較対象数）
+					const firstRowCols = table.querySelectorAll('tr:first-child > *').length;
+					
+					// 比較対象が4つ以上（列数が5以上）の場合
+					if (firstRowCols >= 5) {
+						// ラッパーを作成
+						const wrapper = document.createElement('div');
+						wrapper.className = 'table-scroll-wrapper';
+						
+						// スクロールガイドを作成
+						const hint = document.createElement('div');
+						hint.className = 'table-scroll-hint';
+						hint.innerHTML = '<span>← 左右にスクロールできます →</span>';
+						
+						// DOMツリーに挿入
+						table.parentNode?.insertBefore(wrapper, table);
+						wrapper.appendChild(hint);
+						wrapper.appendChild(table);
+					}
+				});
+			});
+		</script>
 	</body>
 </html>

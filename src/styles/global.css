@@ -122,6 +122,28 @@ thead th {
 	box-shadow: 0 1px 0 var(--border-color);
 }
 
+/* Wide Table Scroll Wrapper (JS Applied) */
+.table-scroll-wrapper {
+	width: 100%;
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+	margin: 2rem 0;
+	/* Add subtle shadow on right edge to imply scrollability */
+	box-shadow: inset -5px 0 5px -5px rgba(0,0,0,0.1);
+}
+.table-scroll-wrapper table {
+	margin: 0;
+	min-width: 800px; /* Force minimum width so it triggers horizontal scroll for 5+ columns */
+}
+.table-scroll-hint {
+	text-align: right;
+	font-size: 0.8rem;
+	color: var(--text-light);
+	padding-bottom: 0.5rem;
+	position: sticky;
+	left: 0; /* Keep it visible even when scrolling */
+}
+
 /* Two Column Layout */
 .layout-container {
 	display: flex;
