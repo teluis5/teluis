@@ -225,28 +225,35 @@ const { title, description, pubDate, updatedDate, heroImage, categories } = Astr
 						const firstTh = table.querySelector('thead th:first-child');
 						if (firstTh) {
 							firstTh.style.width = leftColWidth;
+							firstTh.style.minWidth = leftColWidth;
 						}
 						
-						// 画面に「左端の列 ＋ 比較対象3つ」がピッタリ100%幅で収まるように計算
-						// 1対象あたりの幅 = (100% - 左端の幅) / 3
-						// 表全体の幅 = 左端の幅 + (対象数 * 1対象あたりの幅)
-						table.style.width = `calc(${leftColWidth} + ${targetCount} * ((100% - ${leftColWidth}) / 3))`;
 						table.style.tableLayout = 'fixed';
 						table.classList.add('table-fixed-left-col');
 						
-						// ラッパーを作成
-						const wrapper = document.createElement('div');
-						wrapper.className = 'table-scroll-wrapper';
-						
-						// スクロールガイドを作成
-						const hint = document.createElement('div');
-						hint.className = 'table-scroll-hint';
-						hint.innerHTML = '<span>← 左右にスクロールできます →</span>';
-						
-						// DOMツリーに挿入
-						table.parentNode?.insertBefore(wrapper, table);
-						wrapper.appendChild(hint);
-						wrapper.appendChild(table);
+						if (targetCount > 3) {
+							// 比較対象が4つ以上の場合は、スクロール領域を作るために表自体の幅を広げる
+							// 画面に「左端の列 ＋ 比較対象3つ」がピッタリ収まる基準幅に対する倍率
+							const ratio = targetCount / 3;
+							table.style.width = `calc(${leftColWidth} + (100% - ${leftColWidth}) * ${ratio})`;
+							
+							// ラッパーを作成
+							const wrapper = document.createElement('div');
+							wrapper.className = 'table-scroll-wrapper';
+							
+							// スクロールガイドを作成
+							const hint = document.createElement('div');
+							hint.className = 'table-scroll-hint';
+							hint.innerHTML = '<span>← 左右にスクロールできます →</span>';
+							
+							// DOMツリーに挿入
+							table.parentNode?.insertBefore(wrapper, table);
+							wrapper.appendChild(hint);
+							wrapper.appendChild(table);
+						} else {
+							// 比較対象が3つの場合は画面幅にピッタリ収める
+							table.style.width = '100%';
+						}
 					}
 				});
 			});
