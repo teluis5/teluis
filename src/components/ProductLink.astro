@@ -6,13 +6,26 @@ interface Props {
 	rakutenUrl?: string;
 	yahooUrl?: string;
 	amazonAsin?: string;
+	rakutenKeyword?: string;
 }
 
-const { title, imageUrl, amazonUrl, rakutenUrl, yahooUrl, amazonAsin } = Astro.props;
+const { title, imageUrl, amazonUrl, rakutenUrl, yahooUrl, amazonAsin, rakutenKeyword } = Astro.props;
 
-// ASINが指定されていてURLがない場合、自動でアソシエイトリンクを生成
-const trackingId = 'teluis-22';
-const finalAmazonUrl = amazonUrl || (amazonAsin ? `https://www.amazon.co.jp/dp/${amazonAsin}?tag=${trackingId}` : null);
+// Amazonアソシエイトリンクの自動生成
+const amazonTrackingId = 'teluis-22';
+const finalAmazonUrl = amazonUrl || (amazonAsin ? `https://www.amazon.co.jp/dp/${amazonAsin}?tag=${amazonTrackingId}` : null);
+
+// 楽天アフィリエイトリンクの自動生成
+const rakutenAffiliateId = '52513ff1.59ebf487.52513ff2.71d0e9e4';
+let finalRakutenUrl = rakutenUrl;
+if (!finalRakutenUrl && rakutenKeyword) {
+	const searchUrl = `https://search.rakuten.co.jp/search/mall/${encodeURIComponent(rakutenKeyword)}/`;
+	finalRakutenUrl = searchUrl;
+}
+if (finalRakutenUrl && !finalRakutenUrl.includes('hb.afl.rakuten.co.jp')) {
+	const encodedUrl = encodeURIComponent(finalRakutenUrl);
+	finalRakutenUrl = `https://hb.afl.rakuten.co.jp/hgc/${rakutenAffiliateId}/?pc=${encodedUrl}&m=${encodedUrl}`;
+}
 ---
 
 <div class="product-link-card">
@@ -27,8 +40,8 @@ const finalAmazonUrl = amazonUrl || (amazonAsin ? `https://www.amazon.co.jp/dp/$
 					Amazonで価格を見る
 				</a>
 			)}
-			{rakutenUrl && (
-				<a href={rakutenUrl} target="_blank" rel="noopener noreferrer" class="btn-aff btn-rakuten">
+			{finalRakutenUrl && (
+				<a href={finalRakutenUrl} target="_blank" rel="noopener noreferrer" class="btn-aff btn-rakuten">
 					楽天市場で探す
 				</a>
 			)}
