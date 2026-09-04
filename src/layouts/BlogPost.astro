@@ -241,6 +241,11 @@ const { title, description, pubDate, updatedDate, heroImage, categories } = Astr
 							const ratio = targetCount / 3;
 							table.style.width = `calc(${leftColWidth} + (100% - ${leftColWidth}) * ${ratio})`;
 							
+							// stickyの追従範囲を限定するための大枠ラッパー
+							const superWrapper = document.createElement('div');
+							superWrapper.className = 'table-super-wrapper';
+							// super-wrapper 自体は通常のブロックレベル要素とする
+							
 							const wrapper = document.createElement('div');
 							wrapper.className = 'table-scroll-wrapper';
 							
@@ -248,9 +253,12 @@ const { title, description, pubDate, updatedDate, heroImage, categories } = Astr
 							hint.className = 'table-scroll-hint';
 							hint.innerHTML = '<span>← 左右にスクロールできます →</span>';
 							
-							table.parentNode?.insertBefore(hint, table);
+							// 元の table を superWrapper で囲む
+							table.parentNode?.insertBefore(superWrapper, table);
+							superWrapper.appendChild(hint);
 							
-							table.parentNode?.insertBefore(wrapper, table);
+							// wrapper を superWrapper に入れる
+							superWrapper.appendChild(wrapper);
 							wrapper.appendChild(table);
 
 							// --- 縦スクロール追従用のクローンヘッダーを作成 ---
@@ -269,15 +277,14 @@ const { title, description, pubDate, updatedDate, heroImage, categories } = Astr
 								cloneTable.appendChild(cloneThead);
 								cloneContainer.appendChild(cloneTable);
 								
-								// ラッパーの直前に挿入 (hint の下)
-								wrapper.parentNode?.insertBefore(cloneContainer, wrapper);
+								// 大枠ラッパーの中で、横スクロールラッパーの直前に挿入する
+								// これにより cloneContainer の containing block が superWrapper になり、表が終わると追従も終わる
+								superWrapper.insertBefore(cloneContainer, wrapper);
 								
 								wrapper.addEventListener('scroll', () => {
 									cloneContainer.scrollLeft = wrapper.scrollLeft;
 								}, { passive: true });
 								
-								// クローンと元のヘッダーの二重スペースを消すため、ラッパーをネガティブマージンで上に引き上げる
-								// requestAnimationFrame でレンダリング後の高さを取得
 								requestAnimationFrame(() => {
 									const headerHeight = originalThead.offsetHeight;
 									if (headerHeight > 0) {
