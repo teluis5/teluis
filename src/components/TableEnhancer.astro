@@ -107,8 +107,15 @@ document.addEventListener('DOMContentLoaded', () => {
 		// 1番左の列幅の基準値
 		const leftColWidth = '5.5rem';
 		
-		// 自動でスタイル用のクラスを付与
+		// 自動でスタイル用のクラスを付与し、列幅を揃えるための固定レイアウトを適用
 		table.classList.add('table-fixed-left-col');
+		table.style.tableLayout = 'fixed';
+		
+		const firstTh = table.querySelector('thead th:first-child');
+		if (firstTh) {
+			firstTh.style.width = leftColWidth;
+			firstTh.style.minWidth = leftColWidth;
+		}
 		
 		// 比較対象が4つ以上の場合は、スクロール領域を作るために表自体の幅を広げる
 		if (targetCount > 3) {
