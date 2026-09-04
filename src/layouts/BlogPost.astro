@@ -6,6 +6,7 @@ import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
 import Ad from '../components/Ad.astro';
+import TableEnhancer from '../components/TableEnhancer.astro';
 import { Icon } from 'astro-icon/components';
 
 type Props = CollectionEntry<'blog'>['data'];
@@ -210,96 +211,6 @@ const { title, description, pubDate, updatedDate, heroImage, categories } = Astr
 			</div>
 		</main>
 		<Footer />
-
-		<script>
-			document.addEventListener('DOMContentLoaded', () => {
-				const tables = document.querySelectorAll('.prose table');
-				tables.forEach(table => {
-					// 最初の行の列数をカウント（DOMの table.rows を使用して正確に取得）
-					const firstRowCols = table.rows.length > 0 ? table.rows[0].cells.length : 0;
-					
-					// 比較対象の数（列数 - 1）
-					const targetCount = firstRowCols - 1;
-					
-					// 比較対象が3つ以上（全体で4列以上）の場合にロジックを適用
-					if (targetCount >= 3) {
-						// 1番左の列（比較項目）の幅。「縦1文字幅＋パディング」程度に固定
-						const leftColWidth = '5.5rem';
-						
-						const firstTh = table.querySelector('thead th:first-child');
-						if (firstTh) {
-							firstTh.style.width = leftColWidth;
-							firstTh.style.minWidth = leftColWidth;
-						}
-						
-						table.style.tableLayout = 'fixed';
-						table.classList.add('table-fixed-left-col');
-						
-						if (targetCount > 3) {
-							// 比較対象が4つ以上の場合は、スクロール領域を作るために表自体の幅を広げる
-							// 画面に「左端の列 ＋ 比較対象3つ」がピッタリ収まる基準幅に対する倍率
-							const ratio = targetCount / 3;
-							table.style.width = `calc(${leftColWidth} + (100% - ${leftColWidth}) * ${ratio})`;
-							
-							// stickyの追従範囲を限定するための大枠ラッパー
-							const superWrapper = document.createElement('div');
-							superWrapper.className = 'table-super-wrapper';
-							// super-wrapper 自体は通常のブロックレベル要素とする
-							
-							const wrapper = document.createElement('div');
-							wrapper.className = 'table-scroll-wrapper';
-							
-							const hint = document.createElement('div');
-							hint.className = 'table-scroll-hint';
-							hint.innerHTML = '<span>← 左右にスクロールできます →</span>';
-							
-							// 元の table を superWrapper で囲む
-							table.parentNode?.insertBefore(superWrapper, table);
-							superWrapper.appendChild(hint);
-							
-							// wrapper を superWrapper に入れる
-							superWrapper.appendChild(wrapper);
-							wrapper.appendChild(table);
-
-							// --- 縦スクロール追従用のクローンヘッダーを作成 ---
-							const originalThead = table.querySelector('thead');
-							if (originalThead) {
-								const cloneContainer = document.createElement('div');
-								cloneContainer.className = 'sticky-thead-container';
-								
-								const cloneTable = document.createElement('table');
-								cloneTable.className = table.className;
-								cloneTable.style.width = table.style.width;
-								cloneTable.style.tableLayout = 'fixed';
-								cloneTable.style.margin = '0';
-								
-								const cloneThead = originalThead.cloneNode(true);
-								cloneTable.appendChild(cloneThead);
-								cloneContainer.appendChild(cloneTable);
-								
-								// 大枠ラッパーの中で、横スクロールラッパーの直前に挿入する
-								// これにより cloneContainer の containing block が superWrapper になり、表が終わると追従も終わる
-								superWrapper.insertBefore(cloneContainer, wrapper);
-								
-								wrapper.addEventListener('scroll', () => {
-									cloneContainer.scrollLeft = wrapper.scrollLeft;
-								}, { passive: true });
-								
-								requestAnimationFrame(() => {
-									const headerHeight = originalThead.offsetHeight;
-									if (headerHeight > 0) {
-										wrapper.style.marginTop = `-${headerHeight}px`;
-										originalThead.style.visibility = 'hidden';
-									}
-								});
-							}
-						} else {
-							// 比較対象が3つの場合は画面幅にピッタリ収める
-							table.style.width = '100%';
-						}
-					}
-				});
-			});
-		</script>
+		<TableEnhancer />
 	</body>
 </html>

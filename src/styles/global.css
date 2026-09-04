@@ -130,67 +130,6 @@ thead th {
 	box-shadow: 0 1px 0 var(--border-color);
 }
 
-/* Wide Table Scroll Wrapper (JS Applied) */
-.table-scroll-wrapper {
-	width: 100%;
-	overflow-x: auto;
-	-webkit-overflow-scrolling: touch;
-	margin: 2rem 0;
-	/* Add subtle shadow on right edge to imply scrollability */
-	box-shadow: inset -5px 0 5px -5px rgba(0,0,0,0.1);
-}
-.table-scroll-wrapper table {
-	margin: 0;
-}
-.sticky-thead-container {
-	position: -webkit-sticky;
-	position: sticky;
-	top: 57px;
-	z-index: 20;
-	width: 100%;
-	overflow: hidden; /* 横方向にはみ出した分を隠す */
-	background-color: var(--bg-content); /* スクロール時の背景透け防止 */
-}
-
-.table-scroll-wrapper thead th,
-.sticky-thead-container thead th {
-	position: static;
-	top: auto;
-}
-
-/* 1番左の列（比較項目）を横スクロール時に固定表示する */
-.table-scroll-wrapper th:first-child,
-.table-scroll-wrapper td:first-child,
-.sticky-thead-container th:first-child {
-	position: sticky;
-	left: 0;
-	z-index: 10;
-}
-.table-scroll-wrapper th:first-child,
-.sticky-thead-container th:first-child {
-	z-index: 11; /* ヘッダーの固定列は一番上にする */
-	/* Firefox等での border のバグ対策 */
-	box-shadow: inset -1px 0 0 var(--border-color);
-}
-.table-scroll-wrapper td:first-child {
-	box-shadow: inset -1px 0 0 var(--border-color);
-}
-.table-scroll-hint {
-	text-align: right;
-	font-size: 0.8rem;
-	color: var(--text-light);
-	padding-bottom: 0.5rem;
-	position: sticky;
-	left: 0; /* Keep it visible even when scrolling */
-}
-
-/* Force left column to be narrow and wrap by character */
-.table-fixed-left-col th:first-child,
-.table-fixed-left-col td:first-child {
-	word-break: break-all;
-	line-height: 1.3;
-}
-
 /* Two Column Layout */
 .layout-container {
 	display: flex;
