@@ -7,6 +7,7 @@ import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
 import Ad from '../components/Ad.astro';
 import TableEnhancer from '../components/TableEnhancer.astro';
+import ShareButtons from '../components/ShareButtons.astro';
 import { Icon } from 'astro-icon/components';
 
 type Props = CollectionEntry<'blog'>['data'];
@@ -175,6 +176,8 @@ const { title, description, pubDate, updatedDate, heroImage, categories } = Astr
 					
 					<div class="prose">
 						<slot />
+						
+						<ShareButtons title={title} />
 						
 						<!-- 記事下広告 -->
 						<div style="margin-top: 3rem;">
