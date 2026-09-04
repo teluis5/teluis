@@ -142,6 +142,27 @@ thead th {
 .table-scroll-wrapper table {
 	margin: 0;
 }
+.table-scroll-wrapper thead th {
+	/* overflow-x: auto コンテナ内での position: sticky は、top がラッパーに対して計算されるため
+	   57pxの空白ができ表示が重なるバグを引き起こす。ここで解除する。 */
+	position: static;
+}
+
+/* 1番左の列（比較項目）を横スクロール時に固定表示する */
+.table-scroll-wrapper th:first-child,
+.table-scroll-wrapper td:first-child {
+	position: sticky;
+	left: 0;
+	z-index: 10;
+}
+.table-scroll-wrapper th:first-child {
+	z-index: 11; /* ヘッダーの固定列は一番上にする */
+	/* Firefox等での border のバグ対策 */
+	box-shadow: inset -1px 0 0 var(--border-color);
+}
+.table-scroll-wrapper td:first-child {
+	box-shadow: inset -1px 0 0 var(--border-color);
+}
 .table-scroll-hint {
 	text-align: right;
 	font-size: 0.8rem;
