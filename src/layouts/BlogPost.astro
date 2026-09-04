@@ -241,19 +241,51 @@ const { title, description, pubDate, updatedDate, heroImage, categories } = Astr
 							const ratio = targetCount / 3;
 							table.style.width = `calc(${leftColWidth} + (100% - ${leftColWidth}) * ${ratio})`;
 							
-							// ラッパーを作成
 							const wrapper = document.createElement('div');
 							wrapper.className = 'table-scroll-wrapper';
 							
-							// スクロールガイドを作成
 							const hint = document.createElement('div');
 							hint.className = 'table-scroll-hint';
 							hint.innerHTML = '<span>← 左右にスクロールできます →</span>';
 							
-							// DOMツリーに挿入
+							table.parentNode?.insertBefore(hint, table);
+							
 							table.parentNode?.insertBefore(wrapper, table);
-							wrapper.appendChild(hint);
 							wrapper.appendChild(table);
+
+							// --- 縦スクロール追従用のクローンヘッダーを作成 ---
+							const originalThead = table.querySelector('thead');
+							if (originalThead) {
+								const cloneContainer = document.createElement('div');
+								cloneContainer.className = 'sticky-thead-container';
+								
+								const cloneTable = document.createElement('table');
+								cloneTable.className = table.className;
+								cloneTable.style.width = table.style.width;
+								cloneTable.style.tableLayout = 'fixed';
+								cloneTable.style.margin = '0';
+								
+								const cloneThead = originalThead.cloneNode(true);
+								cloneTable.appendChild(cloneThead);
+								cloneContainer.appendChild(cloneTable);
+								
+								// ラッパーの直前に挿入 (hint の下)
+								wrapper.parentNode?.insertBefore(cloneContainer, wrapper);
+								
+								wrapper.addEventListener('scroll', () => {
+									cloneContainer.scrollLeft = wrapper.scrollLeft;
+								}, { passive: true });
+								
+								// クローンと元のヘッダーの二重スペースを消すため、ラッパーをネガティブマージンで上に引き上げる
+								// requestAnimationFrame でレンダリング後の高さを取得
+								requestAnimationFrame(() => {
+									const headerHeight = originalThead.offsetHeight;
+									if (headerHeight > 0) {
+										wrapper.style.marginTop = `-${headerHeight}px`;
+										originalThead.style.visibility = 'hidden';
+									}
+								});
+							}
 						} else {
 							// 比較対象が3つの場合は画面幅にピッタリ収める
 							table.style.width = '100%';
