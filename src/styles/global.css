@@ -143,6 +143,7 @@ thead th {
 	margin: 0;
 }
 .sticky-thead-container {
+	position: -webkit-sticky;
 	position: sticky;
 	top: 57px;
 	z-index: 20;
@@ -151,7 +152,8 @@ thead th {
 	background-color: var(--bg-content); /* スクロール時の背景透け防止 */
 }
 
-.table-scroll-wrapper thead th {
+.table-scroll-wrapper thead th,
+.sticky-thead-container thead th {
 	position: static;
 	top: auto;
 }
