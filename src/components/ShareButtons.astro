@@ -1,4 +1,4 @@
-﻿---
+---
 interface Props {
 	title: string;
 }
@@ -6,9 +6,9 @@ interface Props {
 const { title } = Astro.props;
 const currentUrl = Astro.url.href;
 
-const twitterUrl = https://twitter.com/intent/tweet?url=${encodeURIComponent(currentUrl)}&text=${encodeURIComponent(title)};
-const lineUrl = https://line.me/R/msg/text/?${encodeURIComponent(title + " " + currentUrl)};
-const threadsUrl = https://www.threads.net/intent/post?text=${encodeURIComponent(title + " " + currentUrl)};
+const twitterUrl = `https://twitter.com/intent/tweet?url=${encodeURIComponent(currentUrl)}&text=${encodeURIComponent(title)}`;
+const lineUrl = `https://line.me/R/msg/text/?${encodeURIComponent(title + " " + currentUrl)}`;
+const threadsUrl = `https://www.threads.net/intent/post?text=${encodeURIComponent(title + " " + currentUrl)}`;
 ---
 
 <div class="share-buttons">
