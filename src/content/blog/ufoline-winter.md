@@ -103,11 +103,11 @@ UFOラインは、例年11月末から冬季閉鎖に入ります。
 松山道　いよ西条ICより　車で約1時間20分  
 高知道　伊野ICより　　　車で約1時間30分
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d504565.0312834574!2d133.22006763711263!3d33.81898057260032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3551d6fd514327c1%3A0x412031b9eb1af4a1!2zVUZP44Op44Kk44OzKOOBhOOBrueUuumBkyDnk7bjgrHmo67nt5op!5e0!3m2!1sja!2sjp!4v1644027658281!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen loading="lazy"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d504565.0312834574!2d133.22006763711263!3d33.81898057260032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3551d6fd514327c1%3A0x412031b9eb1af4a1!2zVUZP44Op44Kk44OzKOOBhOOBrueUuumBkyDnk7bjgrHmo67nt5op!5e0!3m2!1sja!2sjp!4v1644027658281!5m2!1sja!2sjp" width="100%" style="border:0; aspect-ratio: 16 / 10; height: auto;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 ### 山荘らしさ
 
 住所　〒781-2605 高知県吾川郡いの町寺川１７５  
 ホームページ：[https://sansoshirasa.com/](https://sansoshirasa.com/)
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d75035.26309451651!2d133.16423433926016!3d33.78336150282161!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354e2acfe1bc8c6b%3A0xbaedd1b36ce53568!2z5bGx6I2Y44GX44KJ44GV!5e0!3m2!1sja!2sjp!4v1644031885148!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen loading="lazy"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d75035.26309451651!2d133.16423433926016!3d33.78336150282161!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354e2acfe1bc8c6b%3A0xbaedd1b36ce53568!2z5bGx6I2Y44GX44KJ44GV!5e0!3m2!1sja!2sjp!4v1644031885148!5m2!1sja!2sjp" width="100%" style="border:0; aspect-ratio: 16 / 10; height: auto;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

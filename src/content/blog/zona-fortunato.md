@@ -105,4 +105,4 @@ description: ""
 
 三原久井ICはすごい山の中にあるのでお勧めしません
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d52697.825525160006!2d133.0660382!3d34.3602983!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x355056c964a97173%3A0x6f06a72590001c1c!2z44Oq44K544OI44Op44Oz44OG44O744K-44O844OK44O744OV44Kp44Or44OI44Kl44OK44O844OI!5e0!3m2!1sja!2sjp!4v1643508879114!5m2!1sja!2sjp" width="800" height="600" style="border:0;" allowfullscreen loading="lazy"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d52697.825525160006!2d133.0660382!3d34.3602983!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x355056c964a97173%3A0x6f06a72590001c1c!2z44Oq44K544OI44Op44Oz44OG44O744K-44O844OK44O744OV44Kp44Or44OI44Kl44OK44O844OI!5e0!3m2!1sja!2sjp!4v1643508879114!5m2!1sja!2sjp" width="100%" style="border:0; aspect-ratio: 16 / 10; height: auto;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

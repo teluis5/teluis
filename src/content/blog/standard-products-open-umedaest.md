@@ -35,7 +35,7 @@ e☆イヤホン 梅田EST店が2022年2月13日に閉店しました。
 店舗面積も約190坪と過去のStandard Products店舗と比較して広いです。  
 ワンフロアすべてStandard Productsになった場合は最も広い店舗になります。
 
-<iframe src="https://www.google.com/maps/embed?pb=!4v1645525451634!6m8!1m7!1sCAoSLEFGMVFpcE1Ea1FuNlpsQ0U4LTZlbkZtcHpCS1dqSGo1N1JaSmlIM3dpZmhr!2m2!1d34.70502004064261!2d135.5009740607566!3f35.122333464597844!4f-11.134808404317738!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen loading="lazy"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!4v1645525451634!6m8!1m7!1sCAoSLEFGMVFpcE1Ea1FuNlpsQ0U4LTZlbkZtcHpCS1dqSGo1N1JaSmlIM3dpZmhr!2m2!1d34.70502004064261!2d135.5009740607566!3f35.122333464597844!4f-11.134808404317738!5f0.7820865974627469" width="100%" style="border:0; aspect-ratio: 16 / 10; height: auto;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 ## Standard Productsとは
 
@@ -72,7 +72,7 @@ EST梅田店でも金曜日オープンだと思われます。[](https://px.a8.
 
 梅田
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4013.4727916044535!2d135.49915912668777!3d34.70428306225365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e6939149a243%3A0x7d86e33e607a9a0!2z5qKF55Sw44Ko44K544OI!5e0!3m2!1sja!2sjp!4v1645527067520!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen loading="lazy"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4013.4727916044535!2d135.49915912668777!3d34.70428306225365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e6939149a243%3A0x7d86e33e607a9a0!2z5qKF55Sw44Ko44K544OI!5e0!3m2!1sja!2sjp!4v1645527067520!5m2!1sja!2sjp" width="100%" style="border:0; aspect-ratio: 16 / 10; height: auto;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 ## まとめ
 

@@ -41,12 +41,12 @@ description: ""
 観光列車「○○のはなし」に乗って萩市に到着！萩市内を観光してから旅館へ向かいます。  
 東萩駅まで、送迎に来ていただきました。
 
-<iframe src="https://www.google.com/maps/embed?pb=!4v1643790835792!6m8!1m7!1sCfV04QB6QX0EuCrEBxwNPw!2m2!1d34.41685167911726!2d131.4100059744302!3f40.52685254363188!4f3.4960014169592455!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen loading="lazy"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!4v1643790835792!6m8!1m7!1sCfV04QB6QX0EuCrEBxwNPw!2m2!1d34.41685167911726!2d131.4100059744302!3f40.52685254363188!4f3.4960014169592455!5f0.7820865974627469" width="100%" style="border:0; aspect-ratio: 16 / 10; height: auto;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 ドライバーさんが気さくな方で、反射炉や造船所跡があると教えて頂きながら、  
 車で約8分で、本日のお宿萩小町に到着！
 
-<iframe src="https://www.google.com/maps/embed?pb=!4v1643791152211!6m8!1m7!1saX6SN94lqRXfvfY_gexwvg!2m2!1d34.44521238356391!2d131.4151967067207!3f226.9845023065982!4f4.468426999400947!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen loading="lazy"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!4v1643791152211!6m8!1m7!1saX6SN94lqRXfvfY_gexwvg!2m2!1d34.44521238356391!2d131.4151967067207!3f226.9845023065982!4f4.468426999400947!5f0.7820865974627469" width="100%" style="border:0; aspect-ratio: 16 / 10; height: auto;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 ## オーシャンビューの客室に大満足
 
@@ -81,7 +81,7 @@ description: ""
 自慢の岩風呂は、海岸をそのまま取り込んで作られています。圧巻です。  
 水族館のおさかなさんになった気分(笑)
 
-<iframe src="https://www.google.com/maps/embed?pb=!4v1643773866702!6m8!1m7!1sCAoSLEFGMVFpcFAxQ0g3c3FlMVk1eFNZMWQyUU1mVURYVldpRDF6UnBwMTAwY0Nz!2m2!1d34.44524318879209!2d131.4142035497158!3f62.410101154390105!4f-7.308675074540332!5f0.4000000000000002" width="800" height="600" style="border:0;" allowfullscreen loading="lazy"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!4v1643773866702!6m8!1m7!1sCAoSLEFGMVFpcFAxQ0g3c3FlMVk1eFNZMWQyUU1mVURYVldpRDF6UnBwMTAwY0Nz!2m2!1d34.44524318879209!2d131.4142035497158!3f62.410101154390105!4f-7.308675074540332!5f0.4000000000000002" width="100%" style="border:0; aspect-ratio: 16 / 10; height: auto;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 露天風呂からは、日本海を望むことができます。  
 客室から見られるほどではありませんが、、、
@@ -141,7 +141,7 @@ description: ""
 
 売店では、おみやげやおつまみ、夜食のカップ麺などを販売しています。
 
-<iframe src="https://www.google.com/maps/embed?pb=!4v1643794684623!6m8!1m7!1sCAoSLEFGMVFpcE9EMUttQkpQTWpVSkJGRWQ0SzdwaWR4OF9BaTBJWFVwd2FmQjRZ!2m2!1d34.44510630166081!2d131.4147140389139!3f261.12572542409674!4f-2.8172711804710246!5f3.230448244549235" width="600" height="450" style="border:0;" allowfullscreen loading="lazy"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!4v1643794684623!6m8!1m7!1sCAoSLEFGMVFpcE9EMUttQkpQTWpVSkJGRWQ0SzdwaWR4OF9BaTBJWFVwd2FmQjRZ!2m2!1d34.44510630166081!2d131.4147140389139!3f261.12572542409674!4f-2.8172711804710246!5f3.230448244549235" width="100%" style="border:0; aspect-ratio: 16 / 10; height: auto;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 徒歩10分以内にコンビニがあり、夜間の買い出しも可能です。
 
@@ -169,7 +169,7 @@ description: ""
 萩周辺の旅館では、最もリーズナブルな部類に入りますが、  
 子供向けのプレイルームやカラオケ、卓球台、ゲーム機の貸し出しなどアミューズメント要素が豊富です(一部有料)
 
-<iframe src="https://www.google.com/maps/embed?pb=!4v1643794627303!6m8!1m7!1sCAoSLEFGMVFpcE5YbFBuV0RDYmRGejF6VzZabnZmNDJuaEVuMUlvVlRUQ0ZpZWVn!2m2!1d34.445198274006!2d131.4142471368812!3f75.03775531864434!4f-18.035845299387574!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen loading="lazy"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!4v1643794627303!6m8!1m7!1sCAoSLEFGMVFpcE5YbFBuV0RDYmRGejF6VzZabnZmNDJuaEVuMUlvVlRUQ0ZpZWVn!2m2!1d34.445198274006!2d131.4142471368812!3f75.03775531864434!4f-18.035845299387574!5f0.7820865974627469" width="100%" style="border:0; aspect-ratio: 16 / 10; height: auto;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 また、食事会場が複数あり、子供連れとそうでない方で分けているようです。  
 子連れ同士、周囲に気兼ねなく食事を楽しむことができます。
@@ -189,7 +189,7 @@ description: ""
 
 送迎は15時から東萩駅より(要事前予約)。東萩駅到着次第、お宿に電話とのこと。
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d35707.993920118715!2d131.38926754596415!3d34.42813546158581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544ae45b667493b%3A0xaef72f45128b0f9f!2z5aSV5pmv44Gu5a6_IOa1t-OBruOChuOCiuOBi-OBlCDokKnlsI_nlLo!5e0!3m2!1sja!2sjp!4v1643782513692!5m2!1sja!2sjp" width="800" height="600" style="border:0;" allowfullscreen loading="lazy"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d35707.993920118715!2d131.38926754596415!3d34.42813546158581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544ae45b667493b%3A0xaef72f45128b0f9f!2z5aSV5pmv44Gu5a6_IOa1t-OBruOChuOCiuOBi-OBlCDokKnlsI_nlLo!5e0!3m2!1sja!2sjp!4v1643782513692!5m2!1sja!2sjp" width="100%" style="border:0; aspect-ratio: 16 / 10; height: auto;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 ## 萩市の観光情報（関連記事）
 
