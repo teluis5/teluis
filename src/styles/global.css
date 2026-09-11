@@ -208,6 +208,13 @@ thead th {
 	margin-bottom: 0.8rem;
 }
 
+.prose b,
+.prose strong {
+	font-weight: 700;
+	color: var(--text-main);
+}
+
+
 /* 装飾ボックス：アドバイス (Advice Box) */
 .advice-box {
 	background-color: #fffbeb;
