@@ -86,15 +86,7 @@ description: ""
 露天風呂からは、日本海を望むことができます。  
 客室から見られるほどではありませんが、、、
 
-> [
-> 
-> この投稿をInstagramで見る
-> 
-> ](https://www.instagram.com/p/CVlmsKRBj-b/?utm_source=ig_embed&utm_campaign=loading)
-> 
-> [中野 修治(@shuji.nakano.372)がシェアした投稿](https://www.instagram.com/p/CVlmsKRBj-b/?utm_source=ig_embed&utm_campaign=loading)
-
-<script async src="//www.instagram.com/embed.js"></script>
+<iframe src="https://www.instagram.com/p/CVlmsKRBj-b/embed" width="100%" height="480" style="border: 0; max-width: 440px; display: block; margin: 1.5rem auto;" frameborder="0" scrolling="no"></iframe>
 
 ## 夕食
 

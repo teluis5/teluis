@@ -44,27 +44,11 @@ Standard Productsの運営会社ダイソーの求人サイトにこんな募集
 
 渋谷マークシティー店
 
-> [
-> 
-> この投稿をInstagramで見る
-> 
-> ](https://www.instagram.com/p/CM1aUEQs27o/?utm_source=ig_embed&utm_campaign=loading)
-> 
-> [Standard Products(@standardproducts\_official)がシェアした投稿](https://www.instagram.com/p/CM1aUEQs27o/?utm_source=ig_embed&utm_campaign=loading)
-
-<script async src="//www.instagram.com/embed.js"></script>
+<iframe src="https://www.instagram.com/p/CM1aUEQs27o/embed" width="100%" height="480" style="border: 0; max-width: 440px; display: block; margin: 1.5rem auto;" frameborder="0" scrolling="no"></iframe>
 
 新宿アルタ店
 
-> [
-> 
-> この投稿をInstagramで見る
-> 
-> ](https://www.instagram.com/p/CVUzcCFL2KU/?utm_source=ig_embed&utm_campaign=loading)
-> 
-> [Standard Products(@standardproducts\_official)がシェアした投稿](https://www.instagram.com/p/CVUzcCFL2KU/?utm_source=ig_embed&utm_campaign=loading)
-
-<script async src="//www.instagram.com/embed.js"></script>
+<iframe src="https://www.instagram.com/p/CVUzcCFL2KU/embed" width="100%" height="480" style="border: 0; max-width: 440px; display: block; margin: 1.5rem auto;" frameborder="0" scrolling="no"></iframe>
 
 コンセプトは  
 「ちょっといいのが、ずっといい。」  
