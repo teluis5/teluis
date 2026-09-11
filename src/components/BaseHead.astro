@@ -1,4 +1,4 @@
-﻿---
+---
 // Import the global.css file here so that it is included on
 // all pages through the use of the <BaseHead /> component.
 import '../styles/global.css';
@@ -53,6 +53,9 @@ const { title, description, image = FallbackImage } = Astro.props;
 
 <!-- Google AdSense Script -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8011635154814608" crossorigin="anonymous"></script>
+
+<!-- Twitter widgets Script -->
+<script is:inline async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <!-- Google tag (gtag.js) -->
 <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-PDS9E1WQBY"></script>
