@@ -117,7 +117,7 @@ description: ""
 
 ２階からはやんばるの森と海を一望。運がいいとクジラが見えるかも！？
 
-<blockquote class="twitter-tweet" data-dnt="true"><p lang="ja" dir="ltr">スタバ沖縄本部町店<br>沖縄独自のデザイン店舗<br>入口ではシーサーがお出迎え<br>テラスからは青い海どーん<br>気温25℃で汗だくだったので<br>アイスコーヒーがちょう美味しかったヨ <a href="https://t.co/KleyxL4nqK">pic.twitter.com/KleyxL4nqK</a></p>&mdash; みーちゃん(17) (@emiryan_michan) <a href="https://twitter.com/emiryan_michan/status/1503575682898866177?ref_src=twsrc%5Etfw">March 15, 2022</a></blockquote>
+<blockquote class="twitter-tweet" data-dnt="true"><p lang="ja" dir="ltr">スタバ沖縄本部町店<br />沖縄独自のデザイン店舗<br />入口ではシーサーがお出迎え<br />テラスからは青い海どーん<br />気温25℃で汗だくだったので<br />アイスコーヒーがちょう美味しかったヨ <a href="https://t.co/KleyxL4nqK">pic.twitter.com/KleyxL4nqK</a></p>&mdash; みーちゃん(17) (@emiryan_michan) <a href="https://twitter.com/emiryan_michan/status/1503575682898866177?ref_src=twsrc%5Etfw">March 15, 2022</a></blockquote>
 
 琉球松のテーブルがカッコイイ！
 
