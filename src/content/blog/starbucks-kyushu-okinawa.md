@@ -27,8 +27,7 @@ description: ""
 
 到津の森公園店は2023年4月にオープン。動物園に隣接した店舗です。
 
-<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CrQKq6rLqC8/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"></blockquote>
-<script async src="//www.instagram.com/embed.js"></script>
+<iframe src="https://www.instagram.com/p/CrQKq6rLqC8/embed" width="100%" height="480" style="border: 0; max-width: 440px; display: block; margin: 1.5rem auto;" frameborder="0" scrolling="no"></iframe>
 
 店舗の作りは郊外型路面店の汎用タイプといった感じですが、店内には動物型のモニュメントが多くある。
 
@@ -68,8 +67,7 @@ description: ""
 
 九大伊都店は2023年4月にオープンしたばかりの店舗。九州大学伊都キャンパスの近くのIto Lab Plusの蔦屋書店内にある。この蔦屋書店書店は郊外型店舗で、18万冊を備える広さが魅力だ。
 
-<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/Ct0-sR1SieQ/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"></blockquote>
-<script async src="//www.instagram.com/embed.js"></script>
+<iframe src="https://www.instagram.com/p/Ct0-sR1SieQ/embed" width="100%" height="480" style="border: 0; max-width: 440px; display: block; margin: 1.5rem auto;" frameborder="0" scrolling="no"></iframe>
 
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53167.925967775314!2d130.20183754885358!3d33.60542452388401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3541eb33d908fc31%3A0x20ff0e6af318b219!2z44K544K_44O844OQ44OD44Kv44K544Kz44O844OS44O8IOS5neWkp-S8iumDvSDolKblsYvmm7jlupc!5e0!3m2!1sja!2sjp!4v1687185523643!5m2!1sja!2sjp" width="100%" height="400" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
@@ -77,8 +75,7 @@ description: ""
 
 サクラマチは再開発で2019年に誕生した大規模商業施設です。熊本城のお膝元に位置し、ショッピングモール・バスターミナル・ホテルといった施設が入ってます。
 
-<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/Ca5dPo2BJb0/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"></blockquote>
-<script async src="//www.instagram.com/embed.js"></script>
+<iframe src="https://www.instagram.com/p/Ca5dPo2BJb0/embed" width="100%" height="480" style="border: 0; max-width: 440px; display: block; margin: 1.5rem auto;" frameborder="0" scrolling="no"></iframe>
 
 * * *
 
@@ -86,20 +83,17 @@ description: ""
 
 2022年4月にリニューアルオープンした不知火美術館・図書館内にある店舗。同建築はミラノ万博日本館などを設計した北川原温らによって設計され、1999年にオープン。日本建築学会作品選奨や日本図書館協会建築賞を受賞している。市役所も併設されており、手続きの待ち時間にも利用できる。
 
-<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CqjnN6TpYM_/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"></blockquote>
-<script async src="//www.instagram.com/embed.js"></script>
+<iframe src="https://www.instagram.com/p/CqjnN6TpYM_/embed" width="100%" height="480" style="border: 0; max-width: 440px; display: block; margin: 1.5rem auto;" frameborder="0" scrolling="no"></iframe>
 
 図書館内へのコーヒーの持ち込みも可能
 
-<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CdDk1dovEec/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"></blockquote>
-<script async src="//www.instagram.com/embed.js"></script>
+<iframe src="https://www.instagram.com/p/CdDk1dovEec/embed" width="100%" height="480" style="border: 0; max-width: 440px; display: block; margin: 1.5rem auto;" frameborder="0" scrolling="no"></iframe>
 
 ## 駅ビルで全てが揃う　蔦屋書店延岡エンクロス店（宮崎県延岡市）
 
 延岡駅ビルにある蔦屋書店とのコラボ店舗。コンクリート造りの空間の中に書店とスタバという前衛的な組み合わせ。
 
-<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/BzPfW1FA9Y3/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"></blockquote>
-<script async src="//www.instagram.com/embed.js"></script>
+<iframe src="https://www.instagram.com/p/BzPfW1FA9Y3/embed" width="100%" height="480" style="border: 0; max-width: 440px; display: block; margin: 1.5rem auto;" frameborder="0" scrolling="no"></iframe>
 
 ## スターバックスコーヒー　蔦屋書店　武雄市図書館店
 
@@ -107,8 +101,7 @@ description: ""
 
 東京国際展示場など数々の建築を手掛けた佐藤総合計画が改修を行った。
 
-<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CpcfZxOLe3-/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"></blockquote>
-<script async src="//www.instagram.com/embed.js"></script>
+<iframe src="https://www.instagram.com/p/CpcfZxOLe3-/embed" width="100%" height="480" style="border: 0; max-width: 440px; display: block; margin: 1.5rem auto;" frameborder="0" scrolling="no"></iframe>
 
 ## 桜島を望む薩摩藩の洋館内に　鹿児島仙厳園店（鹿児島県鹿児島市）
 
