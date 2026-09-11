@@ -214,6 +214,39 @@ thead th {
 	color: var(--text-main);
 }
 
+.prose i,
+.prose em {
+	font-style: italic;
+}
+
+.prose s,
+.prose del {
+	text-decoration: line-through;
+	color: var(--text-light);
+}
+
+.prose u {
+	text-decoration: underline;
+	text-underline-offset: 3px;
+}
+
+.prose mark {
+	background-color: #fef08a;
+	padding: 0.1em 0.35em;
+	border-radius: 2px;
+	color: inherit;
+}
+
+.prose kbd {
+	background-color: var(--bg-main);
+	border: 1px solid var(--border-color);
+	border-radius: 3px;
+	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+	font-size: 0.85em;
+	padding: 2px 6px;
+	font-family: monospace;
+}
+
 
 /* 装飾ボックス：アドバイス (Advice Box) */
 .advice-box {
