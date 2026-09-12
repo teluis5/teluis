@@ -8,28 +8,30 @@ interface Props {
 
 const { title = "アドバイス", icon = "heroicons:light-bulb" } = Astro.props;
 ---
-<div class="advice-box-wrapper">
+<div class="advice-box">
   <div class="advice-box-title">
     <Icon name={icon} class="icon-inline" /> {title}
   </div>
-  <div class="advice-box">
-    <div class="advice-box-content">
-      <slot />
-    </div>
+  <div class="advice-box-content">
+    <slot />
   </div>
 </div>
 
 <style>
-  .advice-box-wrapper {
-    margin: 2.5rem 0 2rem;
-    display: flex;
-    flex-direction: column;
+  .advice-box {
+    background-color: #fffbeb;
+    border: 1.5px solid #fcd34d;
+    border-radius: 8px;
+    padding: 2.8rem 1.5rem 1.5rem;
+    margin: 3rem 0 2rem;
+    position: relative;
+    box-shadow: 0 4px 6px -1px rgba(217, 119, 6, 0.08);
   }
   .advice-box-title {
-    position: relative;
-    align-self: flex-start;
-    margin-left: 20px;
-    margin-bottom: -16px; /* overlaps the border by 16px */
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+    left: 20px;
     z-index: 2;
     background-color: #d97706;
     padding: 6px 16px;
@@ -51,15 +53,6 @@ const { title = "アドバイス", icon = "heroicons:light-bulb" } = Astro.props
     height: 1.2em;
     flex-shrink: 0;
     margin-top: 0.15em;
-  }
-  .advice-box {
-    position: relative;
-    z-index: 1;
-    background-color: #fffbeb;
-    border: 1.5px solid #fcd34d;
-    border-radius: 8px;
-    padding: 1.8rem 1.5rem 1.5rem;
-    box-shadow: 0 4px 6px -1px rgba(217, 119, 6, 0.08);
   }
   .advice-box-content {
     font-weight: 500;
