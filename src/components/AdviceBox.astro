@@ -26,10 +26,11 @@ const { title = "アドバイス", icon = "heroicons:light-bulb" } = Astro.props
     flex-direction: column;
   }
   .advice-box-title {
+    position: relative;
     align-self: flex-start;
     margin-left: 20px;
     margin-bottom: -16px; /* overlaps the border by 16px */
-    z-index: 1;
+    z-index: 2;
     background-color: #d97706;
     padding: 6px 16px;
     color: #ffffff;
@@ -52,6 +53,8 @@ const { title = "アドバイス", icon = "heroicons:light-bulb" } = Astro.props
     margin-top: 0.15em;
   }
   .advice-box {
+    position: relative;
+    z-index: 1;
     background-color: #fffbeb;
     border: 1.5px solid #fcd34d;
     border-radius: 8px;
