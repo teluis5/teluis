@@ -8,44 +8,55 @@ interface Props {
 
 const { title = "アドバイス", icon = "heroicons:light-bulb" } = Astro.props;
 ---
-<div class="advice-box">
+<div class="advice-box-wrapper">
   <div class="advice-box-title">
     <Icon name={icon} class="icon-inline" /> {title}
   </div>
-  <div class="advice-box-content">
-    <slot />
+  <div class="advice-box">
+    <div class="advice-box-content">
+      <slot />
+    </div>
   </div>
 </div>
 
 <style>
-  .advice-box {
-    background-color: #fffbeb;
-    border: 1.5px solid #fcd34d;
-    border-radius: 8px;
-    padding: 1.5rem;
+  .advice-box-wrapper {
     margin: 2.5rem 0 2rem;
-    position: relative;
-    box-shadow: 0 4px 6px -1px rgba(217, 119, 6, 0.08);
+    display: flex;
+    flex-direction: column;
   }
   .advice-box-title {
-    position: absolute;
-    top: -15px;
-    left: 20px;
+    align-self: flex-start;
+    margin-left: 20px;
+    margin-bottom: -16px; /* overlaps the border by 16px */
+    z-index: 1;
     background-color: #d97706;
-    padding: 2px 14px;
+    padding: 6px 16px;
     color: #ffffff;
     font-weight: bold;
     display: flex;
-    align-items: center;
-    gap: 0.35rem;
+    align-items: flex-start;
+    gap: 0.4rem;
     border: none;
-    border-radius: 20px;
-    font-size: 0.9rem;
+    border-radius: 12px;
+    font-size: 0.95rem;
+    line-height: 1.5;
     box-shadow: 0 2px 4px rgba(180, 83, 9, 0.2);
+    max-width: calc(100% - 40px);
+    box-sizing: border-box;
   }
   .advice-box-title :global(svg) {
     width: 1.2em;
     height: 1.2em;
+    flex-shrink: 0;
+    margin-top: 0.15em;
+  }
+  .advice-box {
+    background-color: #fffbeb;
+    border: 1.5px solid #fcd34d;
+    border-radius: 8px;
+    padding: 1.8rem 1.5rem 1.5rem;
+    box-shadow: 0 4px 6px -1px rgba(217, 119, 6, 0.08);
   }
   .advice-box-content {
     font-weight: 500;

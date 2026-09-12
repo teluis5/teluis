@@ -36,6 +36,6 @@ Markdown記法（CommonMark仕様）では、単語間にスペースのない�
 ## Decorative Box Components
 
 - `<AdviceBox title="タイトル">...</AdviceBox>`: アドバイス、注意点、ワンポイントヒント用（アンバー調・電球アイコン付き）。
-- `<ConclusionBox>...</ConclusionBox>`: この記事の結論・要点まとめ用（ブルー調）。
+- `<ConclusionBox>...</ConclusionBox>`: この記事の結論・要点まとめ用（ブルー調）。**1記事につき最後の「まとめ（総括）」でのみ使用すること（冒頭など複数箇所での重複使用は禁止）**。
 - `<ProblemBox>...</ProblemBox>`: 読者の悩み・問題提起用（グレー調）。
 
