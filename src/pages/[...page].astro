@@ -9,7 +9,7 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 import { Icon } from 'astro-icon/components';
 
 export async function getStaticPaths({ paginate }) {
-	const allPosts = await getCollection('blog');
+	const allPosts = await getCollection('blog', ({ data }) => !data.draft);
 	const sortedPosts = allPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 	return paginate(sortedPosts, { pageSize: 10 });
 }
@@ -17,7 +17,7 @@ export async function getStaticPaths({ paginate }) {
 const { page } = Astro.props;
 
 // サイドバーの新着記事用に全記事を取得
-const allPosts = await getCollection('blog');
+const allPosts = await getCollection('blog', ({ data }) => !data.draft);
 const sortedPosts = allPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 ---
 

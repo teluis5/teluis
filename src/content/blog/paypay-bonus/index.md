@@ -3,7 +3,8 @@ title: "【paypayボーナス運用活用法】テクノロジーコース追加
 pubDate: 2022-01-28
 categories: ["マネー・ビジネス"]
 heroImage: "./f3e00ef59a12fe9bd55456192acc1a59.png"
-description: ""
+description: "PayPayポイントを使って手軽に疑似投資体験ができるPayPayボーナス運用の活用法を解説。新設されたテクノロジーコースの特徴や連動ETFの仕組みを詳しく分析します。"
+draft: true
 ---
 
 ## paypayボーナス運用とは

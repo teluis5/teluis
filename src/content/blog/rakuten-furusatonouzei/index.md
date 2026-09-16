@@ -3,7 +3,8 @@ title: "楽天ふるさと納税・確定申告の方法"
 pubDate: 2022-02-05
 categories: ["マネー・ビジネス"]
 heroImage: "./94c99b9ed4934bd43d518fc20eac42f5.png"
-description: ""
+description: "楽天ふるさと納税を活用した寄附金控除の申請手順と確定申告のやり方を解説。一括管理サービスを使った証明書取得の流れや注意点をわかりやすくまとめました。"
+draft: true
 ---
 
 ## 確定申告申告が必要な人

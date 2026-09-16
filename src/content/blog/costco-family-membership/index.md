@@ -1,9 +1,9 @@
 ﻿---
 title: "コストコ家族会員になったら超お得だった"
 pubDate: 2022-01-17
-categories: ["マネー・ビジネス"]
+categories: ["ライフスタイル"]
 heroImage: "./94c99b9ed4934bd43d518fc20eac42f5.png"
-description: ""
+description: "会員制倉庫型スーパー「コストコ」の家族会員制度を活用するメリットと登録方法を解説。本会員と同等の特典を無料で受けられる仕組みや、お得な買い物のコツを実体験をもとに紹介します。"
 ---
 
 近年流行りの会員制倉庫型スーパーの[COSTCO](https://www.costco.co.jp/)  

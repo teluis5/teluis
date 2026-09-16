@@ -3,7 +3,7 @@ title: "【ブロガー向け】BlogMapの使い方 - noteと徹底比較 -"
 pubDate: 2022-02-04
 categories: ["ブログ運営"]
 heroImage: "./d4c36cf8571e19a0603ef491705d2034.png"
-description: ""
+description: "個人ブログの新しい読者獲得プラットフォーム「BlogMap」の特徴と使い方を解説。noteとの違いやメリット、ブロガーが登録すべき理由をわかりやすく比較・紹介します。"
 ---
 
 BlogMapとは、2021年に[ヒトデ](https://twitter.com/hitodeblog)さん、[ワロリンス](https://twitter.com/warorince)さん、[ひつじ](https://twitter.com/hituji_1234)さんによって  

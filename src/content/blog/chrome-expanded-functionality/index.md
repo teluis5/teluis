@@ -3,7 +3,7 @@ title: "【超快適】chromeブラウザの拡張機能おすすめ10選"
 pubDate: 2022-02-01
 categories: ["IT・ガジェット"]
 heroImage: "./6a9499cc629e84e6cc459efc24b646ff.png"
-description: ""
+description: "毎日のネットサーフィンや作業効率を劇的に高めるGoogle Chromeのおすすめ拡張機能10選を紹介。動画再生速度調整や広告ブロック、翻訳ツールなど、実際に使い倒して便利だった神プラグインを厳選解説します。"
 ---
 
 ## chrome拡張機能とは

@@ -3,7 +3,7 @@ title: "AQUOS sense4　半年使用レビュー"
 pubDate: 2022-01-18
 categories: ["IT・ガジェット"]
 heroImage: "./e5b038fbde67a3801b17b5f5b1ef5e7b.png"
-description: ""
+description: "コスパ最強スマホ「AQUOS sense4」を半年間実際に使ってみたリアルなレビュー。圧倒的なバッテリー持ちや指紋認証の快適さ、気になるカメラ性能やレスポンスまで正直にメリット・デメリットを解説します。"
 ---
 
 2020年12月に発売されたシャープの AQUOS sense4。  

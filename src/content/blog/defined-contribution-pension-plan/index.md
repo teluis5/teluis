@@ -3,7 +3,8 @@ title: "【新卒社会人向けお金のはなし】確定拠出年金編"
 pubDate: 2022-05-11
 categories: ["マネー・ビジネス"]
 heroImage: "./35efa23d85a37268575f210b28dccf8b.png"
-description: ""
+description: "新卒社会人や若手向けに確定拠出年金（企業型DC・iDeCo）の仕組みとメリット・デメリットをわかりやすく解説。将来の資産形成に向けた運用の基本知識を整理します。"
+draft: true
 ---
 
 ![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
