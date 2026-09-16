@@ -25,38 +25,7 @@ UFOラインの正式名称は「町道瓶ヶ森（かめがもり）線」。�
 
 当時のCMメイキング映像（[oricon公式YouTubeチャンネル](https://www.youtube.com/channel/UCbZvkG2uAgr6Oiva4FytscQ)より）：
 
-<div class="youtube-player-10s" data-video-id="_dWKLytb86c" data-start="10" style="position: relative; width: 100%; max-width: 640px; aspect-ratio: 16 / 9; margin: 1.5rem auto; border-radius: 8px; overflow: hidden; background-color: #000; box-shadow: 0 4px 12px rgba(0,0,0,0.15); cursor: pointer;">
-  <img src="/images/ufoline_cm_10s.jpg" alt="トヨタ カローラスポーツ CM メイキング映像（UFOライン）" style="width: 100%; height: 100%; object-fit: cover; display: block;" loading="lazy" />
-  <div class="yt-play-btn" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); filter: drop-shadow(0 4px 8px rgba(0,0,0,0.4)); pointer-events: none; transition: transform 0.2s ease;">
-    <svg viewBox="0 0 68 48" width="68" height="48">
-      <path d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z" fill="#f00"></path>
-      <path d="M 45,24 27,14 27,34" fill="#fff"></path>
-    </svg>
-  </div>
-</div>
-
-<script is:inline>
-  document.querySelectorAll('.youtube-player-10s').forEach((player) => {
-    player.addEventListener('click', () => {
-      const videoId = player.getAttribute('data-video-id');
-      const start = player.getAttribute('data-start') || '10';
-      const iframe = document.createElement('iframe');
-      iframe.setAttribute('src', 'https://www.youtube.com/embed/' + videoId + '?autoplay=1&start=' + start);
-      iframe.setAttribute('title', 'YouTube video player');
-      iframe.setAttribute('frameborder', '0');
-      iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');
-      iframe.setAttribute('allowfullscreen', 'true');
-      iframe.style.width = '100%';
-      iframe.style.height = '100%';
-      iframe.style.position = 'absolute';
-      iframe.style.top = '0';
-      iframe.style.left = '0';
-      iframe.style.border = '0';
-      player.innerHTML = '';
-      player.appendChild(iframe);
-    }, { once: true });
-  });
-</script>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_dWKLytb86c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="max-width: 100%; aspect-ratio: 16 / 9; height: auto;"></iframe>
 
 空から見下ろす緑の稜線と一本の道路のコントラストは、まさに反則級の美しさです。
 
