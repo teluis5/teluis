@@ -268,32 +268,54 @@ const { title, description, pubDate, updatedDate, heroImage, categories, heading
 					}
 				});
 
-				// Google Mapsのインテリジェント遅延読み込み（接近時にのみロード）
+				// Google Mapsの先行事前読み込み（初期描画の邪魔をせず、直後のアイドル時や操作時に先行ロード）
 				const mapIframes = document.querySelectorAll('.prose iframe[src*="google.com/maps"], .prose iframe[data-src*="google.com/maps"]');
-				if ('IntersectionObserver' in window && mapIframes.length > 0) {
-					const mapObserver = new IntersectionObserver((entries, observer) => {
-						entries.forEach(entry => {
-							if (entry.isIntersecting) {
-								const iframe = entry.target as HTMLIFrameElement;
-								const pendingSrc = iframe.dataset.src;
-								if (pendingSrc) {
-									iframe.src = pendingSrc;
-									iframe.removeAttribute('data-src');
-								}
-								observer.unobserve(iframe);
+				if (mapIframes.length > 0) {
+					let allLoaded = false;
+					const loadAllMaps = () => {
+						if (allLoaded) return;
+						allLoaded = true;
+						mapIframes.forEach(iframe => {
+							const htmlIframe = iframe as HTMLIFrameElement;
+							const pendingSrc = htmlIframe.dataset.src;
+							if (pendingSrc) {
+								htmlIframe.src = pendingSrc;
+								htmlIframe.removeAttribute('data-src');
 							}
 						});
-					}, { rootMargin: '300px 0px' });
+					};
 
-					mapIframes.forEach(iframe => {
-						const htmlIframe = iframe as HTMLIFrameElement;
-						const currentSrc = htmlIframe.getAttribute('src');
-						if (currentSrc && currentSrc !== 'about:blank' && !htmlIframe.dataset.src) {
-							htmlIframe.dataset.src = currentSrc;
-							htmlIframe.src = 'about:blank';
-						}
-						mapObserver.observe(htmlIframe);
+					// 1. 初回のスクロール、タッチ、操作で即座に先行ロード
+					['scroll', 'touchstart', 'mousemove', 'wheel'].forEach(evt => {
+						window.addEventListener(evt, loadAllMaps, { once: true, passive: true });
 					});
+
+					// 2. 操作がなくても、初期表示が落ち着いたタイミング（アイドル時または1秒後）に自動で事前読み込み
+					if ('requestIdleCallback' in window) {
+						window.addEventListener('load', () => {
+							(window as any).requestIdleCallback(() => {
+								setTimeout(loadAllMaps, 300);
+							}, { timeout: 1500 });
+						});
+					} else {
+						window.addEventListener('load', () => {
+							setTimeout(loadAllMaps, 800);
+						});
+					}
+
+					// 3. 画面内接近検知（広範囲 1500px 手前で検知）
+					if ('IntersectionObserver' in window) {
+						const mapObserver = new IntersectionObserver((entries) => {
+							entries.forEach(entry => {
+								if (entry.isIntersecting) {
+									loadAllMaps();
+									mapObserver.disconnect();
+								}
+							});
+						}, { rootMargin: '1500px 0px' });
+
+						mapIframes.forEach(iframe => mapObserver.observe(iframe));
+					}
 				}
 			});
 		</script>
