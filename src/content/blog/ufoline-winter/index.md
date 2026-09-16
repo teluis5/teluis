@@ -25,7 +25,7 @@ UFOラインの正式名称は「町道瓶ヶ森（かめがもり）線」。�
 
 当時のCMメイキング映像（[oricon公式YouTubeチャンネル](https://www.youtube.com/channel/UCbZvkG2uAgr6Oiva4FytscQ)より）：
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_dWKLytb86c?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_dWKLytb86c?start=9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="max-width: 100%; aspect-ratio: 16 / 9; height: auto;"></iframe>
 
 空から見下ろす緑の稜線と一本の道路のコントラストは、まさに反則級の美しさです。
 
