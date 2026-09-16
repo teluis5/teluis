@@ -69,11 +69,21 @@ const { title, description, pubDate, updatedDate, heroImage, categories, heading
 				color: inherit;
 				font-weight: normal;
 			}
-			.prose iframe[src*="google.com/maps"] {
+			.prose img {
+				max-width: 100%;
+				height: auto;
+				border-radius: 6px;
+				content-visibility: auto;
+				background-color: #f8fafc;
+			}
+			.prose iframe[src*="google.com/maps"],
+			.prose iframe[data-src*="google.com/maps"] {
 				width: 100%;
 				aspect-ratio: 16 / 10;
 				height: auto;
 				border: 0;
+				border-radius: 8px;
+				background-color: #f1f5f9;
 			}
 			.prose blockquote p {
 				margin: 0;
@@ -172,7 +182,7 @@ const { title, description, pubDate, updatedDate, heroImage, categories, heading
 					</div>
 					
 					<div class="hero-image">
-						{heroImage && <Image width={1020} height={510} src={heroImage} alt="" />}
+						{heroImage && <Image width={1020} height={510} src={heroImage} alt={title} loading="eager" fetchpriority="high" decoding="async" />}
 					</div>
 					
 					<div class="prose">
@@ -245,6 +255,45 @@ const { title, description, pubDate, updatedDate, heroImage, categories, heading
 					if (firstHeading && firstHeading.parentNode && toc.nextElementSibling !== firstHeading) {
 						firstHeading.parentNode.insertBefore(toc, firstHeading);
 					}
+				}
+
+				// 記事内画像の非同期・遅延読み込み補完
+				const proseImages = document.querySelectorAll('.prose img');
+				proseImages.forEach(img => {
+					if (!img.getAttribute('loading')) {
+						img.setAttribute('loading', 'lazy');
+					}
+					if (!img.getAttribute('decoding')) {
+						img.setAttribute('decoding', 'async');
+					}
+				});
+
+				// Google Mapsのインテリジェント遅延読み込み（接近時にのみロード）
+				const mapIframes = document.querySelectorAll('.prose iframe[src*="google.com/maps"], .prose iframe[data-src*="google.com/maps"]');
+				if ('IntersectionObserver' in window && mapIframes.length > 0) {
+					const mapObserver = new IntersectionObserver((entries, observer) => {
+						entries.forEach(entry => {
+							if (entry.isIntersecting) {
+								const iframe = entry.target as HTMLIFrameElement;
+								const pendingSrc = iframe.dataset.src;
+								if (pendingSrc) {
+									iframe.src = pendingSrc;
+									iframe.removeAttribute('data-src');
+								}
+								observer.unobserve(iframe);
+							}
+						});
+					}, { rootMargin: '300px 0px' });
+
+					mapIframes.forEach(iframe => {
+						const htmlIframe = iframe as HTMLIFrameElement;
+						const currentSrc = htmlIframe.getAttribute('src');
+						if (currentSrc && currentSrc !== 'about:blank' && !htmlIframe.dataset.src) {
+							htmlIframe.dataset.src = currentSrc;
+							htmlIframe.src = 'about:blank';
+						}
+						mapObserver.observe(htmlIframe);
+					});
 				}
 			});
 		</script>

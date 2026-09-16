@@ -25,7 +25,7 @@ UFOラインの正式名称は「町道瓶ヶ森（かめがもり）線」。�
 
 当時のCMメイキング映像（[oricon公式YouTubeチャンネル](https://www.youtube.com/channel/UCbZvkG2uAgr6Oiva4FytscQ)より）：
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_dWKLytb86c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="max-width: 100%; aspect-ratio: 16 / 9; height: auto; margin: 1.5rem auto; display: block; border-radius: 8px;"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_dWKLytb86c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy" style="max-width: 100%; aspect-ratio: 16 / 9; height: auto; margin: 1.5rem auto; display: block; border-radius: 8px;"></iframe>
 
 空から見下ろす緑の稜線と一本の道路のコントラストは、まさに反則級の美しさです。
 
@@ -117,14 +117,14 @@ UFOライン（町道瓶ヶ森線）は、例年<strong>11月下旬〜12月上�
   - 松山自動車道「いよ西条IC」より車で約1時間20分（寒風山トンネル経由）
   - 高知自動車道「伊野IC」より車で約1時間30分（国道194号経由）
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d504565.0312834574!2d133.22006763711263!3d33.81898057260032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3551d6fd514327c1%3A0x412031b9eb1af4a1!2zVUZP44Op44Kk44OzKOOBhOOBrueUuumBkyDnk7bjgrHmo67nt5op!5e0!3m2!1sja!2sjp!4v1644027658281!5m2!1sja!2sjp" width="100%" style="border:0; aspect-ratio: 16 / 10; height: auto;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d504565.0312834574!2d133.22006763711263!3d33.81898057260032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3551d6fd514327c1%3A0x412031b9eb1af4a1!2zVUZP44Op44Kk44OzKOOBhOOBrueUuumBkyDnk7bjgrHmo67nt5op!5e0!3m2!1sja!2sjp!4v1644027658281!5m2!1sja!2sjp" src="about:blank" width="100%" style="border:0; aspect-ratio: 16 / 10; height: auto;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 ### 山荘しらさ
 * <strong>住所:</strong> 〒781-2605 高知県吾川郡いの町寺川175  
 * <strong>営業期間:</strong> 4月中旬〜11月下旬（冬季休業あり）  
 * <strong>公式HP:</strong> [https://sansoshirasa.com/](https://sansoshirasa.com/)
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d75035.26309451651!2d133.16423433926016!3d33.78336150282161!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354e2acfe1bc8c6b%3A0xbaedd1b36ce53568!2z5bGx6I2Y44GX44KJ44GV!5e0!3m2!1sja!2sjp!4v1644031885148!5m2!1sja!2sjp" width="100%" style="border:0; aspect-ratio: 16 / 10; height: auto;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe data-src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d75035.26309451651!2d133.16423433926016!3d33.78336150282161!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354e2acfe1bc8c6b%3A0xbaedd1b36ce53568!2z5bGx6I2Y44GX44KJ44GV!5e0!3m2!1sja!2sjp!4v1644031885148!5m2!1sja!2sjp" src="about:blank" width="100%" style="border:0; aspect-ratio: 16 / 10; height: auto;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 ---
 
