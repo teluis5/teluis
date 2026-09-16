@@ -1,4 +1,4 @@
-﻿---
+---
 title: "【リストランテ・ゾーナ・フォルトゥナート】瀬戸内海を一望できるオシャレなイタリアンレストラン（広島・三原）"
 pubDate: 2022-01-30
 categories: ["ライフスタイル"]
@@ -62,26 +62,24 @@ description: "広島県三原市にある全席オーシャンビューのイタ
 
 すぐそばにすなみ海浜公園があります。食後の散策にぴったりです。
 
-人工の砂浜や防波堤があり、海水浴や釣りを楽しめます。
-
-[![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)](https://draft.blogger.com/blog/post/edit/3166167405085398901/8265538124287770996#)
+人工の砂浜や防波堤があり、心地よい潮風を感じながら散歩や海辺の景色を楽しめます。
 
 ## 近隣の観光スポット
 
 - 尾道千光寺
 - しまなみ海道
 - 大久野島（うさぎ島）
-- 竹原街並み
+- 竹原街並み保存地区
 
 ## 基本情報
 
-営業日：月・火・土・日・祝日
-
-営業時間：11:00~17:00(LO.16:00)
-
-[公式インスタグラム](https://draft.blogger.com/blog/post/edit/3166167405085398901/8265538124287770996#)
-
-[食べログ](https://draft.blogger.com/blog/post/edit/3166167405085398901/8265538124287770996#) ← 予約はこちら
+* **住所:** 〒723-0032 広島県三原市須波西1丁目7-2（すなみ海浜公園内）
+* **営業日:** 月・火・土・日・祝日（定休日：水・木・金）
+* **営業時間:** 11:00～17:00（L.O. 16:00）※ディナーは完全予約制
+* **電話番号:** 0848-81-2055
+* **公式サイト:** [https://zona-mihara.com/](https://zona-mihara.com/)
+* **公式Instagram:** [@ristorante_zona_fortunato](https://www.instagram.com/ristorante_zona_fortunato/)
+* **食べログ:** [リストランテ・ゾーナ・フォルトゥナート（食べログ）](https://tabelog.com/hiroshima/A3404/A340303/34001062/)（ネット予約・口コミ情報）
 
 ## アクセス
 
@@ -105,4 +103,4 @@ description: "広島県三原市にある全席オーシャンビューのイタ
 
 三原久井ICはすごい山の中にあるのでお勧めしません
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d52697.825525160006!2d133.0660382!3d34.3602983!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x355056c964a97173%3A0x6f06a72590001c1c!2z44Oq44K544OI44Op44Oz44OG44O744K-44O844OK44O744OV44Kp44Or44OI44Kl44OK44O844OI!5e0!3m2!1sja!2sjp!4v1643508879114!5m2!1sja!2sjp" width="100%" style="border:0; aspect-ratio: 16 / 10; height: auto;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe data-src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d52697.825525160006!2d133.0660382!3d34.3602983!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x355056c964a97173%3A0x6f06a72590001c1c!2z44Oq44K544OI44Op44Oz44OG44O744K-44O844OK44O744OV44Kp44Or44OI44Kl44OK44O844OI!5e0!3m2!1sja!2sjp!4v1643508879114!5m2!1sja!2sjp" src="about:blank" width="100%" style="border:0; aspect-ratio: 16 / 10; height: auto;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
