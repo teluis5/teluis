@@ -1,4 +1,4 @@
-﻿---
+---
 title: "【旅行記】維新の町 萩を歩き歴史と文化に触れる旅"
 pubDate: 2022-02-03
 categories: ["お出かけ・ライフスタイル"]
@@ -61,7 +61,7 @@ https://yomileeblog.com/marumarunohanashi-joushaki-2022-01-08/110/
 
 ![](./20220108_145226.jpg)
 
-[![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)](//af.moshimo.com/af/c/click?a_id=3191851&p_id=55&pc_id=55&pl_id=629&guid=ON)![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found) [![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)](https://px.a8.net/svt/ejp?a8mat=3BFNHH+3K09DU+14CS+6GZCH) 
+![](./hagi-purin.jpg)
 
 ## 維新の遺産　萩反射炉を見学
 
