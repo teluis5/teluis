@@ -1,9 +1,9 @@
-﻿import { getCollection } from 'astro:content';
+import { getCollection } from 'astro:content';
 
 export const prerender = true;
 
 export async function GET() {
-	const posts = await getCollection('blog');
+	const posts = await getCollection('blog', ({ data }) => !data.draft);
 	const searchIndex = posts.map((post) => {
 		const heroImg = post.data.heroImage;
 		let heroImageUrl = '';

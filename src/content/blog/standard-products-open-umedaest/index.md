@@ -2,6 +2,7 @@
 title: "ダイソー新業態Standard Productsがついに大阪・梅田へ！梅田エストにオープン予定"
 pubDate: 2022-02-28
 categories: ["ライフスタイル"]
+heroImage: "./image-20-1024x664.jpg"
 description: "ダイソーが手掛ける人気の高見え日用品ブランド「Standard Products」が関西初進出！梅田エストへのオープン情報や取扱アイテムの魅力をいち早くお届けします。"
 ---
 
