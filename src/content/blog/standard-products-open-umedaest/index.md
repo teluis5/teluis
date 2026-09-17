@@ -1,4 +1,4 @@
-﻿---
+---
 title: "ダイソー新業態Standard Productsがついに大阪・梅田へ！梅田エストにオープン予定"
 pubDate: 2022-02-28
 categories: ["ライフスタイル"]
@@ -9,7 +9,7 @@ description: "ダイソーが手掛ける人気の高見え日用品ブランド
 現在は、渋谷マークシティ・新宿アルタの2店舗が営業しています。  
 2022年4月にはマロニエゲート銀座２も開店し、東京に3店舗体制となります。
 
-https://yomileeblog.com/standard-products-open-marronniergate-ginza/697/
+👉 関連記事：[【開店日予想】ダイソー新業態Standard Productsがマロニエゲート銀座に4月中旬オープン！](/blog/standard-products-open-marronniergate-ginza/)
 
 ## 梅田ESTにOPEN予定
 
@@ -60,19 +60,18 @@ e☆イヤホン 梅田EST店が2022年2月13日に閉店しました。
 その通りいけば、5月中旬のオープンになると思います。  
 しかし、マロニエゲート銀座店と準備期間が重なっていることから、少し遅れる可能もあると思います。
 
-マロニエゲート銀座店の記事は[こちら](https://yomileeblog.com/standard-products-open-marronniergate-ginza/697/)
+マロニエゲート銀座店の詳細については、以下の記事で解説しています。
+
+👉 関連記事：[【開店日予想】ダイソー新業態Standard Productsがマロニエゲート銀座に4月中旬オープン！](/blog/standard-products-open-marronniergate-ginza/)
 
 ### 金曜日が有力候補
 
-Standard Products1号店は3/26**(金)**、2号店は10/22**(金)**オープンでした!
-
-EST梅田店でも金曜日オープンだと思われます。[](https://px.a8.net/svt/ejp?a8mat=3N3YJX+BOC3EQ+2FDU+TYBG1)
+Standard Products1号店は3/26<strong>(金)</strong>、2号店は10/22<strong>(金)</strong>オープンでした！  
+EST梅田店でも金曜日オープンだと思われます。
 
 ## 梅田ESTの詳細
 
-梅田
-
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4013.4727916044535!2d135.49915912668777!3d34.70428306225365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e6939149a243%3A0x7d86e33e607a9a0!2z5qKF55Sw44Ko44K544OI!5e0!3m2!1sja!2sjp!4v1645527067520!5m2!1sja!2sjp" width="100%" style="border:0; aspect-ratio: 16 / 10; height: auto;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4013.4727916044535!2d135.49915912668777!3d34.70428306225365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e6939149a243%3A0x7d86e33e607a9a0!2z5qKF55Sw44Ko44K544OI!5e0!3m2!1sja!2sjp!4v1645527067520!5m2!1sja!2sjp" src="about:blank" width="100%" style="border:0; aspect-ratio: 16 / 10; height: auto;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 ## まとめ
 

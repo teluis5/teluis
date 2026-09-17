@@ -1,4 +1,4 @@
-﻿---
+---
 title: "【530円で乗れる観光列車】○○のはなし乗車記（下関→萩）2022年版"
 pubDate: 2022-01-26
 categories: ["ライフスタイル"]
@@ -124,6 +124,11 @@ description: "山口県の絶景日本海沿いを走る人気観光列車「○
 
 ![](./20220109_140301-1-1024x768.jpg)
 
-青い部分の装飾がてもきれいです。
+青い部分の装飾がとてもきれいです。
 
-[![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)](//af.moshimo.com/af/c/click?a_id=3191851&p_id=55&pc_id=55&pl_id=630&url=http%3A%2F%2Ftravel.rakuten.co.jp%2F)![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
+## 萩旅行の関連記事
+
+「○○のはなし」で萩駅に到着したあとの観光記・宿泊レビューもぜひあわせてご覧ください！
+
+👉 関連記事：[【旅行記】維新の町 萩を歩き歴史と文化に触れる旅](/blog/yamaguchi-hagi-sightseeing/)  
+👉 関連記事：[【宿泊レビュー】夕景の宿 海のゆりかご 萩小町](/blog/hagi-komachi-yamaguchi/)

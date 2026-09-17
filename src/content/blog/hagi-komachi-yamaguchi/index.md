@@ -1,4 +1,4 @@
-﻿---
+---
 title: "【宿泊レビュー】夕景の宿 海のゆりかご 萩小町 部屋おまかせ客室で宿泊(山口県萩市)"
 pubDate: 2022-02-02
 categories: ["お出かけ・ライフスタイル"]
@@ -127,8 +127,6 @@ description: "山口県萩市の温泉宿「夕景の宿 海のゆりかご 萩�
 
 お食事の間に、お部屋にお布団を敷いていただきました。事前にお部屋をキレイにしておきましょう。
 
-[![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)](//af.moshimo.com/af/c/click?a_id=3191851&p_id=55&pc_id=55&pl_id=629&guid=ON)![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found) [![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)](https://px.a8.net/svt/ejp?a8mat=3BFNHH+3K09DU+14CS+6GZCH)
-
 ## 売店
 
 売店では、おみやげやおつまみ、夜食のカップ麺などを販売しています。
@@ -181,18 +179,17 @@ description: "山口県萩市の温泉宿「夕景の宿 海のゆりかご 萩�
 
 送迎は15時から東萩駅より(要事前予約)。東萩駅到着次第、お宿に電話とのこと。
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d35707.993920118715!2d131.38926754596415!3d34.42813546158581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544ae45b667493b%3A0xaef72f45128b0f9f!2z5aSV5pmv44Gu5a6_IOa1t-OBruOChuOCiuOBi-OBlCDokKnlsI_nlLo!5e0!3m2!1sja!2sjp!4v1643782513692!5m2!1sja!2sjp" width="100%" style="border:0; aspect-ratio: 16 / 10; height: auto;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d35707.993920118715!2d131.38926754596415!3d34.42813546158581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544ae45b667493b%3A0xaef72f45128b0f9f!2z5aSV5pmv44Gu5a6_IOa1t-OBruOChuOCiuOBi-OBlCDokKnlsI_nlLo!5e0!3m2!1sja!2sjp!4v1643782513692!5m2!1sja!2sjp" src="about:blank" width="100%" style="border:0; aspect-ratio: 16 / 10; height: auto;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 ## 萩市の観光情報（関連記事）
 
-萩市内を観光した際の旅行記です。
+萩市内を巡る歴史散策や城下町観光の詳しい旅行記はこちら：
 
-https://yomileeblog.com/yamaguchi-hagi-sightseeing/502/
+👉 関連記事：[【旅行記】維新の町 萩を歩き歴史と文化に触れる旅](/blog/yamaguchi-hagi-sightseeing/)
 
-萩と下関を繋ぐ観光列車「○○のはなし」  
-座席指定券530円で乗れる乗る得列車です。
+萩と下関を繋ぐ絶景の観光列車「○○のはなし」。座席指定券530円で乗れるコスパ抜群の列車旅レポートはこちら：
 
-https://yomileeblog.com/marumarunohanashi-joushaki-2022-01-08/110/
+👉 関連記事：[【530円で乗れる観光列車】○○のはなし乗車記（下関〜東萩）](/blog/marumarunohanashi-joushaki-2022-01-08/)
 
 ## 編集後記
 

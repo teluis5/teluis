@@ -1,4 +1,4 @@
-﻿---
+---
 title: "【開店日予想】ダイソー新業態Standard Productsがマロニエゲート銀座にオープン予定！"
 pubDate: 2022-02-07
 categories: ["ライフスタイル"]
@@ -77,21 +77,15 @@ Standard Productsの運営会社ダイソーの求人サイトにこんな募集
 
 ## OPEN予想は4月15日！
 
-Standard Products1号店は3/26**(金)**、2号店は10/22**(金)**オープンでした!
-
-マロニエゲート銀座店でも**金曜日**オープンと予想されます。
-
-4月中旬OPEN予定とされているので、**4月15日(金)**が候補となります
-
-[![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)](https://px.a8.net/svt/ejp?a8mat=3N3YJX+BOC3EQ+2FDU+TYBG1) ![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found) 
+Standard Products1号店は3/26<strong>(金)</strong>、2号店は10/22<strong>(金)</strong>オープンでした！  
+マロニエゲート銀座店でも<strong>金曜日</strong>オープンと予想されます。  
+4月中旬OPEN予定とされているので、<strong>4月15日(金)</strong>が有力候補となります。
 
 ## マロニエゲート銀座の詳細
 
-マロニエゲート銀座はJR線有楽町駅、有楽町線「銀座一丁目」駅 丸の内線・銀座線・日比谷線「銀座」
+マロニエゲート銀座はJR線有楽町駅、有楽町線「銀座一丁目」駅、丸の内線・銀座線・日比谷線「銀座」各駅からアクセス良好。首都高速を挟んで、東京交通会館の向かいに位置しています。
 
-首都高速を挟んで、交通会館の向かいにあります
-
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1927.193724591542!2d139.76424559810258!3d35.67354012624306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188be5ac7d445f%3A0xc5648ddbd06fea89!2z44Oe44Ot44OL44Ko44Ky44O844OI6YqA5bqnMg!5e0!3m2!1sja!2sjp!4v1644200705241!5m2!1sja!2sjp" width="100%" style="border:0; aspect-ratio: 16 / 10; height: auto;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1927.193724591542!2d139.76424559810258!3d35.67354012624306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188be5ac7d445f%3A0xc5648ddbd06fea89!2z44Oe44Ot44OL44Ko44Ky44O844OI6YqA5bqnMg!5e0!3m2!1sja!2sjp!4v1644200705241!5m2!1sja!2sjp" src="about:blank" width="100%" style="border:0; aspect-ratio: 16 / 10; height: auto;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 <iframe src="https://www.google.com/maps/embed?pb=!4v1644199290268!6m8!1m7!1s51MV2ifR5pUwJ5FSipme_w!2m2!1d35.67429399802614!2d139.7648363715264!3f136.01923802129932!4f11.116505254366302!5f0.7863603796667287" width="100%" style="border:0; aspect-ratio: 16 / 10; height: auto;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
@@ -146,10 +140,13 @@ Standard Products三号店がマロニエゲート銀座2にオープンする
 どんな空間ができあがるのか、ワクワクします！  
 オープンしたらレポートしたいと思います。
 
-## 関連リンク
+## 関連記事・リンク
 
-[https://standardproducts.jp/](https://standardproducts.jp/)
+関西初出店となる「梅田エスト店」のオープン情報はこちら：
 
-[https://www.daiso-sangyo.co.jp/](https://www.daiso-sangyo.co.jp/)
+👉 関連記事：[ダイソー新業態Standard Productsがついに大阪・梅田へ！梅田エストにオープン予定](/blog/standard-products-open-umedaest/)
 
-[https://www.threeppy.jp/](https://www.threeppy.jp/)
+### 公式サイト
+* [Standard Products 公式HP](https://standardproducts.jp/)
+* [大創産業 公式HP](https://www.daiso-sangyo.co.jp/)
+* [THREEPPY 公式HP](https://www.threeppy.jp/)

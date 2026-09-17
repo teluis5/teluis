@@ -14,10 +14,9 @@ description: "明治維新の息吹が残る城下町、山口県萩市の観光
 ![](./20220108_124749.jpg)
 
 ○○のはなしは、乗車券のほかに、530円の指定席券を買えば乗ることができます！  
-車窓に流れる日本海を見ながら、3時間ほどの列車旅です。  
-観光列車に乗車した様子はこちら
+車窓に流れる日本海を見ながら、3時間ほどの列車旅です。
 
-https://yomileeblog.com/marumarunohanashi-joushaki-2022-01-08/110/
+👉 関連記事：[【530円で乗れる観光列車】○○のはなし乗車記（下関〜東萩）](/blog/marumarunohanashi-joushaki-2022-01-08/)
 
 ## 登録有形文化財　萩駅舎を見学
 
@@ -77,9 +76,7 @@ https://yomileeblog.com/marumarunohanashi-joushaki-2022-01-08/110/
 東萩駅にお迎えに来ていただき、本日のお宿「夕景の宿 海のゆりかご萩小町」へ！  
 海が見えて、比較的リーズナブルな価格であったので、こちらのお宿を選択しました。
 
-宿泊記はこちら
-
-https://yomileeblog.com/hagi-komachi-yamaguchi/461/
+👉 関連記事：[【宿泊レビュー】夕景の宿 海のゆりかご 萩小町](/blog/hagi-komachi-yamaguchi/)
 
 # 二日目
 
