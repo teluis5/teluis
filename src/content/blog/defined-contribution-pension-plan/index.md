@@ -1,4 +1,4 @@
-﻿---
+---
 title: "【新卒社会人向けお金のはなし】確定拠出年金編"
 pubDate: 2022-05-11
 categories: ["マネー・ビジネス"]
@@ -6,8 +6,6 @@ heroImage: "./35efa23d85a37268575f210b28dccf8b.png"
 description: "新卒社会人や若手向けに確定拠出年金（企業型DC・iDeCo）の仕組みとメリット・デメリットをわかりやすく解説。将来の資産形成に向けた運用の基本知識を整理します。"
 draft: true
 ---
-
-![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
 会社から確定拠出年金の説明を聞いたけどよくわからない。
 
@@ -69,8 +67,6 @@ draft: true
 
 ## 新卒社員が確定拠出年金に加入すべきなのか？
 
-![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
-
 新卒社会人
 
 ![](./gE_cS3DT_400x400-150x150.jpg)
@@ -83,8 +79,6 @@ draft: true
 まずは100万円を現金で貯金するのがいいでしょう。  
 引越しや結婚などの不意な支出やコロナなどで収入が減少するリスクがあります。  
 もし。不測の事態が起こっても、日々の生活に困らないように貯金しておく必要があります
-
-![Image Not Found](https://dummyimage.com/600x400/cccccc/000000.png&text=Image+Not+Found)
 
 新卒社会人
 
