@@ -4,6 +4,7 @@ pubDate: 2022-02-28
 categories: ["ライフスタイル"]
 heroImage: "./image-20-1024x664.jpg"
 description: "ダイソーが手掛ける人気の高見え日用品ブランド「Standard Products」が関西初進出！梅田エストへのオープン情報や取扱アイテムの魅力をいち早くお届けします。"
+draft: true
 ---
 
 100円ショップのダイソーを運営する大創産業の新ブランドStandard Products  

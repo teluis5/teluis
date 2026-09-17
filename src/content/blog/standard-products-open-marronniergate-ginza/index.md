@@ -4,6 +4,7 @@ pubDate: 2022-02-07
 categories: ["ライフスタイル"]
 heroImage: "./e5b038fbde67a3801b17b5f5b1ef5e7b.png"
 description: "ダイソー発のシンプル＆スタイリッシュな新業態「Standard Products」がマロニエゲート銀座2にオープン！注目の3号店の出店概要やおすすめ商品の魅力を紹介します。"
+draft: true
 ---
 
 100円ショップのダイソーを運営する大創産業の新ブランドStandard Products  
