@@ -97,6 +97,9 @@ document.addEventListener('DOMContentLoaded', () => {
 	const tables = document.querySelectorAll('.prose table');
 	
 	tables.forEach(table => {
+		// 楽天アフィリエイトウィジェット等の埋め込みテーブルは装飾対象外にする
+		if (table.querySelector('a[href*="rakuten.co.jp"]') || table.closest('table:has(a[href*="rakuten.co.jp"])')) return;
+
 		// 1行目のセルの数を取得して比較対象の数を計算 (最初の「項目」列を引く)
 		const firstRow = table.querySelector('tr');
 		if (!firstRow) return;
