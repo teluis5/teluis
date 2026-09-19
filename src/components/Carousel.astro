@@ -1,0 +1,90 @@
+---
+// src/components/Carousel.astro
+// 画像やSNS埋め込みを水平スクロールで表示するカルーセルコンポーネント
+---
+<div class="carousel-container">
+  <div class="scroller">
+    <slot />
+  </div>
+</div>
+
+<style>
+  .carousel-container {
+    width: 100%;
+    margin: 2rem 0;
+  }
+  
+  .scroller {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    padding: 16px 0 24px 0;
+    margin: 0;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: var(--theme-accent, #007cba) var(--bg-main, #f3f4f5);
+  }
+
+  /* WebKit (Chrome, Safari) のスクロールバーカスタマイズ */
+  .scroller::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .scroller::-webkit-scrollbar-track {
+    background: var(--bg-main, #f3f4f5); 
+    border-radius: 4px;
+  }
+  
+  .scroller::-webkit-scrollbar-thumb {
+    background: var(--theme-accent, #007cba); 
+    border-radius: 4px;
+  }
+
+  /* カルーセルの各アイテム（直接の子要素）へのスタイル */
+  .scroller > :global(*) {
+    flex: 0 0 85%;
+    max-width: 450px;
+    scroll-snap-align: center;
+    border-radius: var(--radius, 4px);
+    background: var(--bg-content, #ffffff);
+    border: 1px solid var(--border-color, #dfdfdf);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+
+  /* 最初のアイテムと最後のアイテムの余白調整 */
+  .scroller::before,
+  .scroller::after {
+    content: '';
+    flex: 0 0 7.5%; /* (100% - 85%) / 2 */
+  }
+
+  /* 画像・iframe等がコンテナをはみ出さないようにする */
+  .scroller > :global(*) :global(img) {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--radius, 4px);
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .scroller > :global(*) :global(iframe),
+  .scroller > :global(*) :global(blockquote) {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+  }
+  
+  /* Twitter等のiframeが生成された後の調整 */
+  .scroller > :global(*) :global(.twitter-tweet) {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+</style>
