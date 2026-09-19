@@ -135,6 +135,7 @@ const sortedPosts = allPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pu
 				max-width: 1200px;
 				margin: 0 auto;
 				padding: 1rem 1rem 0;
+				position: relative;
 			}
 			.hero-banner img {
 				width: 100%;
@@ -142,6 +143,66 @@ const sortedPosts = allPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pu
 				border-radius: 8px;
 				object-fit: cover;
 				box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+				display: block;
+			}
+			.hero-overlay {
+				position: absolute;
+				top: 1rem;
+				left: 1rem;
+				right: 1rem;
+				bottom: 0;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				background: transparent;
+				border-radius: 8px;
+				color: #1b365d;
+				text-align: center;
+				padding: 2rem;
+			}
+			.hero-overlay h2 {
+				font-size: 2.5rem;
+				margin: 0 0 1rem 0;
+				font-weight: bold;
+				text-shadow: none;
+			}
+			.hero-overlay p {
+				font-size: 1.2rem;
+				margin: 0 0 2rem 0;
+				text-shadow: none;
+				max-width: 600px;
+				font-weight: bold;
+			}
+			.hero-cta {
+				display: inline-block;
+				background-color: var(--theme-accent);
+				color: white;
+				padding: 0.8rem 2rem;
+				border-radius: 30px;
+				font-size: 1.1rem;
+				font-weight: bold;
+				text-decoration: none;
+				transition: background-color 0.2s, transform 0.2s;
+				box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+			}
+			.hero-cta:hover {
+				opacity: 0.9;
+				transform: translateY(-2px);
+				text-decoration: none;
+				color: white;
+			}
+			@media (max-width: 720px) {
+				.hero-overlay h2 {
+					font-size: 1.5rem;
+				}
+				.hero-overlay p {
+					font-size: 0.9rem;
+				}
+				.hero-cta {
+					padding: 0.6rem 1.5rem;
+					font-size: 1rem;
+				}
 			}
 		</style>
 	</head>
@@ -151,7 +212,12 @@ const sortedPosts = allPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pu
 		<!-- トップヒーローバナー -->
 		{page.currentPage === 1 && (
 			<div class="hero-banner">
-				<img src="/brand/テルイズヘッダ_トリミング.jpg" alt="TELUIS Blog Header" />
+				<img src="/brand/hero_banner_new.jpg" alt="TELUIS - 暮らしをシンプルに" />
+				<div class="hero-overlay">
+					<h2>暮らしを、もっとシンプルに。</h2>
+					<p>スマート家電と効率化で、自分らしい時間を取り戻すためのライフスタイル提案。</p>
+					<a href="/about" class="hero-cta">はじめての方へ</a>
+				</div>
 			</div>
 		)}
 
