@@ -147,8 +147,13 @@ const sortedPosts = allPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pu
 				display: block;
 			}
 			@media (max-width: 720px) {
+				.hero-banner {
+					padding: 0.5rem 0.5rem 0; /* スマホでは少し余白を狭く */
+				}
 				.hero-banner img {
-					height: 300px;
+					height: auto; /* 高さを自動調整して横幅の見切れを防ぐ */
+					aspect-ratio: 16 / 9;
+					object-fit: cover;
 				}
 			}
 		</style>
