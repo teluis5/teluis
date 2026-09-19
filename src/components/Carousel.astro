@@ -1,10 +1,13 @@
 ---
 // src/components/Carousel.astro
-// 画像やSNS埋め込みを水平スクロールで表示するカルーセルコンポーネント
+// 画像やSNS埋め込みを水平スクロールで表示するカルーセルコンポーネント（インジケータ付き）
 ---
-<div class="carousel-container">
-  <div class="scroller">
+<div class="carousel-container" data-carousel>
+  <div class="scroller" data-scroller>
     <slot />
+  </div>
+  <div class="indicators" data-indicators>
+    <!-- JSで動的にインジケータ（ドット）が生成されます -->
   </div>
 </div>
 
@@ -12,6 +15,7 @@
   .carousel-container {
     width: 100%;
     margin: 2rem 0;
+    position: relative;
   }
   
   .scroller {
@@ -19,26 +23,17 @@
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     gap: 16px;
-    padding: 16px 0 24px 0;
+    padding: 16px 0 16px 0; /* 下部のパディングを減らす（スクロールバーを隠すため） */
     margin: 0;
     -webkit-overflow-scrolling: touch;
-    scrollbar-width: thin;
-    scrollbar-color: var(--theme-accent, #007cba) var(--bg-main, #f3f4f5);
+    
+    /* スクロールバーを隠す */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
   }
 
-  /* WebKit (Chrome, Safari) のスクロールバーカスタマイズ */
   .scroller::-webkit-scrollbar {
-    height: 8px;
-  }
-  
-  .scroller::-webkit-scrollbar-track {
-    background: var(--bg-main, #f3f4f5); 
-    border-radius: 4px;
-  }
-  
-  .scroller::-webkit-scrollbar-thumb {
-    background: var(--theme-accent, #007cba); 
-    border-radius: 4px;
+    display: none; /* WebKit (Chrome, Safari) */
   }
 
   /* カルーセルの各アイテム（直接の子要素）へのスタイル */
@@ -66,6 +61,31 @@
     flex: 0 0 7.5%; /* (100% - 85%) / 2 */
   }
 
+  /* インジケータ（ドット）のコンテナ */
+  .indicators {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 12px;
+  }
+
+  /* インジケータ（ドット）のデザイン */
+  .indicators :global(.indicator) {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--border-color, #dfdfdf);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    padding: 0;
+    border: none;
+  }
+
+  .indicators :global(.indicator.active) {
+    background-color: var(--theme-accent, #007cba);
+    transform: scale(1.2);
+  }
+
   /* 画像・iframe等がコンテナをはみ出さないようにする */
   .scroller > :global(*) :global(img) {
     max-width: 100%;
@@ -88,3 +108,93 @@
     margin-bottom: 0 !important;
   }
 </style>
+
+<script>
+  // Astroのライフサイクルに合わせて実行
+  const setupCarousels = () => {
+    const carousels = document.querySelectorAll('[data-carousel]');
+    
+    carousels.forEach(carousel => {
+      const scroller = carousel.querySelector('[data-scroller]');
+      const indicatorsContainer = carousel.querySelector('[data-indicators]');
+      
+      if (!scroller || !indicatorsContainer) return;
+
+      // scrollerの実際の子要素（::before, ::after等の擬似要素は除く）を取得
+      // 擬似要素はchildrenに含まれないため、これだけで実際のDOM要素が取得できる
+      const items = Array.from(scroller.children);
+      if (items.length === 0) return;
+
+      // インジケータを生成
+      indicatorsContainer.innerHTML = '';
+      const indicators = items.map((_, index) => {
+        const btn = document.createElement('button');
+        btn.classList.add('indicator');
+        btn.setAttribute('aria-label', `Slide ${index + 1}`);
+        if (index === 0) btn.classList.add('active');
+        
+        // インジケータクリックで該当アイテムへスクロール
+        btn.addEventListener('click', () => {
+          // scrollIntoView を使うと画面全体のスクロールも動く場合があるので、
+          // scrollerのscrollLeftを直接計算する
+          const item = items[index] as HTMLElement;
+          const scrollerCenter = scroller.clientWidth / 2;
+          const itemCenter = item.offsetLeft + item.offsetWidth / 2;
+          scroller.scrollTo({
+            left: itemCenter - scrollerCenter,
+            behavior: 'smooth'
+          });
+        });
+        
+        indicatorsContainer.appendChild(btn);
+        return btn;
+      });
+
+      // スクロール位置に応じてアクティブなインジケータを更新
+      const updateIndicators = () => {
+        const scrollerCenter = scroller.scrollLeft + scroller.clientWidth / 2;
+        
+        let closestIndex = 0;
+        let minDistance = Infinity;
+
+        items.forEach((item, index) => {
+          const el = item as HTMLElement;
+          const itemCenter = el.offsetLeft + el.offsetWidth / 2;
+          const distance = Math.abs(scrollerCenter - itemCenter);
+          
+          if (distance < minDistance) {
+            minDistance = distance;
+            closestIndex = index;
+          }
+        });
+
+        indicators.forEach((indicator, index) => {
+          if (index === closestIndex) {
+            indicator.classList.add('active');
+          } else {
+            indicator.classList.remove('active');
+          }
+        });
+      };
+
+      // スクロールイベントを監視（パフォーマンスのため少し間引き）
+      let isScrolling = false;
+      scroller.addEventListener('scroll', () => {
+        if (!isScrolling) {
+          window.requestAnimationFrame(() => {
+            updateIndicators();
+            isScrolling = false;
+          });
+          isScrolling = true;
+        }
+      });
+      
+      // 初期状態の更新
+      updateIndicators();
+    });
+  };
+
+  // ページ読み込み時およびAstro View Transitionsによるページ遷移時に実行
+  document.addEventListener('DOMContentLoaded', setupCarousels);
+  document.addEventListener('astro:page-load', setupCarousels);
+</script>
