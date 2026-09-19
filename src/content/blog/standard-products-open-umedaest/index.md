@@ -15,7 +15,7 @@ draft: true
 
 ## 梅田ESTにOPEN予定
 
-![](./image-20.png)
+![ダイソー新業態Standard Productsがついに大阪・梅田へ！梅田エストにオープン予定 - image 20](./image-20.png)
 
 ### e☆イヤホン梅田エスト店跡にオープン
 
@@ -24,7 +24,7 @@ e☆イヤホン 梅田EST店が2022年2月13日に閉店しました。
 
 <figure>
 
-[![](./image-20-1024x664.jpg)](https://www.e-earphone.jp/user_data/shop_umd/)
+[![ダイソー新業態Standard Productsがついに大阪・梅田へ！梅田エストにオープン予定 - image 20](./image-20-1024x664.jpg)](https://www.e-earphone.jp/user_data/shop_umd/)
 
 <figcaption>
 

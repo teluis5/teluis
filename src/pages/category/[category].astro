@@ -7,6 +7,7 @@ import FormattedDate from '../../components/FormattedDate.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 import { getCollection } from 'astro:content';
 import { Icon } from 'astro-icon/components';
+import Breadcrumb from '../../components/Breadcrumb.astro';
 
 export async function getStaticPaths() {
 	const allPosts = await getCollection('blog', ({ data }) => !data.draft);
@@ -116,6 +117,12 @@ posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 	<body>
 		<Header />
 		<main>
+			<Breadcrumb
+				items={[
+					{ label: 'ホーム', href: '/' },
+					{ label: `${category}` },
+				]}
+			/>
 			<h2 class="page-header"><span class="category-badge">{category}</span> の記事一覧</h2>
 			<section>
 				<div class="entry-list">

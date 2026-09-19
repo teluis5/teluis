@@ -16,7 +16,7 @@ paypayで決済した際に還元される、paypayボーナスを株式に投�
 
 私はスイングトレードに活用していますが、見ての通り赤字です、、、
 
-![](./Screenshot_20220128-171346_PayPay-1024x682.jpg)
+![【paypayボーナス運用活用法】テクノロジーコース追加！連動するETFは？ - Screenshot 20220128 171346 PayPay](./Screenshot_20220128-171346_PayPay-1024x682.jpg)
 
 ## テクノロジーコースが連動するETFはQQQ
 
@@ -69,7 +69,7 @@ IT関連銘柄が多く、疫病ショックからも立ち直りが早かった
 
 <figure>
 
-[![](./image-5.png)](https://www.google.com/finance/quote/QQQ:NASDAQ?sa=X&ved=2ahUKEwj_tZuwjeb1AhXVA94KHV-uB20Q3ecFegQIFBAc&window=MAX)
+[![【paypayボーナス運用活用法】テクノロジーコース追加！連動するETFは？ - image 5](./image-5.png)](https://www.google.com/finance/quote/QQQ:NASDAQ?sa=X&ved=2ahUKEwj_tZuwjeb1AhXVA94KHV-uB20Q3ecFegQIFBAc&window=MAX)
 
 <figcaption>
 
@@ -81,7 +81,7 @@ Google financeより
 
 一方、直近6か月では低調な値動きです。
 
-![](./image-7.png)
+![【paypayボーナス運用活用法】テクノロジーコース追加！連動するETFは？ - image 7](./image-7.png)
 
 ## テクノロジーコースの活用法
 

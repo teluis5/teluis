@@ -9,16 +9,41 @@ import Ad from '../components/Ad.astro';
 import TableEnhancer from '../components/TableEnhancer.astro';
 import ShareButtons from '../components/ShareButtons.astro';
 import TableOfContents from '../components/TableOfContents.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
 import { Icon } from 'astro-icon/components';
 
 type Props = CollectionEntry<'blog'>['data'] & { headings?: any[] };
 
 const { title, description, pubDate, updatedDate, heroImage, categories, headings } = Astro.props;
+
+const breadcrumbItems = [
+	{ label: 'ホーム', href: '/' },
+	...(categories && categories.length > 0
+		? [{ label: categories[0], href: `/category/${categories[0]}` }]
+		: []),
+	{ label: title },
+];
+
+const articleSchema = {
+	'@context': 'https://schema.org',
+	'@type': 'Article',
+	headline: title,
+	description: description,
+	image: heroImage ? new URL(heroImage.src, Astro.site || Astro.url.origin).href : undefined,
+	datePublished: pubDate.toISOString(),
+	dateModified: updatedDate ? updatedDate.toISOString() : pubDate.toISOString(),
+	author: {
+		'@type': 'Person',
+		name: 'teluis',
+		url: Astro.site ? Astro.site.href : Astro.url.origin,
+	}
+};
 ---
 
 <html lang="ja">
 	<head>
 		<BaseHead title={title} description={description} />
+		<script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
 		<style>
 			.hero-image {
 				width: 100%;
@@ -261,6 +286,7 @@ const { title, description, pubDate, updatedDate, heroImage, categories, heading
 			<div class="layout-container">
 				<!-- メインコンテンツ (左カラム) -->
 				<article class="layout-main">
+					<Breadcrumb items={breadcrumbItems} />
 					<div class="title">
 						<div class="date">
 							<span><Icon name="heroicons:calendar" class="icon-inline" /> <FormattedDate date={pubDate} /></span>

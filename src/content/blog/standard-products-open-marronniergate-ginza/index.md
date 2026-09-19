@@ -21,7 +21,7 @@ Standard Productsの運営会社ダイソーの求人サイトにこんな募集
 
 <figure>
 
-[![](./image-8-1024x420.png)](https://recruit-daiso.com/jobfind-pc/job/All/48663)
+[![【開店日予想】ダイソー新業態Standard Productsがマロニエゲート銀座にオープン予定！ - image 8](./image-8-1024x420.png)](https://recruit-daiso.com/jobfind-pc/job/All/48663)
 
 <figcaption>
 
@@ -64,7 +64,7 @@ Standard Productsの運営会社ダイソーの求人サイトにこんな募集
 ・300円ショップのTHREEPY  
 も同時オープンするようです。
 
-![](./image-10.png)
+![【開店日予想】ダイソー新業態Standard Productsがマロニエゲート銀座にオープン予定！ - image 10](./image-10.png)
 
 ![よぴりん](./gE_cS3DT_400x400-150x150.jpg)
 
@@ -74,7 +74,7 @@ Standard Productsの運営会社ダイソーの求人サイトにこんな募集
 
 同じテナントに入ることは初めてのことです！
 
-![](./image-13-1024x257.png)
+![【開店日予想】ダイソー新業態Standard Productsがマロニエゲート銀座にオープン予定！ - image 13](./image-13-1024x257.png)
 
 ## OPEN予想は4月15日！
 
@@ -92,7 +92,7 @@ Standard Products1号店は3/26<strong>(金)</strong>、2号店は10/22<strong>(
 
 <figure>
 
-![](./image-11.png)
+![【開店日予想】ダイソー新業態Standard Productsがマロニエゲート銀座にオープン予定！ - image 11](./image-11.png)
 
 <figcaption>
 
@@ -113,7 +113,7 @@ Standard Productsの他の店舗の売り場面積は
 
 <figure>
 
-![](./image-12-1024x404.png)
+![【開店日予想】ダイソー新業態Standard Productsがマロニエゲート銀座にオープン予定！ - image 12](./image-12-1024x404.png)
 
 <figcaption>
 
