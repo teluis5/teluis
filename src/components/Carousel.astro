@@ -155,8 +155,8 @@
 
   /* 画像がない場合（SNS埋め込み等）のフォールバックアイコン用 */
   .thumbnails-container :global(.thumb-btn .fallback-icon) {
-    font-size: 12px;
-    color: var(--text-light, #777777);
+    font-size: 20px;
+    color: var(--text-main, #333333);
     font-weight: bold;
   }
 </style>
@@ -192,17 +192,10 @@
           thumbImg.alt = `Thumbnail ${index + 1}`;
           btn.appendChild(thumbImg);
         } else {
-          // 画像がない場合（SNSなど）はテキストを置く
+          // 画像がない場合（SNSなど）はスライド番号（1〜）をテキストとして置く
           const fallback = document.createElement('div');
           fallback.classList.add('fallback-icon');
-          
-          if (item.querySelector('.twitter-tweet')) {
-            fallback.textContent = '𝕏';
-          } else if (item.querySelector('iframe[src*="instagram"]')) {
-            fallback.textContent = 'IG';
-          } else {
-            fallback.textContent = 'SNS';
-          }
+          fallback.textContent = String(index + 1);
           btn.appendChild(fallback);
         }
         
