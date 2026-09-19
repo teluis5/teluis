@@ -139,40 +139,45 @@ const sortedPosts = allPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pu
 			}
 			.hero-banner img {
 				width: 100%;
-				height: auto;
+				height: 380px; /* 縦を短くする */
 				border-radius: 8px;
 				object-fit: cover;
+				object-position: center 30%; /* 少し上寄りを中心にする */
 				box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 				display: block;
 			}
 			.hero-overlay {
 				position: absolute;
-				top: 1rem;
-				left: 1rem;
-				right: 1rem;
-				bottom: 0;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -45%); /* 中央配置 */
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
 				align-items: center;
-				background: transparent;
-				border-radius: 8px;
+				background: rgba(253, 252, 248, 0.92); /* テキストと画像が被らないよう、背景と同じクリーム色の半透明プレートを敷く */
+				border-radius: 12px;
 				color: #1b365d;
 				text-align: center;
-				padding: 2rem;
+				padding: 1.8rem 2rem;
+				width: 90%;
+				max-width: 520px; /* 横幅を制限してパイナップルや人物を隠さないようにする */
+				box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+				border: 1px solid rgba(0,0,0,0.04);
 			}
 			.hero-overlay h2 {
-				font-size: 2.5rem;
+				font-size: 2rem; /* 少し小さく */
 				margin: 0 0 1rem 0;
 				font-weight: bold;
 				text-shadow: none;
+				line-height: 1.3;
 			}
 			.hero-overlay p {
-				font-size: 1.2rem;
-				margin: 0 0 2rem 0;
+				font-size: 1.05rem; /* 少し小さく */
+				margin: 0 0 1.5rem 0;
 				text-shadow: none;
-				max-width: 600px;
 				font-weight: bold;
+				line-height: 1.5;
 			}
 			.hero-cta {
 				display: inline-block;
@@ -193,8 +198,15 @@ const sortedPosts = allPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pu
 				color: white;
 			}
 			@media (max-width: 720px) {
+				.hero-banner img {
+					height: 300px;
+				}
+				.hero-overlay {
+					padding: 1.5rem;
+					max-width: 90%;
+				}
 				.hero-overlay h2 {
-					font-size: 1.5rem;
+					font-size: 1.4rem;
 				}
 				.hero-overlay p {
 					font-size: 0.9rem;
