@@ -10,6 +10,7 @@ import TableEnhancer from '../components/TableEnhancer.astro';
 import ShareButtons from '../components/ShareButtons.astro';
 import TableOfContents from '../components/TableOfContents.astro';
 import Breadcrumb from '../components/Breadcrumb.astro';
+import Sidebar from '../components/Sidebar.astro';
 import { Icon } from 'astro-icon/components';
 
 type Props = CollectionEntry<'blog'>['data'] & { headings?: any[] };
@@ -250,32 +251,6 @@ const articleSchema = {
 			.tag:hover {
 				background-color: #bae6fd;
 			}
-			/* Sidebar Widgets */
-			.widget {
-				padding: 1.5rem;
-				margin-bottom: 2rem;
-			}
-			.widget-title {
-				font-size: 1.1rem;
-				color: var(--text-main);
-				background-color: #f7f7f7;
-				padding: 0.5rem 1rem;
-				border-left: 4px solid var(--theme-accent);
-				margin: -1.5rem -1.5rem 1.5rem -1.5rem;
-			}
-			.profile-pic {
-				width: 100px;
-				height: 100px;
-				border-radius: 50%;
-				margin: 0 auto 1rem;
-				background-color: var(--border-color);
-				display: block;
-			}
-			.profile-desc {
-				font-size: 0.9rem;
-				color: var(--text-main);
-				text-align: center;
-				line-height: 1.6;
 			}
 		</style>
 	</head>
@@ -342,32 +317,7 @@ const articleSchema = {
 				</article>
 
 				<!-- サイドバー (右カラム) -->
-				<aside class="layout-sidebar">
-					<div class="widget box">
-						<div class="widget-title"><Icon name="heroicons:user" class="icon-inline" /> プロフィール</div>
-						<img class="profile-pic" src="/brand/teluis_avatar.jpg" alt="プロフィール画像" style="width: 100px; height: 100px; border-radius: 50%; margin: 0 auto 1rem; background-color: var(--border-color); display: block; object-fit: cover;" />
-						<p class="profile-desc" style="font-size: 0.9rem; color: var(--text-main); text-align: left; line-height: 1.6;">
-							<strong>ITエンジニア / コンサルタント</strong><br/>
-							日経大手企業でキャリアをスタートし、AIスタートアップでの開発経験を経て、現在はコンサルティングファームに勤務。ビジネスマンに必要なスキルや、日々の業務で得た実践的なエッセンスを発信しています。
-						</p>
-					</div>
-
-					<div class="widget box">
-						<div class="widget-title"><Icon name="heroicons:users" class="icon-inline" /> TELUIS 妻</div>
-						<img class="profile-pic" src="/brand/テルイズ妻.png" alt="妻プロフィール" style="width: 100px; height: 100px; border-radius: 50%; margin: 0 auto 1rem; background-color: var(--border-color); display: block; object-fit: cover;" />
-						<p class="profile-desc" style="font-size: 0.9rem; color: var(--text-main); text-align: center; line-height: 1.6;">
-							共同運営者。<br/>時々記事を書いたりサポートしています。
-						</p>
-					</div>
-
-					<!-- サイドバー広告（審査通過後にスロットIDを設定して有効化） -->
-					<!--
-					<div class="widget box" style="padding: 1rem; text-align: center;">
-						<div style="font-size:0.8rem; color:var(--text-light); margin-bottom:0.5rem;">スポンサーリンク</div>
-						<Ad />
-					</div>
-					-->
-				</aside>
+				<Sidebar />
 			</div>
 		</main>
 		<Footer />

@@ -1,12 +1,11 @@
 ---
-import { Image } from 'astro:assets';
 import { getCollection } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
-import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
+import Sidebar from '../components/Sidebar.astro';
+import HomeArticleTabs from '../components/HomeArticleTabs.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
-import { Icon } from 'astro-icon/components';
 
 export async function getStaticPaths({ paginate }) {
 	const allPosts = await getCollection('blog', ({ data }) => !data.draft);
@@ -15,10 +14,6 @@ export async function getStaticPaths({ paginate }) {
 }
 
 const { page } = Astro.props;
-
-// サイドバーの新着記事用に全記事を取得
-const allPosts = await getCollection('blog', ({ data }) => !data.draft);
-const sortedPosts = allPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 ---
 
 <!doctype html>
@@ -26,109 +21,6 @@ const sortedPosts = allPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pu
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 		<style>
-			.entry-list {
-				display: flex;
-				flex-direction: column;
-				gap: 1rem;
-				list-style: none;
-				padding: 0;
-				margin: 0 0 2rem 0;
-			}
-			.entry-card {
-				display: flex;
-				background-color: var(--bg-content);
-				border: 1px solid var(--border-color);
-				border-radius: var(--radius);
-				overflow: hidden;
-				text-decoration: none;
-				color: var(--text-main);
-				transition: background-color 0.2s;
-			}
-			.entry-card:hover {
-				background-color: #fafafa;
-				text-decoration: none;
-			}
-			.entry-thumb {
-				flex: 0 0 300px;
-				aspect-ratio: 16/9;
-				overflow: hidden;
-				background-color: var(--border-color);
-			}
-			.entry-thumb img {
-				width: 100%;
-				height: 100%;
-				object-fit: cover;
-			}
-			.entry-content {
-				padding: 1.5rem;
-				display: flex;
-				flex-direction: column;
-				justify-content: center;
-			}
-			.entry-title {
-				font-size: 1.25rem;
-				margin: 0 0 0.5rem 0;
-				line-height: 1.4;
-			}
-			.entry-date {
-				font-size: 0.9rem;
-				color: var(--text-light);
-				margin: 0;
-			}
-			
-			/* Sidebar Widgets */
-			.widget {
-				padding: 1.5rem;
-				margin-bottom: 2rem;
-			}
-			.widget-title {
-				font-size: 1.1rem;
-				color: var(--text-main);
-				background-color: #f7f7f7;
-				padding: 0.5rem 1rem;
-				border-left: 4px solid var(--theme-accent);
-				margin: -1.5rem -1.5rem 1.5rem -1.5rem;
-			}
-
-			/* Pagination */
-			.pagination {
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
-				margin-top: 2rem;
-				padding-top: 1rem;
-				border-top: 1px solid var(--border-color);
-			}
-			.page-link {
-				padding: 0.5rem 1rem;
-				background-color: var(--theme-accent);
-				color: white;
-				border-radius: 4px;
-				text-decoration: none;
-				font-weight: bold;
-			}
-			.page-link:hover {
-				opacity: 0.8;
-				text-decoration: none;
-			}
-			.page-current {
-				font-size: 0.9rem;
-				color: var(--text-light);
-			}
-			
-			@media (max-width: 720px) {
-				.entry-card {
-					flex-direction: column;
-				}
-				.entry-thumb {
-					flex: auto;
-					width: 100%;
-				}
-				.entry-content {
-					padding: 1rem;
-				}
-			}
-
 			/* ヒーローバナー */
 			.hero-banner {
 				width: 100%;
@@ -139,19 +31,19 @@ const sortedPosts = allPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pu
 			}
 			.hero-banner img {
 				width: 100%;
-				height: 380px; /* 縦を短くする */
+				height: 380px;
 				border-radius: 8px;
 				object-fit: cover;
-				object-position: center 30%; /* 少し上寄りを中心にする */
+				object-position: center 30%;
 				box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 				display: block;
 			}
 			@media (max-width: 720px) {
 				.hero-banner {
-					padding: 0.5rem 0.5rem 0; /* スマホでは少し余白を狭く */
+					padding: 0.5rem 0.5rem 0;
 				}
 				.hero-banner img {
-					height: auto; /* 高さを自動調整して横幅の見切れを防ぐ */
+					height: auto;
 					aspect-ratio: 16 / 9;
 					object-fit: cover;
 				}
@@ -172,68 +64,11 @@ const sortedPosts = allPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pu
 			<div class="layout-container">
 				<!-- メインコンテンツ (左カラム) -->
 				<div class="layout-main">
-					<div class="entry-list">
-						{
-							page.data.map((post) => (
-								<a href={`/blog/${post.id}/`} class="entry-card box">
-									<div class="entry-thumb">
-										{post.data.heroImage ? (
-											<Image width={720} height={405} src={post.data.heroImage} alt="" />
-										) : (
-											<div style="width:100%; height:100%; background:#e0e0e0;"></div>
-										)}
-									</div>
-									<div class="entry-content">
-										<h2 class="entry-title">{post.data.title}</h2>
-										<p class="entry-date">
-											<Icon name="heroicons:calendar" class="icon-inline" /> <FormattedDate date={post.data.pubDate} />
-										</p>
-									</div>
-								</a>
-							))
-						}
-					</div>
-
-					<!-- ページネーション -->
-					{page.lastPage > 1 && (
-						<div class="pagination">
-							{page.url.prev ? <a href={page.url.prev} class="page-link">&laquo; 前へ</a> : <div></div>}
-							<span class="page-current">{page.currentPage} / {page.lastPage} ページ</span>
-							{page.url.next ? <a href={page.url.next} class="page-link">次へ &raquo;</a> : <div></div>}
-						</div>
-					)}
+					<HomeArticleTabs page={page} />
 				</div>
 
 				<!-- サイドバー (右カラム) -->
-				<aside class="layout-sidebar">
-					<div class="widget box">
-						<div class="widget-title"><Icon name="heroicons:user" class="icon-inline" /> プロフィール</div>
-						<img class="profile-pic" src="/brand/teluis_avatar.jpg" alt="プロフィール画像" style="width: 100px; height: 100px; border-radius: 50%; margin: 0 auto 1rem; background-color: var(--border-color); display: block; object-fit: cover;" />
-						<p class="profile-desc" style="font-size: 0.9rem; color: var(--text-main); text-align: left; line-height: 1.6;">
-							<strong>ITエンジニア / コンサルタント</strong><br/>
-							日経大手企業でキャリアをスタートし、AIスタートアップでの開発経験を経て、現在はコンサルティングファームに勤務。ビジネスマンに必要なスキルや、日々の業務で得た実践的なエッセンスを発信しています。
-						</p>
-					</div>
-
-					<div class="widget box">
-						<div class="widget-title"><Icon name="heroicons:users" class="icon-inline" /> TELUIS 妻</div>
-						<img class="profile-pic" src="/brand/テルイズ妻.png" alt="妻プロフィール" style="width: 100px; height: 100px; border-radius: 50%; margin: 0 auto 1rem; background-color: var(--border-color); display: block; object-fit: cover;" />
-						<p class="profile-desc" style="font-size: 0.9rem; color: var(--text-main); text-align: center; line-height: 1.6;">
-							共同運営者。<br/>時々記事を書いたりサポートしています。
-						</p>
-					</div>
-
-					<div class="widget box">
-						<div class="widget-title"><Icon name="heroicons:sparkles" class="icon-inline" /> 新着記事</div>
-						<ul style="list-style:none; padding:0; margin:0; font-size:0.95em;">
-							{sortedPosts.slice(0, 5).map((post) => (
-								<li style="border-bottom: 1px dashed var(--border-color); padding: 0.5rem 0;">
-									<a href={`/blog/${post.id}/`} style="color:var(--text-main);">{post.data.title}</a>
-								</li>
-							))}
-						</ul>
-					</div>
-				</aside>
+				<Sidebar />
 			</div>
 		</main>
 		<Footer />

@@ -278,6 +278,7 @@ thead th {
 .layout-container {
 	display: flex;
 	flex-wrap: wrap;
+	align-items: flex-start;
 	gap: 2rem;
 }
 .layout-main {
@@ -287,11 +288,33 @@ thead th {
 .layout-sidebar {
 	flex: 1 1 30%;
 	min-width: 300px;
+	position: sticky;
+	top: 80px;
+	max-height: calc(100vh - 100px);
+	overflow-y: auto;
+	overflow-x: hidden;
+	scrollbar-width: thin;
+	scrollbar-color: rgba(0, 0, 0, 0.15) transparent;
+}
+.layout-sidebar::-webkit-scrollbar {
+	width: 5px;
+}
+.layout-sidebar::-webkit-scrollbar-thumb {
+	background: rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+}
+.layout-sidebar::-webkit-scrollbar-thumb:hover {
+	background: rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 800px) {
 	.layout-main, .layout-sidebar {
 		flex: 1 1 100%;
+	}
+	.layout-sidebar {
+		position: static;
+		max-height: none;
+		overflow-y: visible;
 	}
 }
 
