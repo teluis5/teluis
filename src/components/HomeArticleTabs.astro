@@ -438,18 +438,40 @@ const sortedCategories = Array.from(categoryPostsMap.entries())
 			padding: 0.55rem 0.85rem;
 			font-size: 0.85rem;
 		}
+		.entry-list {
+			gap: 0.6rem;
+		}
 		.entry-card {
-			flex-direction: column;
+			flex-direction: row;
+			align-items: stretch;
 		}
 		.entry-thumb {
-			flex: auto;
-			width: 100%;
+			flex: 0 0 110px;
+			width: 110px;
+			aspect-ratio: 16 / 9;
+			min-height: 70px;
 		}
 		.entry-content {
-			padding: 1rem;
+			padding: 0.6rem 0.75rem;
+			flex: 1;
+			min-width: 0;
+			justify-content: space-between;
 		}
 		.entry-title {
-			font-size: 1.05rem;
+			font-size: 0.92rem;
+			margin: 0 0 0.25rem 0;
+			line-height: 1.35;
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+			-webkit-line-clamp: 2;
+			overflow: hidden;
+		}
+		.entry-date {
+			font-size: 0.75rem;
+		}
+		.entry-cat-badge {
+			font-size: 0.7rem;
+			padding: 0.05rem 0.4rem;
 		}
 	}
 </style>
