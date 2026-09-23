@@ -75,7 +75,7 @@ const categories = Object.entries(categoryCounts).sort((a, b) => b[1] - a[1]);
 			<ul class="category-list">
 				{categories.map(([category, count]) => (
 					<li>
-						<a href={`/category/${category}`} class="category-item">
+						<a href={`/category/${category}/`} class="category-item">
 							<span class="category-name">
 								<Icon name="heroicons:folder" class="cat-icon" />
 								{category}

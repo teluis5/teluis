@@ -20,7 +20,7 @@ const { title, description, pubDate, updatedDate, heroImage, categories, heading
 const breadcrumbItems = [
 	{ label: 'ホーム', href: '/' },
 	...(categories && categories.length > 0
-		? [{ label: categories[0], href: `/category/${categories[0]}` }]
+		? [{ label: categories[0], href: `/category/${categories[0]}/` }]
 		: []),
 	{ label: title },
 ];

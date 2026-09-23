@@ -86,7 +86,7 @@ const sortedCategories = Object.keys(categoryCount).sort(
 			<div class="category-grid">
 				{
 					sortedCategories.map((category) => (
-						<a href={`/category/${category}`} class="category-card">
+						<a href={`/category/${category}/`} class="category-card">
 							<span class="category-name">{category}</span>
 							<span class="category-count">{categoryCount[category]} 記事</span>
 						</a>

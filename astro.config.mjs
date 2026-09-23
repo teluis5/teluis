@@ -9,6 +9,18 @@ import { defineConfig, fontProviders } from 'astro/config';
 export default defineConfig({
 	site: 'https://teluis.com',
 	integrations: [mdx(), sitemap(), icon()],
+	redirects: {
+		'/category/マネー・ビジネス': '/category/ライフスタイル/',
+		'/category/マネー・ビジネス/': '/category/ライフスタイル/',
+		'/category/暮らし・家電': '/category/ライフスタイル/',
+		'/category/暮らし・家電/': '/category/ライフスタイル/',
+		'/category/グルメ': '/category/旅行/',
+		'/category/グルメ/': '/category/旅行/',
+		'/category/地域ニュース': '/category/ライフスタイル/',
+		'/category/地域ニュース/': '/category/ライフスタイル/',
+		'/category/商業施設': '/category/ライフスタイル/',
+		'/category/商業施設/': '/category/ライフスタイル/',
+	},
 	fonts: [
 		{
 			provider: fontProviders.local(),
