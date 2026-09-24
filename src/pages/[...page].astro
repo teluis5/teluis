@@ -24,10 +24,17 @@ const { page } = Astro.props;
 			<link
 				rel="preload"
 				as="image"
-				href="/brand/hero_banner_new.webp"
-				imagesrcset="/brand/hero_banner_new_mobile.webp 720w, /brand/hero_banner_new.webp 1200w"
-				imagesizes="100vw"
+				href="/brand/hero_banner_new_mobile.webp"
 				type="image/webp"
+				media="(max-width: 768px)"
+				fetchpriority="high"
+			/>
+			<link
+				rel="preload"
+				as="image"
+				href="/brand/hero_banner_new.webp"
+				type="image/webp"
+				media="(min-width: 769px)"
 				fetchpriority="high"
 			/>
 		)}
@@ -39,6 +46,10 @@ const { page } = Astro.props;
 				margin: 0 auto;
 				padding: 1rem 1rem 0;
 				position: relative;
+			}
+			.hero-banner picture {
+				display: block;
+				width: 100%;
 			}
 			.hero-banner img {
 				width: 100%;
@@ -68,17 +79,18 @@ const { page } = Astro.props;
 		<!-- トップヒーローバナー -->
 		{page.currentPage === 1 && (
 			<div class="hero-banner">
-				<img
-					src="/brand/hero_banner_new.webp"
-					srcset="/brand/hero_banner_new_mobile.webp 720w, /brand/hero_banner_new.webp 1200w"
-					sizes="100vw"
-					alt="TELUIS - 暮らしをシンプルに"
-					width="1200"
-					height="669"
-					fetchpriority="high"
-					loading="eager"
-					decoding="sync"
-				/>
+				<picture>
+					<source media="(max-width: 768px)" srcset="/brand/hero_banner_new_mobile.webp" type="image/webp" />
+					<img
+						src="/brand/hero_banner_new.webp"
+						alt="TELUIS - 暮らしをシンプルに"
+						width="1200"
+						height="669"
+						fetchpriority="high"
+						loading="eager"
+						decoding="sync"
+					/>
+				</picture>
 			</div>
 		)}
 
