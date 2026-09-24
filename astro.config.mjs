@@ -8,6 +8,9 @@ import { defineConfig, fontProviders } from 'astro/config';
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://teluis.com',
+	build: {
+		inlineStylesheets: 'always',
+	},
 	integrations: [mdx(), sitemap(), icon()],
 	redirects: {
 		'/category/マネー・ビジネス': '/category/ライフスタイル/',

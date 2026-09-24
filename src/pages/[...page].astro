@@ -60,24 +60,21 @@ const { page } = Astro.props;
 		</style>
 	</head>
 	<body>
-		<h1 class="sr-only">{SITE_TITLE} - {SITE_DESCRIPTION}</h1>
+		<h1 class="sr-only" style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;">{SITE_TITLE} - {SITE_DESCRIPTION}</h1>
 		<Header />
 		
 		<!-- トップヒーローバナー -->
 		{page.currentPage === 1 && (
 			<div class="hero-banner">
-				<picture>
-					<source srcset="/brand/hero_banner_new.webp" type="image/webp" />
-					<img
-						src="/brand/hero_banner_new.jpg"
-						alt="TELUIS - 暮らしをシンプルに"
-						width="1200"
-						height="669"
-						fetchpriority="high"
-						loading="eager"
-						decoding="async"
-					/>
-				</picture>
+				<img
+					src="/brand/hero_banner_new.webp"
+					alt="TELUIS - 暮らしをシンプルに"
+					width="1200"
+					height="669"
+					fetchpriority="high"
+					loading="eager"
+					decoding="sync"
+				/>
 			</div>
 		)}
 
