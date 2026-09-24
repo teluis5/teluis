@@ -5,8 +5,16 @@ pubDate: "2026-09-24"
 categories: ["地域ニュース", "商業施設", "グルメ"]
 heroImage: "./hero.jpg"
 ---
+import { Image } from 'astro:assets';
 import ProblemBox from '../../../components/ProblemBox.astro';
 import ConclusionBox from '../../../components/ConclusionBox.astro';
+
+import maguroImg from './maguro-boomerang.jpg';
+import fishImg from './fresh-fish-corner.jpg';
+import sushiImg from './sushi-shrimp-aji.jpg';
+import beefImg from './hida-beef-corner.jpg';
+import sweetsImg from './fruits-sweets-corner.jpg';
+import koppeImg from './fruits-koppe-closeup.jpg';
 
 <ProblemBox>
 - バロー横浜下永谷店の売り場は普通のスーパーと何が違う？
@@ -28,7 +36,7 @@ import ConclusionBox from '../../../components/ConclusionBox.astro';
 ### ① 大トロ〜赤身を一刀両断！「生本鮪ブーメラン」
 
 <figure>
-  <img src="./maguro-boomerang.jpg" alt="バロー横浜下永谷店の生本鮪ブーメランと中トロ柵の売り場" />
+  <Image src={maguroImg} alt="バロー横浜下永谷店の生本鮪ブーメランと中トロ柵の売り場" />
   <figcaption>名物「生本鮪ブーメラン」。大トロ・中トロ・赤身が繋がった豪快な断面</figcaption>
 </figure>
 
@@ -43,7 +51,7 @@ import ConclusionBox from '../../../components/ConclusionBox.astro';
 ### ② まるで漁港！丸魚の対面販売と無料調理サービス
 
 <figure>
-  <img src="./fresh-fish-corner.jpg" alt="バロー横浜下永谷店の丸魚対面販売コーナー（金目鯛・あんこう・いなだ等）" />
+  <Image src={fishImg} alt="バロー横浜下永谷店の丸魚対面販売コーナー（金目鯛・あんこう・いなだ等）" />
   <figcaption>氷の上に丸魚が並ぶ対面コーナー。三枚おろしや刺身への無料調理にも対応</figcaption>
 </figure>
 
@@ -63,7 +71,7 @@ import ConclusionBox from '../../../components/ConclusionBox.astro';
 ### ③ 魚屋の握り寿司！「えびづくし」と「あじ10貫」
 
 <figure>
-  <img src="./sushi-shrimp-aji.jpg" alt="バロー横浜下永谷店のえびづくし盛りとあじ握り鮨" />
+  <Image src={sushiImg} alt="バロー横浜下永谷店のえびづくし盛りとあじ握り鮨" />
   <figcaption>ネタがシャリを完全に覆い隠す「えびづくし盛り」と「握り鮨（あじ）」</figcaption>
 </figure>
 
@@ -76,7 +84,7 @@ import ConclusionBox from '../../../components/ConclusionBox.astro';
 ## 2. 精肉コーナー：岐阜発祥ならではの「最上級5等級・飛騨牛」
 
 <figure>
-  <img src="./hida-beef-corner.jpg" alt="バロー横浜下永谷店の飛騨牛（5等級）と黒毛和牛焼肉盛り合わせコーナー" />
+  <Image src={beefImg} alt="バロー横浜下永谷店の飛騨牛（5等級）と黒毛和牛焼肉盛り合わせコーナー" />
   <figcaption>岐阜県発祥のバローだからこそ買える「飛騨牛（最上級5等級）」の希少部位</figcaption>
 </figure>
 
@@ -95,7 +103,7 @@ import ConclusionBox from '../../../components/ConclusionBox.astro';
 鮮魚・精肉と並んで絶対に見逃せないのが、青果部門が手掛ける店内加工スイーツ<b>「八百屋の生フルーツデザート」</b>コーナーだ。
 
 <figure>
-  <img src="./fruits-sweets-corner.jpg" alt="バロー横浜下永谷店の八百屋の生フルーツデザート売り場（ワッフル・ロールケーキ・タルト）" />
+  <Image src={sweetsImg} alt="バロー横浜下永谷店の八百屋の生フルーツデザート売り場（ワッフル・ロールケーキ・タルト）" />
   <figcaption>ショーケース一面に並ぶ「八百屋の生フルーツデザート」。見た目の華やかさが圧倒的</figcaption>
 </figure>
 
@@ -106,7 +114,7 @@ import ConclusionBox from '../../../components/ConclusionBox.astro';
 - <b>いちごチョコプリン（498円・税抜） / フルーツタルト</b>：手土産にもそのまま使えるクオリティ
 
 <figure>
-  <img src="./fruits-koppe-closeup.jpg" alt="バロー横浜下永谷店の生フルーツコッペ3本入（1,080円）のアップ" />
+  <Image src={koppeImg} alt="バロー横浜下永谷店の生フルーツコッペ3本入（1,080円）のアップ" />
   <figcaption>思わずカゴに入れた「生フルーツコッペ3本入（税抜1,080円）」。1本あたり360円とは思えない果物量</figcaption>
 </figure>
 
