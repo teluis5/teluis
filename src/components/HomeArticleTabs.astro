@@ -97,7 +97,7 @@ const sortedCategories = Array.from(categoryPostsMap.entries())
 					<a href={`/blog/${post.id}/`} class="entry-card box">
 						<div class="entry-thumb">
 							{post.data.heroImage ? (
-								<Image width={720} height={405} src={post.data.heroImage} alt="" />
+								<Image width={720} height={405} src={post.data.heroImage} alt="" loading="lazy" decoding="async" />
 							) : (
 								<div class="entry-thumb-empty" />
 							)}
@@ -154,7 +154,7 @@ const sortedCategories = Array.from(categoryPostsMap.entries())
 						<a href={`/blog/${post.id}/`} class="entry-card box">
 							<div class="entry-thumb">
 								{post.data.heroImage ? (
-									<Image width={720} height={405} src={post.data.heroImage} alt="" />
+									<Image width={720} height={405} src={post.data.heroImage} alt="" loading="lazy" decoding="async" />
 								) : (
 									<div class="entry-thumb-empty" />
 								)}
@@ -265,9 +265,11 @@ const sortedCategories = Array.from(categoryPostsMap.entries())
 	/* パネル切り替え */
 	.tab-panel {
 		display: none;
+		content-visibility: hidden;
 	}
 	.tab-panel.is-active {
 		display: block;
+		content-visibility: visible;
 		animation: tabFadeIn 0.22s ease-out;
 	}
 

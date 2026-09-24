@@ -62,12 +62,7 @@ const { title, description, image = FallbackImage } = Astro.props;
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   }
 
-  if (d.readyState === 'complete') {
-    setTimeout(loadGTM, 1200);
-  } else {
-    w.addEventListener('load', function() { setTimeout(loadGTM, 1200); });
-  }
-  ['scroll', 'keydown', 'touchstart'].forEach(function(evt) {
+  ['scroll', 'mousemove', 'touchstart', 'click', 'keydown'].forEach(function(evt) {
     w.addEventListener(evt, loadGTM, { once: true, passive: true });
   });
 })(window,document,'script','dataLayer','GTM-NZ2SJ4PM');
@@ -83,7 +78,7 @@ const { title, description, image = FallbackImage } = Astro.props;
 	href={new URL('rss.xml', Astro.site)}
 />
 
-<Font cssVariable="--font-atkinson" preload />
+<Font cssVariable="--font-atkinson" />
 
 <!-- Canonical URL -->
 <link rel="canonical" href={canonicalURL} />

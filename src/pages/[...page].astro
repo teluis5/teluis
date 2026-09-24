@@ -25,6 +25,8 @@ const { page } = Astro.props;
 				rel="preload"
 				as="image"
 				href="/brand/hero_banner_new.webp"
+				imagesrcset="/brand/hero_banner_new_mobile.webp 720w, /brand/hero_banner_new.webp 1200w"
+				imagesizes="100vw"
 				type="image/webp"
 				fetchpriority="high"
 			/>
@@ -68,6 +70,8 @@ const { page } = Astro.props;
 			<div class="hero-banner">
 				<img
 					src="/brand/hero_banner_new.webp"
+					srcset="/brand/hero_banner_new_mobile.webp 720w, /brand/hero_banner_new.webp 1200w"
+					sizes="100vw"
 					alt="TELUIS - 暮らしをシンプルに"
 					width="1200"
 					height="669"
