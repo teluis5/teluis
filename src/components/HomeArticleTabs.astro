@@ -199,9 +199,14 @@ const sortedCategories = Array.from(categoryPostsMap.entries())
 		display: flex;
 		gap: 0.35rem;
 		overflow-x: auto;
+		overflow-y: hidden;
 		-webkit-overflow-scrolling: touch;
+		overscroll-behavior-x: contain;
+		overscroll-behavior-y: none;
+		touch-action: pan-x pinch-zoom;
 		scrollbar-width: none;
-		padding-bottom: 0;
+		padding: 3px 0 0 0;
+		margin-bottom: -2px;
 	}
 	.tab-nav::-webkit-scrollbar {
 		display: none;
@@ -213,7 +218,7 @@ const sortedCategories = Array.from(categoryPostsMap.entries())
 		gap: 0.35rem;
 		padding: 0.65rem 1.1rem;
 		border: 1px solid var(--border-color);
-		border-bottom: none;
+		border-bottom: 2px solid transparent;
 		border-radius: 6px 6px 0 0;
 		background-color: #f7f8f9;
 		color: var(--text-main);
@@ -223,9 +228,9 @@ const sortedCategories = Array.from(categoryPostsMap.entries())
 		white-space: nowrap;
 		transition: all 0.2s ease;
 		position: relative;
-		bottom: -2px;
 		user-select: none;
 		font-family: inherit;
+		box-sizing: border-box;
 	}
 
 	.tab-btn:hover {
@@ -237,7 +242,7 @@ const sortedCategories = Array.from(categoryPostsMap.entries())
 		background-color: var(--bg-content);
 		color: var(--theme-accent);
 		border-color: var(--border-color);
-		border-bottom: 2px solid var(--bg-content);
+		border-bottom-color: var(--bg-content);
 		border-top: 3px solid var(--theme-accent);
 		padding-top: calc(0.65rem - 2px);
 		z-index: 2;
@@ -373,7 +378,7 @@ const sortedCategories = Array.from(categoryPostsMap.entries())
 
 	.entry-cat-badge {
 		font-size: 0.75rem;
-		color: #0369a1;
+		color: #0284c7;
 		background-color: #f0f9ff;
 		border: 1px solid #bae6fd;
 		border-radius: 4px;
@@ -439,6 +444,9 @@ const sortedCategories = Array.from(categoryPostsMap.entries())
 		.tab-btn {
 			padding: 0.55rem 0.85rem;
 			font-size: 0.85rem;
+		}
+		.tab-btn.is-active {
+			padding-top: calc(0.55rem - 2px);
 		}
 		.entry-list {
 			gap: 0.6rem;
