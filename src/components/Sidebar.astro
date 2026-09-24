@@ -59,10 +59,13 @@ const categories = Object.entries(categoryCounts).sort((a, b) => b[1] - a[1]);
 				<img class="partner-avatar" src="/brand/teluis_wife_avatar.webp" alt="TELUIS 妻" width="48" height="48" loading="lazy" decoding="async" />
 				<div class="partner-body">
 					<div class="partner-name">TELUIS 妻 <span class="partner-badge">共同運営</span></div>
-					<p class="partner-text">ときどき記事執筆やレビューをサポートしています。</p>
+					<p class="partner-text">主婦・生活者目線での家事動線チェックや旅行・グルメのレビューを担当しています。</p>
 				</div>
 			</div>
 		)}
+		<div class="profile-more-wrap">
+			<a href="/about/" class="profile-more-link">詳しいプロフィール・運営情報を見る &raquo;</a>
+		</div>
 	</div>
 
 	<!-- カテゴリ一覧ウィジェット -->
@@ -284,6 +287,29 @@ const categories = Object.entries(categoryCounts).sort((a, b) => b[1] - a[1]);
 		color: var(--text-light, #64748b);
 		margin: 0.15rem 0 0 0;
 		line-height: 1.4;
+	}
+
+	.profile-more-wrap {
+		margin-top: 1rem;
+		text-align: center;
+	}
+
+	.profile-more-link {
+		display: block;
+		font-size: 0.82rem;
+		font-weight: 600;
+		color: #0369a1;
+		background-color: #f0f9ff;
+		border: 1px solid #bae6fd;
+		border-radius: 6px;
+		padding: 0.45rem 0.75rem;
+		text-decoration: none;
+		transition: background-color 0.2s, color 0.2s;
+	}
+
+	.profile-more-link:hover {
+		background-color: #e0f2fe;
+		text-decoration: none;
 	}
 
 	/* カテゴリ一覧 */

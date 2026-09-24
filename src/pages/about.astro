@@ -1,50 +1,419 @@
 ---
 import AboutHeroImage from '../assets/images/teluis_avatar.jpg';
 import Layout from '../layouts/BlogPost.astro';
+
+const aboutSchema = {
+	'@context': 'https://schema.org',
+	'@type': 'AboutPage',
+	name: '運営者について（プロフィール・編集ポリシー） | TELUIS',
+	description: 'コンサルティングファーム勤務のITエンジニア（teluis）と妻による共同運営ブログ『TELUIS』の運営者プロフィール、経歴、レビュー基準・編集ポリシーをご紹介します。',
+	url: 'https://teluis.com/about/',
+	mainEntity: {
+		'@type': 'Person',
+		'@id': 'https://teluis.com/about/#author-teluis',
+		name: 'teluis',
+		jobTitle: 'ITエンジニア / ITコンサルタント',
+		url: 'https://teluis.com/about/',
+		image: 'https://teluis.com/brand/teluis_avatar.webp',
+		description: '日系大手企業、AIスタートアップでの開発経験を経て、現在はコンサルティングファームに勤務。合理的なエンジニア視点と夫婦での実体験をもとに生活改善・旅行・ガジェット情報を発信。'
+	}
+};
 ---
 
 <Layout
-	title="運営者について"
-	description="コンサルティングファームで働くITエンジニアのプロフィール"
+	title="運営者について（プロフィール・編集ポリシー）"
+	description="コンサルティングファームで働くITエンジニア（teluis）と妻が共同運営するライフスタイル＆旅行メディア『TELUIS』のプロフィールと編集ポリシー。"
 	pubDate={new Date('2026-09-01')}
+	updatedDate={new Date('2026-09-24')}
 	heroImage={AboutHeroImage}
 >
-	<h3>プロフィール</h3>
-	<p>
-		はじめまして。当ブログ「teluis」の運営者です。<br>
-		現在はコンサルティングファームに勤務するITエンジニアとして、日々様々な企業の課題解決やシステム導入支援に携わっています。
-	</p>
+	<script type="application/ld+json" set:html={JSON.stringify(aboutSchema)} />
 
-	<h3>これまでのキャリア</h3>
-	<ul>
-		<li><strong>日系大手企業:</strong> キャリアのスタート。大規模なシステム開発と、組織の中で働く基礎となるビジネススキルを徹底的に学びました。</li>
-		<li><strong>AIスタートアップ:</strong> 最先端の技術に触れながら、スピード感を持ってプロダクトをゼロから作り上げる経験を積みました。</li>
-		<li><strong>コンサルティングファーム (現在):</strong> これまでの技術的な知見とビジネス視点を掛け合わせ、クライアントのIT戦略立案や業務改善を支援しています。</li>
-	</ul>
-
-	<hr />
-
-	<h3>共同運営者：TELUIS 妻</h3>
-	<div style="display: flex; gap: 1rem; align-items: center; margin-bottom: 1.5rem;">
-		<img src="/brand/teluis_wife_avatar.webp" alt="妻のプロフィール画像" width="120" height="120" loading="lazy" decoding="async" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
-		<p style="margin: 0;">
-			当ブログの共同運営者であり、デザインや一部の記事執筆、編集サポートを担当しています。夫婦ならではの多様な視点で、より幅広い層に役立つ情報をお届けします。
+	<div class="about-lead">
+		<p>
+			はじめまして。ライフスタイル＆旅行メディア<strong>「TELUIS（テルイズ）」</strong>をご覧いただきありがとうございます。<br />
+			当サイトは、<strong>コンサルティングファームに勤務する現役ITエンジニアの夫（teluis）</strong>と、<strong>暮らしと旅のデザインを愛する妻（TELUIS 妻）</strong>の夫婦2人で共同運営しています。
 		</p>
+		<p>
+			<strong>「日々の名もなき雑務や無駄をシンプルに削ぎ落とし、本当に大切な体験（家族との時間や旅）にリソースを注ぐ」</strong>をテーマに、実際に自分たちで購入して使い倒した家電・ガジェットや、現地へ足を運んだ旅の記録を本音で発信しています。
+		</p>
+	</div>
+
+	<h2>運営メンバー紹介</h2>
+
+	<!-- 1. teluis (夫) プロフィールカード -->
+	<div class="author-profile-box" id="author-teluis">
+		<div class="author-header">
+			<img
+				src="/brand/teluis_avatar.webp"
+				alt="teluisのプロフィール画像"
+				width="110"
+				height="110"
+				loading="lazy"
+				decoding="async"
+				class="author-avatar-img"
+			/>
+			<div class="author-title-area">
+				<span class="author-role-badge">メイン執筆・検証・技術担当</span>
+				<h3 class="author-name-heading">teluis（テルイズ）</h3>
+				<p class="author-job-sub">現役ITエンジニア / ITコンサルタント</p>
+			</div>
+		</div>
+
+		<p class="author-intro-text">
+			システム開発の現場とITコンサルティングの世界を渡り歩いてきた、根っからの合理主義者です。仕事での業務改善ノウハウを「家庭内の家事・生活動線」にも持ち込み、<strong>「1日5分の手間をどう自動化するか」</strong>を常に実験しています。
+		</p>
+
+		<h4>これまでのキャリア・経歴</h4>
+		<ul class="career-timeline">
+			<li>
+				<strong>1. 日系大手企業（キャリアのスタート）</strong><br />
+				大規模基幹システムの設計・開発・運用に従事。ミッションクリティカルな環境で、品質管理・セキュリティ・堅牢なシステムアーキテクチャの基礎と、大組織でプロジェクトを推進するビジネススキルを徹底的に学びました。
+			</li>
+			<li>
+				<strong>2. AIスタートアップ（スピードとゼロイチ開発）</strong><br />
+				最先端の機械学習・AI技術を活用したプロダクト開発に参画。限られた時間とリソースの中で、ゼロから高速にプロトタイプを作り上げ、本質的な価値に集中する「徹底した合理性と実装力」を磨きました。
+			</li>
+			<li>
+				<strong>3. コンサルティングファーム（現在）</strong><br />
+				エンジニアとしての技術的知見とビジネス戦略の視点を掛け合わせ、様々な業界のクライアント企業に対してIT戦略立案・DX推進・業務プロセス改善（BPR）を支援しています。
+			</li>
+		</ul>
+
+		<div class="personal-traits">
+			<h4>パーソナルな一面（好きなこと・モットー）</h4>
+			<ul>
+				<li><strong>モットー：</strong>「毎日のルーティンの無駄を1秒でも削り、浮いた時間とエネルギーをすべて『新しい体験』や『家族との時間』に投資する」</li>
+				<li><strong>家電選びの絶対基準：</strong>どれだけ多機能でも<strong>「洗うパーツが4個以上ある調理家電」「手入れに5分以上かかる家電」</strong>は使わなくなるため買わない主義。スペック表に載っていない「パッキンの洗いやすさ」「メンテナンス性」を真っ先にチェックします。</li>
+				<li><strong>趣味・好きなこと：</strong>Googleフライトやホテルステータスを駆使した旅行ルートの最適化計算、新しいガジェット・通信プランの検証、週末のドライブ旅、カメラでの風景撮影。</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- 2. TELUIS 妻 プロフィールカード -->
+	<div class="author-profile-box partner-theme" id="author-wife">
+		<div class="author-header">
+			<img
+				src="/brand/teluis_wife_avatar.webp"
+				alt="TELUIS 妻のプロフィール画像"
+				width="110"
+				height="110"
+				loading="lazy"
+				decoding="async"
+				class="author-avatar-img"
+			/>
+			<div class="author-title-area">
+				<span class="author-role-badge partner-badge-color">共同運営・暮らし＆旅レビュー・デザイン担当</span>
+				<h3 class="author-name-heading">TELUIS 妻</h3>
+				<p class="author-job-sub">共同編集者 / ライフスタイル＆トラベルレビュアー</p>
+			</div>
+		</div>
+
+		<p class="author-intro-text">
+			当ブログの共同運営者であり、イラスト・図解デザイン、および生活者・主婦目線での記事執筆・レビュー監修を担当しています。夫（teluis）が「数字・スペック・効率」ばかりに偏りがちなところを、<strong>「実際の暮らしの中で毎日心地よく使えるか」</strong>という現実的な視点から引き戻すストッパー役でもあります。
+		</p>
+
+		<div class="personal-traits">
+			<h4>パーソナルな一面（好きなこと・こだわり）</h4>
+			<ul>
+				<li><strong>モットー：</strong>「背伸びしすぎず、毎日機嫌よく暮らせるシンプルで温かい選択を」</li>
+				<li><strong>レビューの視点：</strong>キッチンの限られたスペースに置いたときの圧迫感、動作音の静かさ、料理が冷めたときの美味しさ、旅先での動線や清潔感など、<strong>「カタログだけでは絶対にわからないリアルな手触り」</strong>を大切にしています。</li>
+				<li><strong>趣味・好きなこと：</strong>全国のスターバックス（リージョナル ランドマーク ストア）巡り、美術館・建築デザイン鑑賞、時短キッチンツール探し、絶景ホテルや温泉宿でのんびり過ごすこと。</li>
+			</ul>
+		</div>
 	</div>
 
 	<hr />
 
-	<h3>このブログで発信すること</h3>
+	<h2>当ブログ『TELUIS』3つの編集ポリシー・レビュー基準</h2>
 	<p>
-		当ブログ「TELUIS」では、ITエンジニアとしての専門知識や視点と、夫婦での実体験をもとに、日々の生活や仕事がより便利に、豊かになる情報を発信しています。
+		インターネット上には、商品の公式サイトを書き換えただけのまとめ記事や、メリットしか書かれていない記事が溢れています。そんな中で、読者の皆様が「時間とお金を無駄にしない選択」をできるよう、当ブログでは以下の3つの基準を厳守しています。
 	</p>
-	<ul>
-		<li><strong>旅行:</strong> 実際に訪れてよかった観光スポットやドライブコース、ホテル宿泊記、お得な予約術などの現地体験レポート</li>
-		<li><strong>ライフスタイル:</strong> 暮らしの質を向上させる時短調理家電や便利グッズ、防災備蓄、日々の生活の知恵</li>
-		<li><strong>IT・ガジェット:</strong> エンジニア目線で厳選したおすすめガジェット、便利アプリやWEBサービスの活用法</li>
-		<li><strong>ブログ運営:</strong> サイト構築や運用ノウハウ、トラブル解決手順などの実践的な記録</li>
-	</ul>
+
+	<div class="policy-grid">
+		<div class="policy-card">
+			<div class="policy-num">POLICY 01</div>
+			<h3>一次情報（実機使用・現地訪問）の徹底</h3>
+			<p>
+				レビュー記事や旅行レポートは、実際に自分たちのお金で購入して長期間使用したモノ、および実際に現地へ足を運んで体験したコトだけをベースに執筆しています。メーカーの宣伝文句ではなく、生活の中で感じたリアルな事実をお届けします。
+			</p>
+		</div>
+		<div class="policy-card">
+			<div class="policy-num">POLICY 02</div>
+			<h3>デメリット・手入れの手間も正直に開示</h3>
+			<p>
+				「ここは期待外れだった」「洗うパーツが多くて面倒」「このプランはこの人には向かない」といったネガティブな情報や維持コストこそ、購入・予約前に最も知るべき価値ある情報だと考えています。欠点も包み隠さず明記します。
+			</p>
+		</div>
+		<div class="policy-card">
+			<div class="policy-num">POLICY 03</div>
+			<h3>エンジニア夫 × 生活者妻の「ダブル視点」</h3>
+			<p>
+				「論理的なコストパフォーマンス・機能性（夫の視点）」と、「毎日の家事動線での使いやすさ・空間の心地よさ（妻の視点）」の2つのフィルターを通過した、本当に納得できるモノ・旅先だけを厳選してご紹介します。
+			</p>
+		</div>
+	</div>
+
+	<hr />
+
+	<h2>初めての方へ：カテゴリ別の代表記事・おすすめ記事</h2>
 	<p>
-		単なる情報のまとめではなく、自分たちが実際に使ってよかったもの・体験したことをベースに、読者の皆様に役立つ誠実な情報をお届けします。
+		当ブログで多くの読者の方に読まれている、各カテゴリの代表的な体験レポート・徹底検証記事です。気になるテーマからぜひご覧ください。
 	</p>
+
+	<div class="featured-links-section">
+		<h3>🏠 ライフスタイル・時短スマート家電</h3>
+		<ul>
+			<li><a href="/blog/auto-cooker-comparison/">自動調理鍋（ホットクック・ビストロ・クックフォーミー）を徹底比較！かき混ぜ機能とお手入れパーツ数の違い</a></li>
+			<li><a href="/blog/dressing-room-air-conditioner/">洗面所・脱衣所が暑い＆寒い問題を解決！小型エアコン・冷暖房対策の導入実体験レポート</a></li>
+			<li><a href="/blog/homeworkgoods8/">在宅勤務・テレワークの生産性と快適性が劇的に上がる！エンジニア厳選の愛用グッズ8選</a></li>
+		</ul>
+
+		<h3>✈️ 旅行・ホテル・お出かけ攻略</h3>
+		<ul>
+			<li><a href="/blog/disney-adventure-booking/">【完全ガイド】ディズニークルーズ「ディズニー・アドベンチャー」の予約手順と失敗しない部屋選び</a></li>
+			<li><a href="/blog/google-flights-guide/">Googleフライトを使い倒して最安値の航空券・穴場日程を一瞬で見つける検索テクニック</a></li>
+			<li><a href="/blog/kumamoto-starbucks/">熊本の絶景・ご当地スターバックス巡り！現地で味わう空間デザインとアクセスまとめ</a></li>
+		</ul>
+
+		<h3>💻 IT・ガジェット・ブログ運営</h3>
+		<ul>
+			<li><a href="/blog/edion-docomo-iphone18pro/">iPhone 18 Proを実質最小負担で運用するキャリアプログラム・通信費トータル計算シミュレーション</a></li>
+			<li><a href="/blog/chrome-expanded-functionality/">日々のPC作業とリサーチが爆速になる！現役エンジニアが手放せないChrome拡張機能</a></li>
+			<li><a href="/blog/blog-color-universal-design/">誰にとっても読みやすいWebサイトへ。ブログの「カラーユニバーサルデザイン」実践記録</a></li>
+		</ul>
+	</div>
+
+	<hr />
+
+	<h2>サイト運営概要</h2>
+	<table class="site-info-table">
+		<tbody>
+			<tr>
+				<th>サイト名</th>
+				<td>TELUIS（テルイズ）</td>
+			</tr>
+			<tr>
+				<th>サイトURL</th>
+				<td><a href="https://teluis.com/">https://teluis.com/</a></td>
+			</tr>
+			<tr>
+				<th>運営者</th>
+				<td>teluis ＆ TELUIS 妻（夫婦共同運営）</td>
+			</tr>
+			<tr>
+				<th>主な発信テーマ</th>
+				<td>ライフスタイル（生活改善・時短家電）、旅行・ホテル宿泊記、IT・ガジェット検証、ブログ運営ノウハウ</td>
+			</tr>
+			<tr>
+				<th>お問い合わせ</th>
+				<td>記事内容に関するご質問、レビュー・取材のご依頼等は <a href="/contact/">お問い合わせフォーム</a> よりご連絡ください。</td>
+			</tr>
+			<tr>
+				<th>プライバシーポリシー</th>
+				<td>個人情報の取り扱い、アクセス解析ツール、広告配信および免責事項については <a href="/privacy/">プライバシーポリシー</a> をご確認ください。</td>
+			</tr>
+		</tbody>
+	</table>
 </Layout>
+
+<style>
+	.about-lead {
+		background-color: #f8fafc;
+		border-left: 4px solid var(--theme-accent, #007cba);
+		padding: 1.25rem 1.5rem;
+		border-radius: 0 8px 8px 0;
+		margin-bottom: 2.5rem;
+	}
+	.about-lead p:last-child {
+		margin-bottom: 0;
+	}
+
+	.author-profile-box {
+		background: #ffffff;
+		border: 1px solid #e2e8f0;
+		border-radius: 12px;
+		padding: 1.75rem;
+		margin-bottom: 2rem;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+	}
+	.author-profile-box.partner-theme {
+		border-color: #fed7aa;
+		background: linear-gradient(to bottom, #fffbeb 0%, #ffffff 120px);
+	}
+
+	.author-header {
+		display: flex;
+		align-items: center;
+		gap: 1.25rem;
+		margin-bottom: 1.25rem;
+	}
+	.author-avatar-img {
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+		object-fit: cover;
+		border: 3px solid #e0f2fe;
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+		flex-shrink: 0;
+	}
+	.partner-theme .author-avatar-img {
+		border-color: #ffedd5;
+	}
+
+	.author-role-badge {
+		display: inline-block;
+		font-size: 0.75rem;
+		font-weight: 700;
+		color: #0369a1;
+		background: #e0f2fe;
+		padding: 0.2rem 0.65rem;
+		border-radius: 9999px;
+		margin-bottom: 0.35rem;
+	}
+	.author-role-badge.partner-badge-color {
+		color: #9a3412;
+		background: #ffedd5;
+	}
+
+	.author-name-heading {
+		margin: 0 0 0.2rem 0 !important;
+		font-size: 1.4rem !important;
+		border: none !important;
+		padding: 0 !important;
+	}
+	.author-job-sub {
+		margin: 0 !important;
+		font-size: 0.9rem;
+		color: #64748b;
+		font-weight: 600;
+	}
+
+	.author-intro-text {
+		margin-bottom: 1.25rem;
+	}
+
+	.career-timeline {
+		background: #f8fafc;
+		padding: 1.2rem 1.2rem 1.2rem 2.2rem;
+		border-radius: 8px;
+		margin-bottom: 1.25rem;
+	}
+	.career-timeline li {
+		margin-bottom: 0.85rem;
+		line-height: 1.65;
+	}
+	.career-timeline li:last-child {
+		margin-bottom: 0;
+	}
+
+	.personal-traits {
+		background: #f0f9ff;
+		padding: 1.1rem 1.25rem;
+		border-radius: 8px;
+	}
+	.partner-theme .personal-traits {
+		background: #fff7ed;
+	}
+	.personal-traits h4 {
+		margin: 0 0 0.6rem 0;
+		font-size: 1rem;
+		color: #0f172a;
+	}
+	.personal-traits ul {
+		margin: 0;
+		padding-left: 1.25rem;
+	}
+	.personal-traits li {
+		margin-bottom: 0.5rem;
+		line-height: 1.6;
+	}
+	.personal-traits li:last-child {
+		margin-bottom: 0;
+	}
+
+	.policy-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 1.25rem;
+		margin: 1.5rem 0 2rem;
+	}
+	.policy-card {
+		background: #ffffff;
+		border: 1px solid #e2e8f0;
+		border-top: 4px solid var(--theme-accent, #007cba);
+		border-radius: 8px;
+		padding: 1.25rem;
+		box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+	}
+	.policy-num {
+		font-size: 0.75rem;
+		font-weight: 800;
+		color: #0369a1;
+		letter-spacing: 0.05em;
+		margin-bottom: 0.35rem;
+	}
+	.policy-card h3 {
+		font-size: 1.08rem !important;
+		margin: 0 0 0.65rem 0 !important;
+		padding: 0 !important;
+		border: none !important;
+	}
+	.policy-card p {
+		font-size: 0.92rem;
+		line-height: 1.65;
+		margin: 0;
+		color: #334155;
+	}
+
+	.featured-links-section h3 {
+		font-size: 1.15rem;
+		margin-top: 1.5rem;
+		margin-bottom: 0.6rem;
+	}
+	.featured-links-section ul {
+		margin-bottom: 1.25rem;
+	}
+	.featured-links-section li {
+		margin-bottom: 0.5rem;
+	}
+
+	.site-info-table {
+		width: 100%;
+		border-collapse: collapse;
+		margin-top: 1rem;
+	}
+	.site-info-table th,
+	.site-info-table td {
+		border: 1px solid #e2e8f0;
+		padding: 0.85rem 1rem;
+		text-align: left;
+		line-height: 1.6;
+	}
+	.site-info-table th {
+		width: 28%;
+		background-color: #f8fafc;
+		font-weight: 700;
+		color: #1e293b;
+		white-space: nowrap;
+	}
+
+	@media (max-width: 640px) {
+		.author-header {
+			flex-direction: column;
+			text-align: center;
+		}
+		.author-profile-box {
+			padding: 1.25rem;
+		}
+		.site-info-table th,
+		.site-info-table td {
+			display: block;
+			width: 100%;
+		}
+		.site-info-table th {
+			border-bottom: none;
+			padding-bottom: 0.4rem;
+		}
+	}
+</style>

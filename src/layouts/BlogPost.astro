@@ -25,6 +25,8 @@ const breadcrumbItems = [
 	{ label: title },
 ];
 
+const siteBase = Astro.site ? Astro.site.href.replace(/\/$/, '') : Astro.url.origin;
+
 const articleSchema = {
 	'@context': 'https://schema.org',
 	'@type': 'Article',
@@ -33,10 +35,42 @@ const articleSchema = {
 	image: heroImage ? new URL(heroImage.src, Astro.site || Astro.url.origin).href : undefined,
 	datePublished: pubDate.toISOString(),
 	dateModified: updatedDate ? updatedDate.toISOString() : pubDate.toISOString(),
-	author: {
-		'@type': 'Person',
-		name: 'teluis',
-		url: Astro.site ? Astro.site.href : Astro.url.origin,
+	author: [
+		{
+			'@type': 'Person',
+			'@id': `${siteBase}/about/#author-teluis`,
+			name: 'teluis',
+			jobTitle: 'ITエンジニア / ITコンサルタント',
+			description: '日系大手企業、AIスタートアップでのシステム開発を経て、現在はコンサルティングファームに勤務する現役ITエンジニア。合理的なエンジニア視点と実機検証に基づき、スマート家電・ガジェット・生活改善・旅行の一次情報を発信。',
+			url: `${siteBase}/about/`,
+			image: `${siteBase}/brand/teluis_avatar.webp`,
+			knowsAbout: [
+				'ITエンジニアリング',
+				'システム開発・AI活用',
+				'業務効率化・ライフハック',
+				'スマート家電・時短家電レビュー',
+				'ガジェット・通信サービス比較',
+				'国内外の旅行計画・マイル・ホテル予約術'
+			]
+		},
+		{
+			'@type': 'Person',
+			'@id': `${siteBase}/about/#author-wife`,
+			name: 'TELUIS 妻',
+			jobTitle: '共同運営者 / ライフスタイル・旅行レビュアー',
+			description: '当ブログの共同編集者。生活者・主婦目線からの家事動線チェック、カフェ・ホテル・観光スポットの現地レポート、インテリアやデザインの監修を担当。',
+			url: `${siteBase}/about/`,
+			image: `${siteBase}/brand/teluis_wife_avatar.webp`
+		}
+	],
+	publisher: {
+		'@type': 'Organization',
+		name: 'TELUIS（テルイズ）',
+		url: `${siteBase}/`,
+		logo: {
+			'@type': 'ImageObject',
+			url: `${siteBase}/brand/teluis_horizontal_logo.webp`
+		}
 	}
 };
 ---
