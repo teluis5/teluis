@@ -275,7 +275,7 @@ const articleSchema = {
 						{categories && categories.length > 0 && (
 							<div class="tags">
 								{categories.map((category: string) => (
-									<a href={`/category/${category}`} class="tag"><Icon name="heroicons:tag" class="icon-inline" /> {category}</a>
+									<a href={`/category/${category}/`} class="tag"><Icon name="heroicons:tag" class="icon-inline" /> {category}</a>
 								))}
 							</div>
 						)}

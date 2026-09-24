@@ -20,6 +20,15 @@ const { page } = Astro.props;
 <html lang="ja">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		{page.currentPage === 1 && (
+			<link
+				rel="preload"
+				as="image"
+				href="/brand/hero_banner_new.webp"
+				type="image/webp"
+				fetchpriority="high"
+			/>
+		)}
 		<style>
 			/* ヒーローバナー */
 			.hero-banner {
@@ -51,12 +60,24 @@ const { page } = Astro.props;
 		</style>
 	</head>
 	<body>
+		<h1 class="sr-only">{SITE_TITLE} - {SITE_DESCRIPTION}</h1>
 		<Header />
 		
 		<!-- トップヒーローバナー -->
 		{page.currentPage === 1 && (
 			<div class="hero-banner">
-				<img src="/brand/hero_banner_new.jpg" alt="TELUIS - 暮らしをシンプルに" />
+				<picture>
+					<source srcset="/brand/hero_banner_new.webp" type="image/webp" />
+					<img
+						src="/brand/hero_banner_new.jpg"
+						alt="TELUIS - 暮らしをシンプルに"
+						width="1200"
+						height="669"
+						fetchpriority="high"
+						loading="eager"
+						decoding="async"
+					/>
+				</picture>
 			</div>
 		)}
 

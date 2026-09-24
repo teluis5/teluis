@@ -3,7 +3,7 @@
 	--theme-color: #333333;
 	--theme-accent: #007cba;
 	--text-main: #333333;
-	--text-light: #777777;
+	--text-light: #717171;
 	--bg-main: #f3f4f5;
 	--bg-content: #ffffff;
 	--border-color: #dfdfdf;
@@ -412,5 +412,18 @@ thead th {
 	font-size: 0.85em;
 	padding: 2px 6px;
 	font-family: monospace;
+}
+
+/* Screen reader only utility (アクセシビリティ・SEO用非表示見出し) */
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border-width: 0;
 }
 

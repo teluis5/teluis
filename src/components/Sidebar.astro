@@ -16,7 +16,7 @@ const {
 	authorName = 'teluis',
 	authorTitle = 'ITエンジニア / コンサルタント',
 	authorBio = '日経大手企業でキャリアをスタートし、AIスタートアップでの開発経験を経て、現在はコンサルティングファームに勤務。日々の実体験から得た改善エッセンスを発信しています。',
-	authorAvatar = '/brand/teluis_avatar.jpg',
+	authorAvatar = '/brand/teluis_avatar.webp',
 	showPartner = true,
 } = Astro.props;
 
@@ -44,7 +44,7 @@ const categories = Object.entries(categoryCounts).sort((a, b) => b[1] - a[1]);
 		</div>
 		<div class="profile-card">
 			<div class="profile-avatar-wrap">
-				<img class="profile-avatar" src={authorAvatar} alt={authorName} />
+				<img class="profile-avatar" src={authorAvatar} alt={authorName} width="88" height="88" loading="lazy" decoding="async" />
 			</div>
 			<div class="profile-body">
 				<div class="profile-name">{authorName}</div>
@@ -56,7 +56,7 @@ const categories = Object.entries(categoryCounts).sort((a, b) => b[1] - a[1]);
 		{showPartner && (
 			<div class="partner-divider"></div>
 			<div class="partner-card">
-				<img class="partner-avatar" src="/brand/テルイズ妻.png" alt="TELUIS 妻" />
+				<img class="partner-avatar" src="/brand/teluis_wife_avatar.webp" alt="TELUIS 妻" width="48" height="48" loading="lazy" decoding="async" />
 				<div class="partner-body">
 					<div class="partner-name">TELUIS 妻 <span class="partner-badge">共同運営</span></div>
 					<p class="partner-text">ときどき記事執筆やレビューをサポートしています。</p>
@@ -115,7 +115,7 @@ const categories = Object.entries(categoryCounts).sort((a, b) => b[1] - a[1]);
 							)}
 						</div>
 						<div class="recent-content">
-							<h4 class="recent-title">{post.data.title}</h4>
+							<p class="recent-title">{post.data.title}</p>
 							<span class="recent-date">
 								<Icon name="heroicons:calendar" class="date-icon" />
 								<FormattedDate date={post.data.pubDate} />

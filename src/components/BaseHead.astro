@@ -59,8 +59,8 @@ const { title, description, image = FallbackImage } = Astro.props;
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-NZ2SJ4PM');
 </script>
-<!-- End Google Tag Manager -->
-<link rel="icon" href="/brand/teluis_new_icon.jpg" />
+<link rel="icon" type="image/png" sizes="64x64" href="/brand/favicon-64.png" />
+<link rel="icon" href="/favicon.ico" sizes="any" />
 <link rel="sitemap" href="/sitemap-index.xml" />
 <meta name="generator" content={Astro.generator} />
 <link
@@ -98,5 +98,15 @@ const { title, description, image = FallbackImage } = Astro.props;
 <!-- Google AdSense Script -->
 <script is:inline async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8011635154814608" crossorigin="anonymous"></script>
 
-<!-- Twitter widgets Script -->
-<script is:inline async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<!-- Twitter widgets Script (ツイート埋め込みが存在する場合のみ動的に遅延ロード) -->
+<script is:inline>
+	document.addEventListener('DOMContentLoaded', () => {
+		if (document.querySelector('.twitter-tweet')) {
+			const s = document.createElement('script');
+			s.src = 'https://platform.twitter.com/widgets.js';
+			s.charset = 'utf-8';
+			s.async = true;
+			document.head.appendChild(s);
+		}
+	});
+</script>
