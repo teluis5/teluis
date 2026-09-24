@@ -6,7 +6,7 @@ const aboutSchema = {
 	'@context': 'https://schema.org',
 	'@type': 'AboutPage',
 	name: '運営者について（プロフィール・編集ポリシー） | TELUIS',
-	description: 'コンサルティングファーム勤務のITエンジニア（teluis）と妻による共同運営ブログ『TELUIS』の運営者プロフィール、経歴、レビュー基準・編集ポリシーをご紹介します。',
+	description: 'コンサルティングファーム勤務の現役ITエンジニア（teluis）が運営するライフスタイル＆旅行メディア『TELUIS』の運営者プロフィール、経歴、レビュー基準・編集ポリシーをご紹介します。',
 	url: 'https://teluis.com/about/',
 	mainEntity: {
 		'@type': 'Person',
@@ -15,14 +15,14 @@ const aboutSchema = {
 		jobTitle: 'ITエンジニア / ITコンサルタント',
 		url: 'https://teluis.com/about/',
 		image: 'https://teluis.com/brand/teluis_avatar.webp',
-		description: '日系大手企業、AIスタートアップでの開発経験を経て、現在はコンサルティングファームに勤務。合理的なエンジニア視点と夫婦での実体験をもとに生活改善・旅行・ガジェット情報を発信。'
+		description: '日系大手企業、AIスタートアップでの開発経験を経て、現在はコンサルティングファームに勤務。合理的なエンジニア視点と実体験をもとに生活改善・スマート家電・旅行・ガジェット情報を発信。'
 	}
 };
 ---
 
 <Layout
 	title="運営者について（プロフィール・編集ポリシー）"
-	description="コンサルティングファームで働くITエンジニア（teluis）と妻が共同運営するライフスタイル＆旅行メディア『TELUIS』のプロフィールと編集ポリシー。"
+	description="コンサルティングファームで働く現役ITエンジニア（teluis）が運営するライフスタイル＆旅行メディア『TELUIS』のプロフィールと編集ポリシー。"
 	pubDate={new Date('2026-09-01')}
 	updatedDate={new Date('2026-09-24')}
 	heroImage={AboutHeroImage}
@@ -32,16 +32,15 @@ const aboutSchema = {
 	<div class="about-lead">
 		<p>
 			はじめまして。ライフスタイル＆旅行メディア<strong>「TELUIS（テルイズ）」</strong>をご覧いただきありがとうございます。<br />
-			当サイトは、<strong>コンサルティングファームに勤務する現役ITエンジニアの夫（teluis）</strong>と、<strong>暮らしと旅のデザインを愛する妻（TELUIS 妻）</strong>の夫婦2人で共同運営しています。
+			当サイトは、<strong>コンサルティングファームに勤務する現役ITエンジニア兼コンサルタントの teluis</strong> が運営しています。
 		</p>
 		<p>
-			<strong>「日々の名もなき雑務や無駄をシンプルに削ぎ落とし、本当に大切な体験（家族との時間や旅）にリソースを注ぐ」</strong>をテーマに、実際に自分たちで購入して使い倒した家電・ガジェットや、現地へ足を運んだ旅の記録を本音で発信しています。
+			<strong>「日々の名もなき雑務や生活動線の無駄をシンプルに削ぎ落とし、本当に大切な体験（趣味や旅、クリエイティブな時間）にリソースを注ぐ」</strong>をテーマに、実際に購入して使い倒した家電・ガジェットや、現地へ足を運んだ旅の記録を本音で発信しています。
 		</p>
 	</div>
 
-	<h2>運営メンバー紹介</h2>
+	<h2>運営者プロフィール</h2>
 
-	<!-- 1. teluis (夫) プロフィールカード -->
 	<div class="author-profile-box" id="author-teluis">
 		<div class="author-header">
 			<img
@@ -54,14 +53,14 @@ const aboutSchema = {
 				class="author-avatar-img"
 			/>
 			<div class="author-title-area">
-				<span class="author-role-badge">メイン執筆・検証・技術担当</span>
+				<span class="author-role-badge">サイト運営・執筆・検証</span>
 				<h3 class="author-name-heading">teluis（テルイズ）</h3>
 				<p class="author-job-sub">現役ITエンジニア / ITコンサルタント</p>
 			</div>
 		</div>
 
 		<p class="author-intro-text">
-			システム開発の現場とITコンサルティングの世界を渡り歩いてきた、根っからの合理主義者です。仕事での業務改善ノウハウを「家庭内の家事・生活動線」にも持ち込み、<strong>「1日5分の手間をどう自動化するか」</strong>を常に実験しています。
+			システム開発の現場とITコンサルティングの世界を渡り歩いてきた、根っからの合理主義者です。仕事で培ったシステム思考や業務改善（BPR）のノウハウを「日々の暮らし・家事動線・旅の計画」にも持ち込み、<strong>「1日5分の手間をどう仕組み化・自動化するか」</strong>を常に実験しています。
 		</p>
 
 		<h4>これまでのキャリア・経歴</h4>
@@ -72,53 +71,26 @@ const aboutSchema = {
 			</li>
 			<li>
 				<strong>2. AIスタートアップ（スピードとゼロイチ開発）</strong><br />
-				最先端の機械学習・AI技術を活用したプロダクト開発に参画。限られた時間とリソースの中で、ゼロから高速にプロトタイプを作り上げ、本質的な価値に集中する「徹底した合理性と実装力」を磨きました。
+				最先端の機械学習・AI技術を活用したプロダクト開発に参画。限られた時間とリソースの中で、ゼロから高速にプロダクトを形にし、本質的な価値に集中する「徹底した合理性と実装力」を磨きました。
 			</li>
 			<li>
 				<strong>3. コンサルティングファーム（現在）</strong><br />
-				エンジニアとしての技術的知見とビジネス戦略の視点を掛け合わせ、様々な業界のクライアント企業に対してIT戦略立案・DX推進・業務プロセス改善（BPR）を支援しています。
+				エンジニアとしての技術的知見とビジネス戦略の視点を掛け合わせ、様々な業界のクライアント企業に対してIT戦略立案・DX推進・業務プロセス改善を支援しています。
 			</li>
 		</ul>
 
 		<div class="personal-traits">
 			<h4>パーソナルな一面（好きなこと・モットー）</h4>
 			<ul>
-				<li><strong>モットー：</strong>「毎日のルーティンの無駄を1秒でも削り、浮いた時間とエネルギーをすべて『新しい体験』や『家族との時間』に投資する」</li>
-				<li><strong>家電選びの絶対基準：</strong>どれだけ多機能でも<strong>「洗うパーツが4個以上ある調理家電」「手入れに5分以上かかる家電」</strong>は使わなくなるため買わない主義。スペック表に載っていない「パッキンの洗いやすさ」「メンテナンス性」を真っ先にチェックします。</li>
-				<li><strong>趣味・好きなこと：</strong>Googleフライトやホテルステータスを駆使した旅行ルートの最適化計算、新しいガジェット・通信プランの検証、週末のドライブ旅、カメラでの風景撮影。</li>
-			</ul>
-		</div>
-	</div>
-
-	<!-- 2. TELUIS 妻 プロフィールカード -->
-	<div class="author-profile-box partner-theme" id="author-wife">
-		<div class="author-header">
-			<img
-				src="/brand/teluis_wife_avatar.webp"
-				alt="TELUIS 妻のプロフィール画像"
-				width="110"
-				height="110"
-				loading="lazy"
-				decoding="async"
-				class="author-avatar-img"
-			/>
-			<div class="author-title-area">
-				<span class="author-role-badge partner-badge-color">共同運営・暮らし＆旅レビュー・デザイン担当</span>
-				<h3 class="author-name-heading">TELUIS 妻</h3>
-				<p class="author-job-sub">共同編集者 / ライフスタイル＆トラベルレビュアー</p>
-			</div>
-		</div>
-
-		<p class="author-intro-text">
-			当ブログの共同運営者であり、イラスト・図解デザイン、および生活者・主婦目線での記事執筆・レビュー監修を担当しています。夫（teluis）が「数字・スペック・効率」ばかりに偏りがちなところを、<strong>「実際の暮らしの中で毎日心地よく使えるか」</strong>という現実的な視点から引き戻すストッパー役でもあります。
-		</p>
-
-		<div class="personal-traits">
-			<h4>パーソナルな一面（好きなこと・こだわり）</h4>
-			<ul>
-				<li><strong>モットー：</strong>「背伸びしすぎず、毎日機嫌よく暮らせるシンプルで温かい選択を」</li>
-				<li><strong>レビューの視点：</strong>キッチンの限られたスペースに置いたときの圧迫感、動作音の静かさ、料理が冷めたときの美味しさ、旅先での動線や清潔感など、<strong>「カタログだけでは絶対にわからないリアルな手触り」</strong>を大切にしています。</li>
-				<li><strong>趣味・好きなこと：</strong>全国のスターバックス（リージョナル ランドマーク ストア）巡り、美術館・建築デザイン鑑賞、時短キッチンツール探し、絶景ホテルや温泉宿でのんびり過ごすこと。</li>
+				<li><strong>モットー：</strong>「毎日のルーティンの無駄を1秒でも削り、浮いた時間とエネルギーをすべて『新しい体験』や『旅・学び』に投資する」</li>
+				<li><strong>家電・モノ選びの絶対基準：</strong>どれだけ多機能でも<strong>「洗うパーツが4個以上ある調理家電」「日々の手入れに5分以上かかる製品」</strong>は結局使わなくなるため選ばない主義。スペック表に載っていない「パッキンの洗いやすさ」「メンテナンスの手軽さ」を真っ先にチェックします。</li>
+				<li><strong>趣味・好きなこと：</strong>
+					<ul>
+						<li><strong>旅行＆ルート最適化：</strong>Googleフライトやホテルプログラムを駆使した航空券・宿泊先の徹底リサーチ、全国のスターバックス（リージョナル ランドマーク ストア）や美術館・建築巡り、週末のドライブ旅。</li>
+						<li><strong>ガジェット・通信環境：</strong>最新スマートフォンやPC周辺機器の検証、キャリアプログラムや格安SIM（povo等）を組み合わせた通信費・端末代の最適化計算。</li>
+						<li><strong>ライフスタイル：</strong>時短調理家電（自動調理鍋など）での自炊効率化、空間を整えるミニマルなインテリア・便利グッズ探し、カメラでの風景撮影。</li>
+					</ul>
+				</li>
 			</ul>
 		</div>
 	</div>
@@ -127,7 +99,7 @@ const aboutSchema = {
 
 	<h2>当ブログ『TELUIS』3つの編集ポリシー・レビュー基準</h2>
 	<p>
-		インターネット上には、商品の公式サイトを書き換えただけのまとめ記事や、メリットしか書かれていない記事が溢れています。そんな中で、読者の皆様が「時間とお金を無駄にしない選択」をできるよう、当ブログでは以下の3つの基準を厳守しています。
+		インターネット上には、商品の公式サイトを書き換えただけのまとめ記事や、メリットしか書かれていない記事が溢れています。読者の皆様が「時間とお金を無駄にしない選択」をできるよう、当ブログでは以下の3つの基準を厳守しています。
 	</p>
 
 	<div class="policy-grid">
@@ -135,7 +107,7 @@ const aboutSchema = {
 			<div class="policy-num">POLICY 01</div>
 			<h3>一次情報（実機使用・現地訪問）の徹底</h3>
 			<p>
-				レビュー記事や旅行レポートは、実際に自分たちのお金で購入して長期間使用したモノ、および実際に現地へ足を運んで体験したコトだけをベースに執筆しています。メーカーの宣伝文句ではなく、生活の中で感じたリアルな事実をお届けします。
+				レビュー記事や旅行レポートは、実際に自分のお金で購入して長期間使用したモノ、および実際に現地へ足を運んで体験したコトだけをベースに執筆しています。カタログの宣伝文句ではなく、実生活の中で感じたリアルな事実をお届けします。
 			</p>
 		</div>
 		<div class="policy-card">
@@ -147,9 +119,9 @@ const aboutSchema = {
 		</div>
 		<div class="policy-card">
 			<div class="policy-num">POLICY 03</div>
-			<h3>エンジニア夫 × 生活者妻の「ダブル視点」</h3>
+			<h3>エンジニアの論理 × 生活者としての実用性</h3>
 			<p>
-				「論理的なコストパフォーマンス・機能性（夫の視点）」と、「毎日の家事動線での使いやすさ・空間の心地よさ（妻の視点）」の2つのフィルターを通過した、本当に納得できるモノ・旅先だけを厳選してご紹介します。
+				「数字・スペック・実質コストの厳密な比較検証（エンジニア・コンサルタントの視点）」と、「毎日の生活動線の中でストレスなく使い続けられるか（生活者の視点）」の両面から徹底的に評価します。
 			</p>
 		</div>
 	</div>
@@ -199,7 +171,7 @@ const aboutSchema = {
 			</tr>
 			<tr>
 				<th>運営者</th>
-				<td>teluis ＆ TELUIS 妻（夫婦共同運営）</td>
+				<td>teluis（ITエンジニア / ITコンサルタント）</td>
 			</tr>
 			<tr>
 				<th>主な発信テーマ</th>
@@ -237,10 +209,6 @@ const aboutSchema = {
 		margin-bottom: 2rem;
 		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
 	}
-	.author-profile-box.partner-theme {
-		border-color: #fed7aa;
-		background: linear-gradient(to bottom, #fffbeb 0%, #ffffff 120px);
-	}
 
 	.author-header {
 		display: flex;
@@ -257,9 +225,6 @@ const aboutSchema = {
 		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 		flex-shrink: 0;
 	}
-	.partner-theme .author-avatar-img {
-		border-color: #ffedd5;
-	}
 
 	.author-role-badge {
 		display: inline-block;
@@ -270,10 +235,6 @@ const aboutSchema = {
 		padding: 0.2rem 0.65rem;
 		border-radius: 9999px;
 		margin-bottom: 0.35rem;
-	}
-	.author-role-badge.partner-badge-color {
-		color: #9a3412;
-		background: #ffedd5;
 	}
 
 	.author-name-heading {
@@ -311,9 +272,6 @@ const aboutSchema = {
 		background: #f0f9ff;
 		padding: 1.1rem 1.25rem;
 		border-radius: 8px;
-	}
-	.partner-theme .personal-traits {
-		background: #fff7ed;
 	}
 	.personal-traits h4 {
 		margin: 0 0 0.6rem 0;

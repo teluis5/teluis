@@ -15,9 +15,8 @@ interface Props {
 const {
 	authorName = 'teluis',
 	authorTitle = 'ITエンジニア / コンサルタント',
-	authorBio = '日経大手企業でキャリアをスタートし、AIスタートアップでの開発経験を経て、現在はコンサルティングファームに勤務。日々の実体験から得た改善エッセンスを発信しています。',
+	authorBio = '日系大手企業でキャリアをスタートし、AIスタートアップでの開発経験を経て、現在はコンサルティングファームに勤務。合理的なエンジニア視点と実体験から得た暮らし・旅の改善エッセンスを発信しています。',
 	authorAvatar = '/brand/teluis_avatar.webp',
-	showPartner = true,
 } = Astro.props;
 
 // 全記事の取得（ドラフト除外）
@@ -52,17 +51,6 @@ const categories = Object.entries(categoryCounts).sort((a, b) => b[1] - a[1]);
 				<p class="profile-text">{authorBio}</p>
 			</div>
 		</div>
-
-		{showPartner && (
-			<div class="partner-divider"></div>
-			<div class="partner-card">
-				<img class="partner-avatar" src="/brand/teluis_wife_avatar.webp" alt="TELUIS 妻" width="48" height="48" loading="lazy" decoding="async" />
-				<div class="partner-body">
-					<div class="partner-name">TELUIS 妻 <span class="partner-badge">共同運営</span></div>
-					<p class="partner-text">主婦・生活者目線での家事動線チェックや旅行・グルメのレビューを担当しています。</p>
-				</div>
-			</div>
-		)}
 		<div class="profile-more-wrap">
 			<a href="/about/" class="profile-more-link">詳しいプロフィール・運営情報を見る &raquo;</a>
 		</div>
