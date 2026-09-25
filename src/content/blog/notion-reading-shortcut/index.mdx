@@ -14,7 +14,9 @@ import AdviceBox from '../../../components/AdviceBox.astro';
 import popupFilteredImg from './shortcut-popup-filtered.jpg';
 import popupAllImg from './shortcut-popup-all.jpg';
 import dbTableImg from './notion-database-table.png';
-import tokenImg from './notion-integration-token.png';
+import newConnectImg from './notion-step1-new-connect.png';
+import createModalImg from './notion-step1-create-modal.png';
+import tokenCopyImg from './notion-step1-token-copy.png';
 import shortcutSettingsImg from './shortcut-edit-settings.png';
 
 <ProblemBox>
@@ -120,15 +122,27 @@ Notionはデータベース設計の自由度が高い反面、<b>「目的の1�
 
 ショートカットがあなたのNotionデータベースを読みに行くための「合鍵（アクセストークン）」を取得します。
 
+1. [Notion Developers](https://www.notion.so/profile/integrations) を開く
+2. 右上の <b>「＋ 新規コネクト」</b> ボタンをクリック
+
 <figure>
-  <Image src={tokenImg} alt="Notion開発者ツール画面のインテグレーション設定。アクセストークンのコピー欄" />
-  <figcaption>Notion設定画面（開発者ツール / コネクション）。「アクセストークン」の右端アイコンからトークンをコピーする</figcaption>
+  <Image src={newConnectImg} alt="Notion開発者ツール一覧画面。右上の＋新規コネクトボタンを赤枠強調" />
+  <figcaption>開発者ツールのコネクション画面。右上の赤枠「＋ 新規コネクト」をクリックする</figcaption>
 </figure>
 
-1. [Notion Developers](https://www.notion.so/profile/integrations) を開く
-2. <b>「新しいインテグレーションを作成」</b> をクリック
-3. 関連ワークスペースを選択し、名前に「iOSショートカット」等と入力して保存
-4. 画面内の **「インテグレーション トークン」** 欄にある <b>「アクセストークン」</b> をコピーしてメモ
+3. コネクト名に「iOSショートカット」など任意の名前を入力し、右下の <b>「コネクトを作成」</b> をクリック
+
+<figure>
+  <Image src={createModalImg} alt="新規コネクト作成モーダル。コネクト名入力欄とコネクト作成ボタンを赤枠強調" />
+  <figcaption>作成モーダル。コネクト名を入力し、右下の「コネクトを作成」を押す</figcaption>
+</figure>
+
+4. 作成後、**「インテグレーション トークン」** 欄にある <b>「アクセストークン」</b> の右側アイコンをクリックしてコピー
+
+<figure>
+  <Image src={tokenCopyImg} alt="Notion設定画面。アクセストークン欄とコピーアイコンを赤枠強調" />
+  <figcaption>詳細設定画面。赤枠内の「アクセストークン」をコピーして控えておく</figcaption>
+</figure>
 
 ※画面表示上「内部シークレット」ではなく<b>「アクセストークン」</b>と表記されています。この文字列をそのまま使用します。
 
@@ -178,8 +192,8 @@ https://www.notion.so/myworkspace/{データベースID}?v=xxxxxxxxxxxx
 ダウンロードしたショートカットアプリを開き、取得した2つの値を設定します。
 
 <figure>
-  <Image src={shortcutSettingsImg} alt="iOSショートカット編集画面。データベースIDとAuthorizationのテキスト入力欄" />
-  <figcaption>ショートカットの編集画面。1番目のテキストに「データベースID」、2番目のテキストに「アクセストークン」を貼り付ける</figcaption>
+  <Image src={shortcutSettingsImg} alt="iOSショートカット編集画面。データベースIDとAuthorizationのテキスト入力欄を赤枠強調" />
+  <figcaption>ショートカットの編集画面。1番目の赤枠に「データベースID」、2番目の赤枠に「アクセストークン」を貼り付ける</figcaption>
 </figure>
 
 1. ショートカットアプリで「公開用_読書メモを開く」の右上の <b>「…」</b> をタップして編集画面を開く
