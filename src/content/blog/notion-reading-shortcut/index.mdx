@@ -15,6 +15,7 @@ import popupFilteredImg from './shortcut-popup-filtered.jpg';
 import popupAllImg from './shortcut-popup-all.jpg';
 import dbTableImg from './notion-database-table.png';
 import tokenImg from './notion-integration-token.png';
+import shortcutSettingsImg from './shortcut-edit-settings.png';
 
 <ProblemBox>
 - Notionで読書管理を作ったものの、開くのがだるくてメモが続かない
@@ -176,9 +177,14 @@ https://www.notion.so/myworkspace/{データベースID}?v=xxxxxxxxxxxx
 
 ダウンロードしたショートカットアプリを開き、取得した2つの値を設定します。
 
+<figure>
+  <Image src={shortcutSettingsImg} alt="iOSショートカット編集画面。データベースIDとAuthorizationのテキスト入力欄" />
+  <figcaption>ショートカットの編集画面。1番目のテキストに「データベースID」、2番目のテキストに「アクセストークン」を貼り付ける</figcaption>
+</figure>
+
 1. ショートカットアプリで「公開用_読書メモを開く」の右上の <b>「…」</b> をタップして編集画面を開く
 2. <b>1番目のアクション（テキスト）</b>: コピーした <b>「データベースID」</b> を貼り付け
-3. <b>2番目のアクション（テキスト）</b>: コピーした <b>「アクセストークン」</b> を貼り付け
+3. <b>2番目のテキスト</b>: 「アクセストークン」を貼り付け（変数名はAuthorization）
 4. 右上の「完了」を押して保存
 
 以上で設定はすべて完了です。
