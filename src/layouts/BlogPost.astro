@@ -7,6 +7,7 @@ import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
 import Ad from '../components/Ad.astro';
 import TableEnhancer from '../components/TableEnhancer.astro';
+import CodeEnhancer from '../components/CodeEnhancer.astro';
 import ShareButtons from '../components/ShareButtons.astro';
 import TableOfContents from '../components/TableOfContents.astro';
 import Breadcrumb from '../components/Breadcrumb.astro';
@@ -274,7 +275,6 @@ const articleSchema = {
 			.tag:hover {
 				background-color: #bae6fd;
 			}
-			}
 		</style>
 	</head>
 
@@ -345,6 +345,7 @@ const articleSchema = {
 		</main>
 		<Footer />
 		<TableEnhancer />
+		<CodeEnhancer />
 		<script>
 			document.addEventListener('DOMContentLoaded', () => {
 				const toc = document.getElementById('toc-wrapper');

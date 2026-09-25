@@ -15,8 +15,9 @@ interface Props {
 const {
 	authorName = 'teluis',
 	authorTitle = 'ITエンジニア / コンサルタント',
-	authorBio = '日系大手企業でキャリアをスタートし、AIスタートアップでの開発経験を経て、現在はコンサルティングファームに勤務。合理的なエンジニア視点と実体験から得た暮らし・旅の改善エッセンスを発信しています。',
-	authorAvatar = '/brand/teluis_avatar.webp',
+	authorBio = '日経大手企業でキャリアをスタートし、AIスタートアップでの開発経験を経て、現在はコンサルティングファームに勤務。日々の実体験から得た改善エッセンスを発信しています。',
+	authorAvatar = '/brand/teluis_avatar.jpg',
+	showPartner = true,
 } = Astro.props;
 
 // 全記事の取得（ドラフト除外）
@@ -43,7 +44,7 @@ const categories = Object.entries(categoryCounts).sort((a, b) => b[1] - a[1]);
 		</div>
 		<div class="profile-card">
 			<div class="profile-avatar-wrap">
-				<img class="profile-avatar" src={authorAvatar} alt={authorName} width="88" height="88" loading="lazy" decoding="async" />
+				<img class="profile-avatar" src={authorAvatar} alt={authorName} />
 			</div>
 			<div class="profile-body">
 				<div class="profile-name">{authorName}</div>
@@ -51,9 +52,17 @@ const categories = Object.entries(categoryCounts).sort((a, b) => b[1] - a[1]);
 				<p class="profile-text">{authorBio}</p>
 			</div>
 		</div>
-		<div class="profile-more-wrap">
-			<a href="/about/" class="profile-more-link">詳しいプロフィール・運営情報を見る &raquo;</a>
-		</div>
+
+		{showPartner && (
+			<div class="partner-divider"></div>
+			<div class="partner-card">
+				<img class="partner-avatar" src="/brand/テルイズ妻.png" alt="TELUIS 妻" />
+				<div class="partner-body">
+					<div class="partner-name">TELUIS 妻 <span class="partner-badge">共同運営</span></div>
+					<p class="partner-text">ときどき記事執筆やレビューをサポートしています。</p>
+				</div>
+			</div>
+		)}
 	</div>
 
 	<!-- カテゴリ一覧ウィジェット -->
@@ -66,7 +75,7 @@ const categories = Object.entries(categoryCounts).sort((a, b) => b[1] - a[1]);
 			<ul class="category-list">
 				{categories.map(([category, count]) => (
 					<li>
-						<a href={`/category/${category}/`} class="category-item">
+						<a href={`/category/${category}`} class="category-item">
 							<span class="category-name">
 								<Icon name="heroicons:folder" class="cat-icon" />
 								{category}
@@ -106,7 +115,7 @@ const categories = Object.entries(categoryCounts).sort((a, b) => b[1] - a[1]);
 							)}
 						</div>
 						<div class="recent-content">
-							<p class="recent-title">{post.data.title}</p>
+							<h4 class="recent-title">{post.data.title}</h4>
 							<span class="recent-date">
 								<Icon name="heroicons:calendar" class="date-icon" />
 								<FormattedDate date={post.data.pubDate} />
@@ -152,8 +161,6 @@ const categories = Object.entries(categoryCounts).sort((a, b) => b[1] - a[1]);
 			position: static;
 			max-height: none;
 			overflow-y: visible;
-			content-visibility: auto;
-			contain-intrinsic-size: 1px 800px;
 		}
 	}
 
@@ -210,7 +217,7 @@ const categories = Object.entries(categoryCounts).sort((a, b) => b[1] - a[1]);
 	.profile-role {
 		font-size: 0.78rem;
 		font-weight: 600;
-		color: #0369a1;
+		color: var(--theme-accent, #0284c7);
 		background: #e0f2fe;
 		padding: 0.15rem 0.6rem;
 		border-radius: 9999px;
@@ -277,29 +284,6 @@ const categories = Object.entries(categoryCounts).sort((a, b) => b[1] - a[1]);
 		line-height: 1.4;
 	}
 
-	.profile-more-wrap {
-		margin-top: 1rem;
-		text-align: center;
-	}
-
-	.profile-more-link {
-		display: block;
-		font-size: 0.82rem;
-		font-weight: 600;
-		color: #0369a1;
-		background-color: #f0f9ff;
-		border: 1px solid #bae6fd;
-		border-radius: 6px;
-		padding: 0.45rem 0.75rem;
-		text-decoration: none;
-		transition: background-color 0.2s, color 0.2s;
-	}
-
-	.profile-more-link:hover {
-		background-color: #e0f2fe;
-		text-decoration: none;
-	}
-
 	/* カテゴリ一覧 */
 	.category-list {
 		list-style: none;
@@ -346,7 +330,7 @@ const categories = Object.entries(categoryCounts).sort((a, b) => b[1] - a[1]);
 		font-size: 0.75rem;
 		font-weight: 700;
 		background: #f1f5f9;
-		color: #475569;
+		color: var(--text-light, #64748b);
 		padding: 0.1rem 0.5rem;
 		border-radius: 9999px;
 		flex-shrink: 0;
