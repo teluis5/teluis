@@ -8,6 +8,7 @@ import { defineConfig, fontProviders } from 'astro/config';
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://teluis.com',
+	trailingSlash: 'always',
 	build: {
 		inlineStylesheets: 'always',
 	},
