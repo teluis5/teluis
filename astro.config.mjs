@@ -22,6 +22,8 @@ export default defineConfig({
 		'/category/グルメ/': '/category/旅行/',
 		'/category/地域ニュース': '/category/ライフスタイル/',
 		'/category/地域ニュース/': '/category/ライフスタイル/',
+		'/category/商業施設': '/category/ライフスタイル/',
+		'/category/商業施設/': '/category/ライフスタイル/',
 	},
 	fonts: [
 		{
