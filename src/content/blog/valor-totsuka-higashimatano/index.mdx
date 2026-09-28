@@ -10,6 +10,7 @@ import { Image } from 'astro:assets';
 import ProblemBox from '../../../components/ProblemBox.astro';
 import ConclusionBox from '../../../components/ConclusionBox.astro';
 import Carousel from '../../../components/Carousel.astro';
+import BlogCard from '../../../components/BlogCard.astro';
 import plan3dImg from './plan-3d-image.jpg';
 import planSignboardImg from './plan-signboard.jpg';
 import planBlueprintImg from './plan-blueprint.jpg';
@@ -23,7 +24,8 @@ import siteViewBenzSideImg from './site-view-benz-side.jpg';
 - <b>今の現地の様子</b>や、どんな店舗（駐車場台数など）になるのか知りたい！
 </ProblemBox>
 
-横浜市戸塚区東俣野町に出店予定のスーパー「バロー」について、<b>現地視察で撮影した写真と看板データから「場所・開店時期・現在の様子」の3点</b>に絞って端的にまとめました。
+横浜市戸塚区東俣野町に出店予定のスーパー「バロー」。
+<b>現地視察で撮影した写真と看板データから「場所・開店時期・現在の様子」の3点</b>に絞って端的にまとめました。
 
 ---
 
@@ -35,14 +37,14 @@ import siteViewBenzSideImg from './site-view-benz-side.jpg';
 | :--- | :--- |
 | <b>開店（オープン）予想</b> | <b>2027年秋頃</b>（建物完成予定：2027年9月30日） |
 | <b>建物工事の着工</b> | <b>2026年12月1日</b>から着工予定 |
-| <b>場所</b> | 横浜市戸塚区東俣野町1759番他（国道1号沿い・旧ミツバ跡地） |
+| <b>場所</b> | 横浜市戸塚区東俣野町1759番他（旧ミツバ横浜研究開発センター跡地） |
 | <b>店舗規模・駐車場</b> | 地上2階建て（延床約4,243㎡）/ <b>駐車場 221台</b> |
 
 ---
 
-## 2. 場所はどこ？（Googleマップ）
+## 2. 場所はどこ？（Googleマップ・車での出入り注意点）
 
-場所は<b>国道1号線（東海道）沿い、旧「ミツバ 横浜研究開発センター」の跡地</b>（メルセデス・ベンツの隣接地）です。原宿交差点から藤沢方面へ向かう幹線道路沿いに位置しています。
+場所は<b>旧「ミツバ 横浜研究開発センター」の跡地</b>（メルセデス・ベンツ隣接地）です。<b>国道1号本線からは直接敷地へ出入りできません。</b>裏手の<b>「旧国道1号（市道東俣野278号線）」</b>や<b>「市道東俣野36号線」</b>から入庫するルートになります。
 
 <iframe src="https://maps.google.com/maps?q=%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E6%A8%AA%E6%B5%9C%E5%B8%82%E6%88%B8%E5%A1%9A%E5%8C%BA%E6%9D%B1%E4%BF%A3%E9%87%8E%E7%94%BA1760&z=15&output=embed&hl=ja" width="100%" style="border:0; aspect-ratio: 16 / 10; height: auto;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
@@ -75,10 +77,10 @@ import siteViewBenzSideImg from './site-view-benz-side.jpg';
 
 <Carousel>
   <div>
-    <Image src={plan3dImg} alt="バロー戸塚区東俣野町店の平面図をもとに生成した3D店舗完成イメージ（屋上駐車場スロープ・平面駐車場・国道1号出入口）" />
+    <Image src={plan3dImg} alt="バロー戸塚区東俣野町店の平面図をもとに生成した3D店舗完成イメージ（屋上駐車場スロープ・平面駐車場・車両出入口）" />
   </div>
   <div>
-    <Image src={planBlueprintImg} alt="バロー戸塚区東俣野町店の現地配置・1階平面図（店舗棟・屋上駐車場スロープ・車両出入口）" />
+    <Image src={planBlueprintImg} alt="バロー戸塚区東俣野町店の現地配置・1階平面図（店舗棟・屋上駐車場スロープ・旧国道1号側の車両出入口）" />
   </div>
   <div>
     <Image src={planSignboardImg} alt="バロー戸塚区東俣野町店の現地「開発事業のお知らせ」標識看板（工期・面積・駐車221台）" />
@@ -88,22 +90,33 @@ import siteViewBenzSideImg from './site-view-benz-side.jpg';
   ※1枚目は現地看板の平面図をもとに生成した店舗レイアウトのイメージ図です。
 </p>
 
-- <b>駐車場は「平面＋屋上」で計221台</b>：敷地手前の広い平面駐車場に加え、スロープで建物の上へ登る「屋上駐車場」が設けられます。
-- <b>国道1号から直接出入り可能</b>：国道1号線沿いに幅10mの「車両入口専用」と「車両出口専用」が分かれて作られるため、車での買い出しが非常にスムーズです。
-
-<p style="background: #f0f7ff; border-left: 4px solid #0066cc; padding: 12px 16px; margin: 20px 0; border-radius: 4px;">
-  <b>関東のバロー関連記事：</b><br />
-  ・<a href="/blog/valor-yokohama-shimonagaya/" style="font-weight: bold; color: #0066cc; text-decoration: underline;">【現地レポ】バロー横浜下永谷店（関東1号店）に行ってきた！鮪ブーメラン・飛騨牛・果物スイーツが凄すぎる</a><br />
-  ・<a href="/blog/valor-honhaneda/" style="font-weight: bold; color: #0066cc; text-decoration: underline;">【東京初進出】バロー本羽田店はいつ開店？場所・テナント・求人まとめ</a>
-</p>
+- <b>駐車場は「平面＋屋上」で計221台</b>：敷地手前の広い平面駐車場に加え、スロープで建物の上へ登る「屋上駐車場」を完備。
+- <b>【注意】国道1号からは直接出入り不可</b>：車の出入口は国道1号沿いにはありません。北西側の<b>「旧国道1号（市道278号線）」</b>と南東側の<b>「市道36号線」</b>に設置されます。
 
 ---
 
-## 5. まとめ
+## 5. バロー関東進出（1号店〜3号店）の開店予定と比較
+
+東海地方を地盤とするバローは現在、神奈川・東京エリアへの出店を加速させています。関東3店舗のスケジュールとテナントは以下の通りです。
+
+| 店舗名 | 所在地 | 開店時期・テナント特徴 |
+| :--- | :--- | :--- |
+| <b>関東1号店：[横浜下永谷店](/blog/valor-yokohama-shimonagaya/)</b> | 横浜市港南区（環状2号沿い） | <b>営業中</b>（鮪ブーメラン・飛騨牛・果物タルトが大人気） |
+| <b>関東2号店：[本羽田店（東京初）](/blog/valor-honhaneda/)</b> | 東京都大田区（旧オリンピック跡） | <b>2026年晩秋（11月頃）開店予定</b>（<b>ノジマ</b>・北欧倶楽部が入居） |
+| <b>関東3号店：戸塚区東俣野町店（当店舗）</b> | 横浜市戸塚区（旧ミツバ跡地） | <b>2027年秋頃開店予定</b>（2026年12月着工・駐車221台） |
+
+<BlogCard
+  slugs={["valor-yokohama-shimonagaya", "valor-honhaneda"]}
+  label="関東のバロー現地レポ・新店舗記事"
+/>
+
+---
+
+## 6. まとめ
 
 <ConclusionBox>
-- <b>場所</b>：横浜市戸塚区東俣野町1759番他（国道1号沿い・旧ミツバ跡地）
+- <b>場所</b>：横浜市戸塚区東俣野町1759番他（旧ミツバ横浜研究開発センター跡地）
 - <b>いつ開店？</b>：2026年12月着工・2027年9月末完成予定のため、<b>2027年秋頃オープン見通し</b>
+- <b>駐車場と出入口</b>：平面＋屋上で<b>計221台</b>。国道1号からは直接入れず<b>旧国道1号・周辺市道側</b>から入出庫
 - <b>今の様子</b>：現在はまだ草木が茂る空き地状態（現地看板のみ設置済）
-- <b>店舗規模</b>：平面＋屋上駐車場で<b>計221台</b>を備える大型店
 </ConclusionBox>
