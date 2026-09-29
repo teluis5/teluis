@@ -8,15 +8,17 @@ import Header from '../components/Header.astro';
 import Ad from '../components/Ad.astro';
 import TableEnhancer from '../components/TableEnhancer.astro';
 import CodeEnhancer from '../components/CodeEnhancer.astro';
+import RelatedPosts from '../components/RelatedPosts.astro';
 import ShareButtons from '../components/ShareButtons.astro';
 import TableOfContents from '../components/TableOfContents.astro';
 import Breadcrumb from '../components/Breadcrumb.astro';
 import Sidebar from '../components/Sidebar.astro';
 import { Icon } from 'astro-icon/components';
 
-type Props = CollectionEntry<'blog'>['data'] & { headings?: any[] };
+type Props = CollectionEntry<'blog'>['data'] & { headings?: any[]; currentSlug?: string };
 
 const { title, description, pubDate, updatedDate, heroImage, categories, headings } = Astro.props;
+const currentSlug = Astro.props.currentSlug || Astro.url.pathname.replace(/^\/blog\//, '').replace(/\/$/, '');
 
 const breadcrumbItems = [
 	{ label: 'ホーム', href: '/' },
@@ -315,6 +317,8 @@ const articleSchema = {
 						<slot />
 						
 						<ShareButtons title={title} />
+						
+						<RelatedPosts currentSlug={currentSlug} categories={categories} />
 						
 						<!-- 記事下広告（審査通過後にスロットIDを設定して有効化） -->
 						<!--
