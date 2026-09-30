@@ -1,8 +1,14 @@
 ---
 // src/components/Carousel.astro
 // 画像やSNS埋め込みを水平スクロールで表示するカルーセルコンポーネント（サムネイルプレビュー・キャプション対応）
+interface Props {
+  aspectRatio?: string; // 例: "16/10", "16/9", "4/3", "1/1"（デフォルト: "16/10"）
+  fit?: 'contain' | 'cover'; // （デフォルト: "contain"）
+}
+
+const { aspectRatio = '16/10', fit = 'contain' } = Astro.props;
 ---
-<div class="carousel-container" data-carousel>
+<div class="carousel-container" data-carousel style={`--carousel-aspect: ${aspectRatio}; --carousel-fit: ${fit};`}>
   <div class="scroller" data-scroller>
     <slot />
   </div>
@@ -58,20 +64,29 @@
     justify-content: flex-start;
     align-items: center;
     box-sizing: border-box;
-    padding: 4px;
+    padding: 6px;
   }
 
-  /* 画像・iframe等がコンテナをはみ出さないようにする */
+  /* 画像の高さ・アスペクト比を統一（縦横比が混在しても縦の長さが変わらない） */
   .scroller > :global(*) :global(img) {
-    max-width: 100%;
+    width: 100%;
     height: auto;
-    max-height: 60vh;
-    object-fit: contain;
+    aspect-ratio: var(--carousel-aspect, 16 / 10);
+    max-height: 480px;
+    object-fit: var(--carousel-fit, contain);
+    background-color: #f8fafc;
+    border: 1px solid var(--border-color, #e2e8f0);
     border-radius: var(--radius, 6px);
     display: block;
     margin: 0 auto;
+    box-sizing: border-box;
   }
   
+  .scroller > :global(*) :global(figure) {
+    margin: 0 !important;
+    width: 100% !important;
+  }
+
   .scroller > :global(*) :global(iframe),
   .scroller > :global(*) :global(blockquote) {
     width: 100% !important;
