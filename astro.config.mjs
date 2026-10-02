@@ -24,6 +24,8 @@ export default defineConfig({
 		'/category/地域ニュース/': '/category/ライフスタイル/',
 		'/category/商業施設': '/category/ライフスタイル/',
 		'/category/商業施設/': '/category/ライフスタイル/',
+		'/category/ブログ運営': '/category/IT・ガジェット/',
+		'/category/ブログ運営/': '/category/IT・ガジェット/',
 	},
 	fonts: [
 		{
