@@ -3,6 +3,7 @@ import { Image } from 'astro:assets';
 import { getCollection } from 'astro:content';
 import { Icon } from 'astro-icon/components';
 import FormattedDate from './FormattedDate.astro';
+import * as consts from '../consts';
 
 interface Props {
 	authorName?: string;
@@ -12,11 +13,13 @@ interface Props {
 	showPartner?: boolean;
 }
 
+const siteConsts = consts as Record<string, any>;
+
 const {
-	authorName = 'teluis',
-	authorTitle = 'ITエンジニア / ITコンサルタント',
-	authorBio = '日系大手企業でキャリアをスタートし、AIスタートアップでの開発経験を経て、現在はコンサルティングファームに勤務。スマート家電の徹底検証（お手入れ・パーツ数重視）や旅行記など、日々の実体験から得た生活改善エッセンスを発信しています。',
-	authorAvatar = '/brand/teluis_avatar.webp',
+	authorName = siteConsts.AUTHOR_NAME ?? siteConsts.AUTHOR?.name ?? 'teluis',
+	authorTitle = siteConsts.AUTHOR_TITLE ?? siteConsts.AUTHOR?.title ?? '',
+	authorBio = siteConsts.AUTHOR_BIO ?? siteConsts.AUTHOR?.bio ?? '',
+	authorAvatar = siteConsts.AUTHOR_AVATAR ?? siteConsts.AUTHOR?.avatar ?? '/brand/teluis_avatar.webp',
 } = Astro.props;
 
 // 全記事の取得（ドラフト除外）
