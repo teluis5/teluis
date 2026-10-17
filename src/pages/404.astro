@@ -17,7 +17,7 @@ const recentPosts = allPosts
 <html lang="ja">
 	<head>
 		<BaseHead title={'404 Not Found | ' + SITE_TITLE} description="お探しのページは見つかりませんでした。" />
-		<!-- 旧日本語URL・旧カテゴリからのスマート自動転送スクリプト -->
+		<!-- 旧カテゴリからのスマート自動転送スクリプト -->
 		<script is:inline>
 			(function() {
 				var path = window.location.pathname;
@@ -25,11 +25,6 @@ const recentPosts = allPosts
 				try { decoded = decodeURIComponent(path); } catch (e) { decoded = path; }
 
 				var redirects = [
-					{ match: '名画のティータイム', to: '/blog/art-teatime-book-review/' },
-					{ match: 'ハリー・ポッ', to: '/blog/harry-potter-toshimaen-station/' },
-					{ match: 'ハリーポッ', to: '/blog/harry-potter-toshimaen-station/' },
-					{ match: 'とっとり', to: '/blog/tottori-hanakairou-winter-illumination/' },
-					{ match: '挫折した理由', to: '/blog/why-quit-blog-first-month/' },
 					{ match: 'マネー・ビジネス', to: '/category/ライフスタイル/' },
 					{ match: '暮らし・家電', to: '/category/ライフスタイル/' },
 					{ match: 'グルメ', to: '/category/旅行/' },

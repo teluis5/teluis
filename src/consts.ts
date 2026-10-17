@@ -1,6 +1,6 @@
 // Global site configurations
-export const SITE_TITLE = 'teluis';
-export const SITE_DESCRIPTION = '暮らしをシンプルに、豊かに。現役ITエンジニア兼コンサルタントによる、生活改善・スマート家電・旅行・おすすめガジェット実体験ブログ「teluis」。';
+export const SITE_TITLE = 'TELUIS（テルイズ）';
+export const SITE_DESCRIPTION = '暮らしをシンプルに整える。現役ITエンジニア兼コンサルタントによる、スマート家電・生活改善・旅行・ガジェットの実体験レビューブログ「TELUIS」。';
 
 // Author / Profile configurations for Sidebar & Author Box
 export const AUTHOR = {

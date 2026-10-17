@@ -1,7 +1,9 @@
 ---
+import { Icon } from 'astro-icon/components';
+
 interface Props {
 	title: string;
-	imageUrl: string;
+	imageUrl?: string;
 	amazonUrl?: string;
 	rakutenUrl?: string;
 	yahooUrl?: string;
@@ -30,23 +32,29 @@ if (finalRakutenUrl && !finalRakutenUrl.includes('hb.afl.rakuten.co.jp')) {
 
 <div class="product-link-card">
 	<div class="product-image">
-		<img src={imageUrl} alt={title} loading="lazy" />
+		{imageUrl ? (
+			<img src={imageUrl} alt={title} loading="lazy" />
+		) : (
+			<div class="product-placeholder">
+				<Icon name="heroicons:shopping-bag" class="placeholder-icon" />
+			</div>
+		)}
 	</div>
 	<div class="product-info">
 		<div class="product-title">{title}</div>
 		<div class="product-buttons">
 			{finalAmazonUrl && (
-				<a href={finalAmazonUrl} target="_blank" rel="noopener noreferrer" class="btn-aff btn-amazon">
+				<a href={finalAmazonUrl} target="_blank" rel="sponsored noopener noreferrer" class="btn-aff btn-amazon">
 					Amazonで価格を見る
 				</a>
 			)}
 			{finalRakutenUrl && (
-				<a href={finalRakutenUrl} target="_blank" rel="noopener noreferrer" class="btn-aff btn-rakuten">
+				<a href={finalRakutenUrl} target="_blank" rel="sponsored noopener noreferrer" class="btn-aff btn-rakuten">
 					楽天市場で探す
 				</a>
 			)}
 			{yahooUrl && (
-				<a href={yahooUrl} target="_blank" rel="noopener noreferrer" class="btn-aff btn-yahoo">
+				<a href={yahooUrl} target="_blank" rel="sponsored noopener noreferrer" class="btn-aff btn-yahoo">
 					Yahoo!ショッピング
 				</a>
 			)}
@@ -78,6 +86,21 @@ if (finalRakutenUrl && !finalRakutenUrl.includes('hb.afl.rakuten.co.jp')) {
 		max-width: 100%;
 		max-height: 140px;
 		object-fit: contain;
+	}
+
+	.product-placeholder {
+		width: 100px;
+		height: 100px;
+		background-color: #f1f5f9;
+		border-radius: 8px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: #94a3b8;
+	}
+
+	.placeholder-icon {
+		font-size: 2.5rem;
 	}
 
 	.product-info {
