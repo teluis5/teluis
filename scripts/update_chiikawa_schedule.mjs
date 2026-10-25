@@ -153,10 +153,11 @@ function translateStatus(statusText) {
 }
 
 // -------------------------------------------------------------
-// 2. スケジュールテーブル Markdown 生成
+// 2. スケジュールテーブル Markdown 生成（今後の予定ファースト）
 // -------------------------------------------------------------
 function generateScheduleMarkdown(rawFlights, dateInfo) {
   const todayStr = dateInfo.dateStr;
+  const nowTs = Math.floor(Date.now() / 1000);
 
   // フライト情報のパース
   const parsed = [];
@@ -171,48 +172,95 @@ function generateScheduleMarkdown(rawFlights, dateInfo) {
     const depSched = t.scheduled?.departure;
     const arrSched = t.scheduled?.arrival;
     const depReal = t.real?.departure;
+    const arrReal = t.real?.arrival;
 
     const date = formatDate(depSched || depReal);
     const depTime = formatTime(depSched);
     const arrTime = formatTime(arrSched);
-    const status = translateStatus(f.status?.text);
+    const statusText = f.status?.text || '';
+    const status = translateStatus(statusText);
+    const isLive = Boolean(f.status?.live);
+    const isLanded = /Landed/i.test(statusText) || Boolean(arrReal);
+
+    // 未来の便（未出発・飛行中）判定
+    const isUpcoming = isLive || (!isLanded && (depSched ? depSched >= nowTs - 1800 : false));
 
     parsed.push({
       date,
       flightNo,
+      origCode,
+      origName,
+      destCode,
+      destName,
       route: `${origName} ➔ ${destName}`,
       scheduleTime: `${depTime}発 - ${arrTime}着`,
       status,
-      timestamp: depSched || depReal || 0
+      isLive,
+      isLanded,
+      isUpcoming,
+      depTimestamp: depSched || depReal || 0,
+      arrTimestamp: arrSched || arrReal || 0
     });
   }
 
-  // 今日のフライトを抽出
-  const todayFlights = parsed.filter(f => f.date === todayStr);
+  // 最新順から古い順（時系列昇順）にソート
+  const chronological = [...parsed].sort((a, b) => a.depTimestamp - b.depTimestamp);
 
-  // もし今日のフライトがまだAPIに載っていない、または深夜等で0件の場合、直近のフライトを採用
-  const displayFlights = todayFlights.length > 0 ? todayFlights : parsed.slice(0, 5);
-  // 時系列順（古い順：朝➔夜）に並べ替え
-  displayFlights.sort((a, b) => a.timestamp - b.timestamp);
+  // 本日のフライト
+  const todayFlights = chronological.filter(f => f.date === todayStr);
+
+  // これから飛ぶ便（Upcoming）と 終了した便（Past）に分類
+  const upcomingFlights = todayFlights.filter(f => !f.isLanded);
+  const pastFlights = todayFlights.filter(f => f.isLanded);
+
+  // 最新の着陸便・駐機場所（ナイトステイ先）の特定
+  const lastCompletedFlight = [...pastFlights].pop() || [...chronological].filter(f => f.isLanded).pop();
+  const currentAirportCode = lastCompletedFlight ? lastCompletedFlight.destCode : 'HND';
+  const currentAirportName = AIRPORT_NAMES[currentAirportCode] || currentAirportCode;
 
   let md = `\n{/* CHIIKAWA_SCHEDULE_START */}\n`;
-  md += `### 📅 本日のちいかわジェット運航実績・スケジュール（${dateInfo.formattedJa} 自動更新）\n\n`;
+  md += `### ✈️ 【最新】ちいかわジェット今後の運行予定・フライト状況（${dateInfo.formattedJa} 自動更新）\n\n`;
 
-  if (displayFlights.length === 0) {
-    md += `本日の確定運航ダイヤは現在調整中、または未登録です。朝の運航開始後に順次反映されます。\n\n`;
-  } else {
-    md += `| 便名 | 区間（出発 ➔ 到着） | 定刻ダイヤ | 最新ステータス |\n`;
+  // 1. 現在の機体位置 ＆ 明日のフライト予測ボックス
+  md += `<div style="background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem;">\n`;
+  md += `  <p style="margin: 0 0 0.5rem 0; font-weight: bold; color: #166534; font-size: 1rem;">\n`;
+  md += `    📍 現在の機体位置 ＆ 今後の出発予測\n`;
+  md += `  </p>\n`;
+  md += `  <ul style="margin: 0; padding-left: 1.25rem; color: #15803d; font-size: 0.9rem; line-height: 1.6;">\n`;
+  md += `    <li><b>現在地</b>: <b>${currentAirportName}（${currentAirportCode}）</b> に滞在／駐機中</li>\n`;
+  md += `    <li><b>今後の始発便予測</b>: 航空機の運用上、次のフライトは<b>「${currentAirportName}発」</b>の便（羽田行き等）からスタートする可能性が極めて高いです！</li>\n`;
+  md += `  </ul>\n`;
+  md += `</div>\n\n`;
+
+  // 2. これから飛ぶ予定のフライト（Upcoming Flights）
+  md += `#### 🕒 本日これからの運行予定（出発前・飛行中）\n\n`;
+  if (upcomingFlights.length > 0) {
+    md += `| 便名 | 区間（出発 ➔ 到着） | 定刻ダイヤ | ステータス |\n`;
     md += `| :--- | :--- | :--- | :--- |\n`;
-    for (const f of displayFlights) {
+    for (const f of upcomingFlights) {
+      md += `| <b>${f.flightNo}</b> | ${f.route} | ${f.scheduleTime} | <b>${f.status}</b> |\n`;
+    }
+    md += `\n`;
+  } else {
+    md += `> 🌙 **本日のフライトはすべて終了しました。**\n`;
+    md += `> 機体は現在 **${currentAirportName}** で夜間駐機（ナイトステイ）中です。明朝の運航計画（午前6〜7時頃）が入り次第、ここに最新ダイヤが自動反映されます。\n\n`;
+  }
+
+  // 3. 本日の運航実績（終了分）
+  if (pastFlights.length > 0) {
+    md += `#### 📋 本日の運航実績（終了分）\n\n`;
+    md += `| 便名 | 区間（出発 ➔ 到着） | 定刻ダイヤ | 運航結果 |\n`;
+    md += `| :--- | :--- | :--- | :--- |\n`;
+    for (const f of pastFlights) {
       md += `| <b>${f.flightNo}</b> | ${f.route} | ${f.scheduleTime} | ${f.status} |\n`;
     }
     md += `\n`;
   }
 
-  md += `<small style="color: #64748b; display: block; margin-top: 0.5rem;">※フライトレーダー24（JA609A）公式トラッキングデータより自動取得しています。天候や機材繰りにより変更となる場合があるため、最新の運航情報は必ずANA公式サイトの発着案内をご確認ください。<br />※当記事は最新フライト情報が更新され次第、自動追跡で内容をアップデートしています。</small>\n`;
+  md += `<small style="color: #64748b; display: block; margin-top: 0.5rem;">※フライトレーダー24（JA609A）公式トラッキングデータよりリアルタイム自動更新しています。天候や急な機材繰りにより変更となる場合があるため、搭乗前には必ずANA公式サイトの発着案内をご確認ください。</small>\n`;
   md += `{/* CHIIKAWA_SCHEDULE_END */}\n`;
 
-  return { md, flightCount: displayFlights.length };
+  return { md, flightCount: todayFlights.length };
 }
 
 // -------------------------------------------------------------
