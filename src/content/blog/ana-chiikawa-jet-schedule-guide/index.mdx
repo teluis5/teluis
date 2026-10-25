@@ -2,7 +2,7 @@
 title: "【ANAちいかわジェット】運行予定の調べ方！JA609Aで今日のフライトを特定する裏ワザ"
 description: "ANA特別塗装機「ちいかわジェット」の運行予定・ダイヤの調べ方を徹底解説！固定ダイヤがない理由から、機体番号「JA609A」を使ってFlightradar24で本日のフライト・路線をリアルタイム特定する手順、主な就航路線までまとめました。"
 pubDate: "2026-10-25"
-updatedDate: "2026-10-25"
+updatedDate: "2026-10-26"
 heroImage: "./hero.jpg"
 categories: ["ちいかわ", "旅行", "ライフスタイル"]
 ---
@@ -59,36 +59,51 @@ import ConclusionBox from '../../../components/ConclusionBox.astro';
 </figure>
 
 
-{/* CHIIKAWA_SCHEDULE_START */}
-### ✈️ 【最新】ちいかわジェット今後の運行予定・フライト状況（2026年10月25日 23:06 自動更新）
+{/* CHIIKAWA_TOMORROW_PREDICTION_START */}
+### 🔮 【明日 10月27日】のちいかわジェット運行予測（ANA同型機データ分析）
 
-<div style="background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem;">
-  <p style="margin: 0 0 0.5rem 0; font-weight: bold; color: #166534; font-size: 1rem;">
-    📍 現在の機体位置 ＆ 今後の出発予測
+<div style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1rem;">
+  <p style="margin: 0; color: #334155; font-size: 0.95rem; line-height: 1.6;">
+    夜間駐機先は <b>長崎（NGS）</b> です。<br />
+    ANA同型機（全15機・計220便）の蓄積データから算出した明日の予測ダイヤをまとめました。
   </p>
-  <ul style="margin: 0; padding-left: 1.25rem; color: #15803d; font-size: 0.9rem; line-height: 1.6;">
-    <li><b>現在地</b>: <b>長崎（NGS）</b> に滞在／駐機中</li>
-    <li><b>今後の始発便予測</b>: 航空機の運用上、次のフライトは<b>「長崎発」</b>の便（羽田行き等）からスタートする可能性が極めて高いです！</li>
-  </ul>
 </div>
 
-#### 🕒 本日これからの運行予定（出発前・飛行中）
-
-> 🌙 **本日のフライトはすべて終了しました。**
-> 機体は現在 **長崎** で夜間駐機（ナイトステイ）中です。明朝の運航計画（午前6〜7時頃）が入り次第、ここに最新ダイヤが自動反映されます。
-
-#### 📋 本日の運航実績（終了分）
-
-| 便名 | 区間（出発 ➔ 到着） | 定刻ダイヤ | 運航結果 |
+| 順番 | 予測便名 | 区間（出発 ➔ 到着） | 予定時刻 | 信頼度 | 予測根拠・運用パターン |
 | :--- | :--- | :--- | :--- |
-| <b>NH86</b> | 名古屋(中部) ➔ 東京(羽田) | 07:25発 - 08:25着 | 着陸済 (08:31) |
-| <b>NH245</b> | 東京(羽田) ➔ 福岡 | 08:55発 - 11:05着 | 着陸済 (11:32) |
-| <b>NH250</b> | 福岡 ➔ 東京(羽田) | 11:45発 - 13:25着 | 着陸済 (14:13) |
-| <b>NH593</b> | 東京(羽田) ➔ 松山 | 14:15発 - 15:50着 | 着陸済 (16:48) |
-| <b>NH596</b> | 松山 ➔ 東京(羽田) | 16:35発 - 18:05着 | 着陸済 (19:01) |
-| <b>NH669</b> | 東京(羽田) ➔ 長崎 | 19:15発 - 21:15着 | 着陸済 (21:48) |
+| <b>第1便 (朝一始発)</b> | <b>NH662</b> | 長崎 ➔ 東京(羽田) | 07:45発 - 09:20着 | <b>本命 ◎ (95%)</b> | 長崎空港ナイトステイ機材の朝一羽田行き（高頻度・固定運用）（同型機過去実績 4回連続投入） |
+| <b>第2便 (午前往路)</b> | <b>NH677 / NH251</b> | 東京(羽田) ➔ 広島 または 福岡 | 10:15〜10:30発 - 11:40〜12:30着 | <b>有力 ◯ (75%)</b> | 羽田での折り返し整備（約60分）後、主要地方基幹路線へ再投入 |
+| <b>第3便 (午後復路)</b> | <b>NH682 / NH256</b> | 広島 または 福岡 ➔ 東京(羽田) | 12:45〜13:10発 - 14:05〜14:50着 | <b>有力 ◯ (75%)</b> | 地方空港から羽田への昼折り返し便 |
+| <b>第4便 (夕方便)</b> | <b>NH593 / NH669</b> | 東京(羽田) ➔ 松山 または 長崎 | 14:15〜19:15発 | <b>可能性あり △ (60%)</b> | 午後〜夕方にかけての四国・九州方面への2巡目フライト |
 
-<small style="color: #64748b; display: block; margin-top: 0.5rem;">※フライトレーダー24（JA609A）公式トラッキングデータよりリアルタイム自動更新しています。天候や急な機材繰りにより変更となる場合があるため、搭乗前には必ずANA公式サイトの発着案内をご確認ください。</small>
+<div style="background: #fffbeb; border: 1px solid #fde68a; border-radius: 6px; padding: 0.75rem 1rem; margin-top: 0.75rem; font-size: 0.85rem; color: #92400e;">
+  💡 <b>明朝の答え合わせ</b>: 明日朝6時〜7時頃に当日の確定ダイヤが反映されます。ANA公式サイトの「国内線運航状況」または当ブログの朝刊更新をご確認ください。
+</div>
+{/* CHIIKAWA_TOMORROW_PREDICTION_END */}
+
+{/* CHIIKAWA_SCHEDULE_START */}
+### ✈️ 【最新】ちいかわジェット今後の運行予定・フライト状況（2026年10月26日 00:31 自動更新）
+
+
+<div style="background: #eff6ff; border: 2px solid #3b82f6; border-radius: 8px; padding: 1rem 1.25rem; margin: 1.5rem 0;">
+  <p style="margin: 0 0 0.5rem 0; font-weight: bold; color: #1d4ed8; font-size: 1rem;">
+    📅 本日（10月26日）のリアルタイム運行＆明日（10月27日）の予測速報
+  </p>
+  <p style="margin: 0; color: #1e3a8a; font-size: 0.9rem; line-height: 1.5;">
+    当日の最新状況と明日の予測ダイヤを更新中！<br />
+    👉 [【10月26日速報】運行状況＆明日の予測レポート](/blog/20261026-chiikawa-jet-schedule)
+  </p>
+</div>
+
+
+
+### ✈️ 【本日 10月26日】ちいかわジェット運航スケジュール
+
+> 🕒 **朝のフライト計画を待機中**<br />
+> 現在、ちいかわジェットは **長崎** に駐機しています。ANAの早朝機材割り当てデータがFlightradar24へ連携され次第、本日の全運航便がここに自動反映されます。
+
+<small style="color: #64748b; display: block; margin-top: 0.5rem;">※Flightradar24公式追跡データ（JA609A）よりリアルタイム自動更新中。急な機材繰りや天候による変更が発生する場合があります。</small>
+
 {/* CHIIKAWA_SCHEDULE_END */}
 
 ### ステップ2：ナイトステイ先から「明日の初便」を先読みする
