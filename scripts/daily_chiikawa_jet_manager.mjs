@@ -690,7 +690,7 @@ function updateGuideArticle(dateInfo, parsed, predictions, fleetDb) {
   if (!fs.existsSync(GUIDE_ARTICLE_FILE)) return;
   let content = fs.readFileSync(GUIDE_ARTICLE_FILE, 'utf-8');
 
-  // 日次記事へのリンクバナー
+  // 日次記事およびyomilee専用ダッシュボードへのリンクバナー
   const dailyLinkBanner = `
 <div style="background: #eff6ff; border: 2px solid #3b82f6; border-radius: 8px; padding: 1rem 1.25rem; margin: 1.5rem 0;">
   <p style="margin: 0 0 0.5rem 0; font-weight: bold; color: #1d4ed8; font-size: 1rem;">
@@ -699,6 +699,17 @@ function updateGuideArticle(dateInfo, parsed, predictions, fleetDb) {
   <p style="margin: 0; color: #1e3a8a; font-size: 0.9rem; line-height: 1.5;">
     当日の最新状況と明日の予測ダイヤを更新中！<br />
     👉 [【${dateInfo.todayJa}速報】運行状況＆明日の予測レポート](/blog/${dateInfo.todaySlug})
+  </p>
+</div>
+
+<div style="background: linear-gradient(135deg, #e0f2fe 0%, #fef3c7 100%); border: 2px solid #38bdf8; border-radius: 8px; padding: 1.25rem; margin: 1.5rem 0;">
+  <p style="margin: 0 0 0.5rem 0; font-weight: bold; color: #0369a1; font-size: 1.05rem;">
+    📊 【新登場】向こう1週間の運行予定＆全国空港遭遇レーダー
+  </p>
+  <p style="margin: 0; color: #334155; font-size: 0.9rem; line-height: 1.6;">
+    「今週末の土日に乗れる？」「最寄り空港に来る確率は？」をAIが予測。<br />
+    向こう1週間のフライト確率カレンダーは姉妹サイト「ヨミトク」の専用ダッシュボードで公開中！<br />
+    👉 [ちいかわジェット週間運行予測ダッシュボード（ヨミトク専用ツール）を見る](https://yomileeblog.com/site/chiikawajet/)
   </p>
 </div>
 `;
