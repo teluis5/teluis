@@ -511,7 +511,7 @@ function buildTomorrowPredictionSection(dateInfo, parsed, predictions, fleetDb) 
   md += `</div>\n\n`;
 
   md += `| 順番 | 予測便名 | 区間（出発 ➔ 到着） | 予定時刻 | 信頼度 | 予測根拠・運用パターン |\n`;
-  md += `| :--- | :--- | :--- | :--- |\n`;
+  md += `| :--- | :--- | :--- | :--- | :--- | :--- |\n`;
   for (const p of predictions) {
     md += `| <b>${p.step}</b> | <b>${p.flightNo}</b> | ${p.route} | ${p.time} | <b>${p.status} (${p.confidence})</b> | ${p.reason} |\n`;
   }
