@@ -763,9 +763,8 @@ function performAutoPush(dateInfo, articleDir) {
 
     const relArticleDir = path.relative(TELUIS_ROOT, articleDir);
     const relGuide = path.relative(TELUIS_ROOT, GUIDE_ARTICLE_FILE);
-    const relData = path.relative(TELUIS_ROOT, HISTORY_FILE);
 
-    execSync(`git add "${relArticleDir}" "${relGuide}" "${relData}"`, { cwd: TELUIS_ROOT, stdio: 'inherit' });
+    execSync(`git add "${relArticleDir}" "${relGuide}"`, { cwd: TELUIS_ROOT, stdio: 'inherit' });
 
     const detail = dateInfo.phaseDetail;
     const commitMsg = `feat(teluis): update chiikawa jet schedule for ${dateInfo.todayStr} (${detail.name})`;
