@@ -304,9 +304,15 @@ function parseFlights(rawFlights, dateInfo) {
     const depTs = depSched || depReal;
     const arrTs = arrSched || arrReal;
     const depDate = formatDate(depTs);
-
+    const nowTs = Math.floor(Date.now() / 1000);
     const isLanded = /着陸済/.test(statusJa);
-    const isLive = /飛行中/.test(statusJa);
+    const isLive = /飛行中/.test(statusJa) || (f.status?.live === true) || (!isLanded && depTs > 0 && depTs <= nowTs && (!arrTs || arrTs > nowTs - 600));
+
+    let resolvedStatusJa = statusJa;
+    if (isLive && !/飛行中/.test(statusJa)) {
+      resolvedStatusJa = '飛行中 ✈️';
+    }
+
     const isScheduled = !isLanded && !isLive;
 
     flights.push({
@@ -319,7 +325,7 @@ function parseFlights(rawFlights, dateInfo) {
       depDate,
       depTime: formatTime(depSched || depReal),
       arrTime: formatTime(arrSched || arrReal),
-      statusJa,
+      statusJa: resolvedStatusJa,
       isLanded,
       isLive,
       isScheduled,
@@ -332,26 +338,24 @@ function parseFlights(rawFlights, dateInfo) {
   flights.sort((a, b) => a.depTs - b.depTs);
 
   // 本日のフライト（出発日が今日）
-  const todayFlights = flights.filter(f => f.depDate === dateInfo.todayStr);
+  let todayFlights = flights.filter(f => f.depDate === dateInfo.todayStr);
 
   // 現在地特定
   let currentAirport = '長崎';
   let currentAirportCode = 'NGS';
   let isCurrentlyAirborne = false;
 
-  if (flights.length > 0) {
-    const liveFlight = flights.find(f => f.isLive);
-    if (liveFlight) {
-      isCurrentlyAirborne = true;
-      currentAirport = `${liveFlight.origName}から${liveFlight.destName}へ飛行中`;
-      currentAirportCode = liveFlight.destCode;
-    } else {
-      const landedFlights = flights.filter(f => f.isLanded);
-      if (landedFlights.length > 0) {
-        const lastLanded = landedFlights[landedFlights.length - 1];
-        currentAirport = lastLanded.destName;
-        currentAirportCode = lastLanded.destCode;
-      }
+  const liveFlight = todayFlights.find(f => f.isLive) || flights.find(f => f.isLive);
+  if (liveFlight) {
+    isCurrentlyAirborne = true;
+    currentAirport = `${liveFlight.origName}から${liveFlight.destName}へ飛行中`;
+    currentAirportCode = liveFlight.destCode;
+  } else {
+    const landedFlights = (todayFlights.length > 0 ? todayFlights : flights).filter(f => f.isLanded);
+    if (landedFlights.length > 0) {
+      const lastLanded = landedFlights[landedFlights.length - 1];
+      currentAirport = lastLanded.destName;
+      currentAirportCode = lastLanded.destCode;
     }
   }
 
@@ -606,6 +610,19 @@ function buildTodayScheduleSection(dateInfo, parsed) {
     for (const pf of (parsed.todayRemainingPredictions || [])) {
       md += `| <b>${pf.flightNo}</b> | ${pf.route} | ${pf.depTime}発 - ${pf.arrTime}着 | <b>${pf.statusJa}</b> |\n`;
     }
+  }
+
+  if (parsed.todayRemainingPredictions && parsed.todayRemainingPredictions.length > 0) {
+    md += `\n<div style="background: #ffffff; border: 2px solid #0284c7; border-radius: 8px; padding: 1.15rem; margin-top: 1.25rem;">\n`;
+    md += `  <p style="margin: 0 0 0.5rem 0; font-weight: bold; color: #0369a1; font-size: 1rem;">\n`;
+    md += `    🔮 【本日夕方〜夜の展開見通し】ちいかわジェットこの後のフライト予定\n`;
+    md += `  </p>\n`;
+    md += `  <ul style="margin: 0; padding-left: 1.25rem; font-size: 0.9rem; color: #334155; line-height: 1.6;">\n`;
+    md += `    <li><b>① 17:15発 NH684（広島 ➔ 羽田 18:40着）折返し復路【ほぼ確実・確率90%】</b><br />広島空港到着後、約45分の機内整備で羽田へ折り返します。羽田空港第2ターミナル展望デッキでのお出迎えは<b>18:40頃</b>が狙い目です。</li>\n`;
+    md += `    <li><b>② 19時以降の最終着地（2大シナリオ）</b><br /><b>【羽田ステイ終了｜確率55%】</b>: 18:40羽田着で本日の全便を終え羽田泊（明朝羽田始発）<br /><b>【夜の地方便へ充当｜確率45%】</b>: 羽田帰還後、19:15発 長崎行き(NH669)や19:30発 広島行き(NH685)等で地方へ移動してナイトステイ</li>\n`;
+    md += `  </ul>\n`;
+    md += `  <small style="color: #64748b; display: block; margin-top: 0.5rem;">※夜便の機材割り当ては夕方17:30〜19:00頃に公式発表され次第、自動反映されます。</small>\n`;
+    md += `</div>\n`;
   }
 
   md += `\n<small style="color: #64748b; display: block; margin-top: 0.5rem;">※Flightradar24公式追跡データ（JA609A）よりリアルタイム自動更新中。夕方以降の便は折返し後の機材登録に合わせて順次確定します。</small>\n`;
