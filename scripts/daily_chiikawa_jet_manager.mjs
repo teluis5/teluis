@@ -758,7 +758,7 @@ function performAutoPush(dateInfo, articleDir) {
     }
 
     try {
-      execSync('git pull origin main --rebase', { cwd: TELUIS_ROOT, stdio: 'inherit' });
+      execSync('git pull origin main --rebase --autostash', { cwd: TELUIS_ROOT, stdio: 'inherit' });
     } catch {}
 
     const relArticleDir = path.relative(TELUIS_ROOT, articleDir);
