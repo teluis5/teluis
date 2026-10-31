@@ -60,7 +60,7 @@ import ConclusionBox from '../../../components/ConclusionBox.astro';
 
 
 {/* CHIIKAWA_SCHEDULE_START */}
-### ✈️ 【最新】ちいかわジェット今後の運行予定・フライト状況（2026年10月31日 08:00 自動更新）
+### ✈️ 【最新】ちいかわジェット今後の運行予定・フライト状況（2026年10月31日 09:00 自動更新）
 
 
 <div style="background: #eff6ff; border: 2px solid #3b82f6; border-radius: 8px; padding: 1rem 1.25rem; margin: 1.5rem 0;">
@@ -91,8 +91,9 @@ import ConclusionBox from '../../../components/ConclusionBox.astro';
 
 ### ✈️ 【本日 10月31日】ちいかわジェット運航スケジュール
 
-> 🕒 **朝のフライト計画を待機中**<br />
-> 現在、ちいかわジェットは **大阪(伊丹)** に駐機しています。ANAの早朝機材割り当てデータがFlightradar24へ連携され次第、本日の全運航便がここに自動反映されます。
+| 便名 | 区間（出発 ➔ 到着） | 定刻ダイヤ | 現在のステータス |
+| :--- | :--- | :--- | :--- |
+| <b>NH18</b> | 大阪(伊丹) ➔ 東京(羽田) | 09:00発 - 10:10着 | <b>✈️ 飛行中 ✈️</b> |
 
 <small style="color: #64748b; display: block; margin-top: 0.5rem;">※Flightradar24公式追跡データ（JA609A）よりリアルタイム自動更新中。夕方以降の便は折返し後の機材登録に合わせて順次確定します。</small>
 
@@ -103,10 +104,10 @@ import ConclusionBox from '../../../components/ConclusionBox.astro';
 
 <div style="background: linear-gradient(135deg, #f0fdf4 0%, #e0f2fe 100%); border: 2px solid #38bdf8; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.25rem;">
   <p style="margin: 0 0 0.4rem 0; font-weight: bold; color: #0369a1; font-size: 0.95rem;">
-    ⚡ 今夜の夜間駐機状況「大阪(伊丹)」に基づく3大運航ルート予測
+    ⚡ 今夜の夜間駐機状況「未確定（10:10東京(羽田)着後、夕方便で羽田へ折返し見込み / 19〜21時頃に確定）」に基づく3大運航ルート予測
   </p>
   <p style="margin: 0; color: #334155; font-size: 0.88rem; line-height: 1.6;">
-    ANA保有B767-300ER同型機（全15機・計548便）の独自蓄積データから算出した、明日の<b>1日通し運航シナリオ（プランA・プランB・プランC）</b>です。
+    ANA保有B767-300ER同型機（全15機・計556便）の独自蓄積データから算出した、明日の<b>1日通し運航シナリオ（プランA・プランB・プランC）</b>です。
   </p>
 </div>
 
@@ -132,12 +133,12 @@ import ConclusionBox from '../../../components/ConclusionBox.astro';
 | <b>④ 午後便</b> | <b>15:15発 - 16:45着</b> | <b>NH595</b> | 東京(羽田) ➔ 松山 | 午後往路 |
 | <b>⑤ 夜最終</b> | <b>17:35発 - 19:05着</b> | <b>NH598</b> | 松山 ➔ 東京(羽田) | 🌙羽田帰還 |
 
-#### 📌 プランC（対抗 ▲｜確率 20%）：【今夜大阪(伊丹)で夜間駐機する場合】大阪(伊丹)始発 ➔ 福岡・新千歳ルート
-<p style="margin: 0.2rem 0 0.6rem 0; font-size: 0.88rem; color: #475569;"><b>1日のルート</b>: <code>大阪(伊丹) ➔ 羽田 ➔ 福岡 ➔ 羽田 ➔ 新千歳(泊)</code></p>
+#### 📌 プランC（対抗 ▲｜確率 20%）：【今夜東京(羽田)で夜間駐機する場合】東京(羽田)始発 ➔ 福岡・新千歳ルート
+<p style="margin: 0.2rem 0 0.6rem 0; font-size: 0.88rem; color: #475569;"><b>1日のルート</b>: <code>東京(羽田) ➔ 羽田 ➔ 福岡 ➔ 羽田 ➔ 新千歳(泊)</code></p>
 
 | 順序 | 予定時刻（出発 ➔ 到着） | 予測便名 | 就航区間 | 備考 |
 | :--- | :--- | :--- | :--- | :--- |
-| <b>① 朝一便</b> | <b>07:05発 - 08:15着</b> | <b>NH14</b> | 大阪(伊丹) ➔ 東京(羽田) | 大阪(伊丹)ステイ時始発 |
+| <b>① 朝一便</b> | <b>08:15発 - 10:10着</b> | <b>NH661</b> | 東京(羽田) ➔ 長崎 | 東京(羽田)ステイ時始発 |
 | <b>② 午前便</b> | <b>10:30発 - 12:30着</b> | <b>NH251</b> | 東京(羽田) ➔ 福岡 | 午前往路 |
 | <b>③ 午後便</b> | <b>13:10発 - 14:50着</b> | <b>NH256</b> | 福岡 ➔ 東京(羽田) | 昼復路 |
 | <b>④ 夜最終</b> | <b>18:00発 - 19:35着</b> | <b>NH75</b> | 東京(羽田) ➔ 札幌(新千歳) | 🌙夜間駐機 |
