@@ -7,10 +7,12 @@ import { collectFleetData } from './collector_ana_fleet.mjs';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const TELUIS_ROOT = path.resolve(__dirname, '..');
+const YOMILEE_ROOT = path.resolve(TELUIS_ROOT, '..', 'yomilee');
 
-const BLOG_CONTENT_DIR = path.join(TELUIS_ROOT, 'src', 'content', 'blog');
-const GUIDE_ARTICLE_FILE = path.join(BLOG_CONTENT_DIR, 'ana-chiikawa-jet-schedule-guide', 'index.mdx');
-const GUIDE_HERO_IMAGE = path.join(BLOG_CONTENT_DIR, 'ana-chiikawa-jet-schedule-guide', 'hero.jpg');
+const TELUIS_BLOG_DIR = path.join(TELUIS_ROOT, 'src', 'content', 'blog');
+const YOMILEE_BLOG_DIR = path.join(YOMILEE_ROOT, 'src', 'content', 'blog');
+const GUIDE_ARTICLE_FILE = path.join(TELUIS_BLOG_DIR, 'ana-chiikawa-jet-schedule-guide', 'index.mdx');
+const GUIDE_HERO_IMAGE = path.join(GUIDE_ARTICLE_FILE, '..', 'hero.jpg');
 const DATA_DIR = path.join(TELUIS_ROOT, 'data');
 const HISTORY_FILE = path.join(DATA_DIR, 'ana_b767_flight_history.json');
 
@@ -746,6 +748,20 @@ ANAのボーイング767-300ER型機で運航されている、大人気の特�
 
 朝7時の初回予想から、昼12時の補正、18時の再補正、22時のナイトステイ確定まで、最新ダイヤを随時反映しています。
 
+<div style="background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); border-radius: 10px; padding: 1.25rem; margin: 1.5rem 0; color: #ffffff; box-shadow: 0 4px 12px rgba(15, 23, 42, 0.15);">
+  <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.5rem;">
+    <span style="background: #f59e0b; color: #000; font-size: 0.75rem; font-weight: 800; padding: 0.2rem 0.6rem; border-radius: 9999px;">🎯 初便的中率 96.0% (25戦24勝)</span>
+    <span style="font-size: 0.8rem; color: #94a3b8;">プランA〜C確率＆時刻順ダイヤ対応</span>
+  </div>
+  <p style="margin: 0 0 0.5rem 0; font-weight: bold; font-size: 1.05rem; color: #67e8f9;">
+    📊 ちいかわジェット週間運行予測＆AI的中率スコアボード公開中！
+  </p>
+  <p style="margin: 0; color: #e2e8f0; font-size: 0.88rem; line-height: 1.6;">
+    「明日はどのルートで飛ぶ？（プランA・B・C）」「自分の空港に来る時間は？」をワンタップで絞り込める<b>プラン別・時刻順タイムラインUI</b>と、過去の答え合わせ実績を専用ダッシュボードで無料公開中！<br />
+    👉 <a href="/site/chiikawajet/" style="color: #fef08a; font-weight: bold; text-decoration: underline;">ちいかわジェット週間運行予測ダッシュボード（ヨミトク専用ツール）を見る</a>
+  </p>
+</div>
+
 ${badgeMd}
 
 ${todayMd}
@@ -826,7 +842,7 @@ function updateGuideArticle(dateInfo, parsed, predictions, fleetDb) {
   </p>
   <p style="margin: 0; color: #1e3a8a; font-size: 0.9rem; line-height: 1.5;">
     当日の最新状況と明日の予測ダイヤを更新中！<br />
-    👉 [【${dateInfo.todayJa}速報】運行状況＆明日の予測レポート](/blog/${dateInfo.todaySlug})
+    👉 [【${dateInfo.todayJa}速報】運行状況＆明日の予測レポート（ヨミトク）](https://yomileeblog.com/blog/${dateInfo.todaySlug}/)
   </p>
 </div>
 
@@ -878,35 +894,61 @@ function updateGuideArticle(dateInfo, parsed, predictions, fleetDb) {
   console.log(`💾 総合ガイド記事を同期更新しました: ${GUIDE_ARTICLE_FILE}`);
 }
 
-// Git Push
+// Git Push (teluis 総合ガイド & yomilee 日次記事)
 function performAutoPush(dateInfo, articleDir) {
   console.log('\n🔒 === 安全なGitコミット＆プッシュを開始 ===');
+  const detail = dateInfo.phaseDetail;
+
+  // 1. teluis (総合ガイド記事の更新)
   try {
-    const remoteUrl = execSync('git remote get-url origin', { cwd: TELUIS_ROOT, encoding: 'utf-8' }).trim();
-    if (!remoteUrl.includes('teluis') || !remoteUrl.includes('github.com')) {
-      console.error(`❌ リモートURL検証エラー: 予期しないリポジトリです (${remoteUrl})`);
-      return;
+    const remoteUrlTeluis = execSync('git remote get-url origin', { cwd: TELUIS_ROOT, encoding: 'utf-8' }).trim();
+    if (remoteUrlTeluis.includes('teluis') && remoteUrlTeluis.includes('github.com')) {
+      try {
+        execSync('git pull origin main --rebase --autostash', { cwd: TELUIS_ROOT, stdio: 'inherit' });
+      } catch {}
+
+      const relGuide = path.relative(TELUIS_ROOT, GUIDE_ARTICLE_FILE);
+      execSync(`git add "${relGuide}" "scripts/daily_chiikawa_jet_manager.mjs"`, { cwd: TELUIS_ROOT, stdio: 'inherit' });
+
+      const commitMsg = `feat(teluis): update chiikawa jet guide for ${dateInfo.todayStr} (${detail.name})`;
+      console.log(`📝 [teluis] コミット実行: "${commitMsg}"`);
+      try {
+        execSync(`git commit -m "${commitMsg}"`, { cwd: TELUIS_ROOT, stdio: 'inherit' });
+        console.log('🚀 [teluis] リモート (origin main) へプッシュ中...');
+        execSync('git push origin main', { cwd: TELUIS_ROOT, stdio: 'inherit' });
+        console.log('🎉 [teluis] Gitプッシュが完了しました！');
+      } catch (err) {
+        console.log('ℹ️ [teluis] コミット対象の変更がないか、すでに最新です。');
+      }
     }
-
-    try {
-      execSync('git pull origin main --rebase --autostash', { cwd: TELUIS_ROOT, stdio: 'inherit' });
-    } catch {}
-
-    const relArticleDir = path.relative(TELUIS_ROOT, articleDir);
-    const relGuide = path.relative(TELUIS_ROOT, GUIDE_ARTICLE_FILE);
-
-    execSync(`git add "${relArticleDir}" "${relGuide}" "scripts/daily_chiikawa_jet_manager.mjs"`, { cwd: TELUIS_ROOT, stdio: 'inherit' });
-
-    const detail = dateInfo.phaseDetail;
-    const commitMsg = `feat(teluis): update chiikawa jet schedule for ${dateInfo.todayStr} (${detail.name})`;
-    console.log(`📝 コミット実行: "${commitMsg}"`);
-    execSync(`git commit -m "${commitMsg}"`, { cwd: TELUIS_ROOT, stdio: 'inherit' });
-
-    console.log('🚀 リモート (origin main) へプッシュ中...');
-    execSync('git push origin main', { cwd: TELUIS_ROOT, stdio: 'inherit' });
-    console.log('🎉 Gitプッシュが完了しました！GitHub Pagesの自動デプロイが開始されます。');
   } catch (e) {
-    console.error('❌ Git操作エラー:', e.message);
+    console.error('❌ [teluis] Git操作エラー:', e.message);
+  }
+
+  // 2. yomilee (本日の日次記事の追加・更新)
+  try {
+    const remoteUrlYomilee = execSync('git remote get-url origin', { cwd: YOMILEE_ROOT, encoding: 'utf-8' }).trim();
+    if (remoteUrlYomilee.includes('yomilee') && remoteUrlYomilee.includes('github.com')) {
+      try {
+        execSync('git pull origin main --rebase --autostash', { cwd: YOMILEE_ROOT, stdio: 'inherit' });
+      } catch {}
+
+      const relArticleDir = path.relative(YOMILEE_ROOT, articleDir);
+      execSync(`git add "${relArticleDir}"`, { cwd: YOMILEE_ROOT, stdio: 'inherit' });
+
+      const commitMsgYomilee = `feat(yomilee): update chiikawa jet daily post for ${dateInfo.todayStr} (${detail.name})`;
+      console.log(`📝 [yomilee] コミット実行: "${commitMsgYomilee}"`);
+      try {
+        execSync(`git commit -m "${commitMsgYomilee}"`, { cwd: YOMILEE_ROOT, stdio: 'inherit' });
+        console.log('🚀 [yomilee] リモート (origin main) へプッシュ中...');
+        execSync('git push origin main', { cwd: YOMILEE_ROOT, stdio: 'inherit' });
+        console.log('🎉 [yomilee] Gitプッシュが完了しました！');
+      } catch (err) {
+        console.log('ℹ️ [yomilee] コミット対象の変更がないか、すでに最新です。');
+      }
+    }
+  } catch (e) {
+    console.error('❌ [yomilee] Git操作エラー:', e.message);
   }
 }
 
@@ -934,8 +976,8 @@ export async function runDailyManager() {
   // 3. 明日の運行予測を計算
   const predictions = computePredictions(parsed, fleetDb);
 
-  // 4. 一日一記事の管理
-  const articleDir = path.join(BLOG_CONTENT_DIR, dateInfo.todaySlug);
+  // 4. 一日一記事の管理（yomilee / ヨミトク）
+  const articleDir = path.join(YOMILEE_BLOG_DIR, dateInfo.todaySlug);
   const articleFile = path.join(articleDir, 'index.mdx');
 
   if (isDryRun) {
@@ -957,11 +999,19 @@ export async function runDailyManager() {
     console.log(`📝 本日の日次記事を新規作成します: ${articleDir}`);
     fs.mkdirSync(articleDir, { recursive: true });
 
-    // ヒーロー画像をコピー
+    // ヒーロー画像を配置
     const destHero = path.join(articleDir, 'hero.jpg');
-    if (fs.existsSync(GUIDE_HERO_IMAGE) && !fs.existsSync(destHero)) {
-      fs.copyFileSync(GUIDE_HERO_IMAGE, destHero);
-      console.log('🖼️ ヒーロー画像を配置しました。');
+    if (!fs.existsSync(destHero)) {
+      if (fs.existsSync(GUIDE_HERO_IMAGE)) {
+        fs.copyFileSync(GUIDE_HERO_IMAGE, destHero);
+        console.log('🖼️ ヒーロー画像を配置しました。');
+      } else {
+        const fallbackHero = path.join(YOMILEE_BLOG_DIR, '20261107-chiikawa-jet-schedule', 'hero.jpg');
+        if (fs.existsSync(fallbackHero)) {
+          fs.copyFileSync(fallbackHero, destHero);
+          console.log('🖼️ フォールバックヒーロー画像を配置しました。');
+        }
+      }
     }
 
     const content = buildNewArticleContent(dateInfo, parsed, predictions, fleetDb);
