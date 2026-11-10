@@ -28,6 +28,7 @@ const pageDescription = page.currentPage === 1
 <html lang="ja">
 	<head>
 		<BaseHead title={pageTitle} description={pageDescription} />
+		{page.currentPage > 1 && <meta name="robots" content="noindex, follow" />}
 		{page.currentPage === 1 && (
 			<link
 				rel="preload"
