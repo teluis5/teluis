@@ -27,6 +27,10 @@ export default defineConfig({
 		icon(),
 	],
 	redirects: {
+		'/povo2-open/175/': '/blog/povo2-open/',
+		'/povo2-open/': '/blog/povo2-open/',
+		'/povo-re/': '/blog/povo-re/',
+		'/povo2-application/': '/blog/povo2-application/',
 		'/category/マネー・ビジネス/': '/category/ライフスタイル/',
 		'/category/暮らし・家電/': '/category/ライフスタイル/',
 		'/category/グルメ/': '/category/旅行/',
