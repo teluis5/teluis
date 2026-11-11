@@ -27,6 +27,8 @@ export default defineConfig({
 		icon(),
 	],
 	redirects: {
+		'/blog/ana-chiikawa-jet-schedule-guide/': 'https://yomileeblog.com/site/chiikawajet/',
+		'/blog/ana-chiikawa-jet-schedule-guide': 'https://yomileeblog.com/site/chiikawajet/',
 		'/povo2-open/175/': '/blog/povo2-open/',
 		'/povo2-open/': '/blog/povo2-open/',
 		'/povo-re/': '/blog/povo-re/',

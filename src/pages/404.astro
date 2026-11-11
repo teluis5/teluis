@@ -25,6 +25,8 @@ const recentPosts = allPosts
 				try { decoded = decodeURIComponent(path); } catch (e) { decoded = path; }
 
 				var redirects = [
+					{ match: 'chiikawa', to: 'https://yomileeblog.com/site/chiikawajet/' },
+					{ match: 'ちいかわ', to: 'https://yomileeblog.com/site/chiikawajet/' },
 					{ match: 'マネー・ビジネス', to: '/category/ライフスタイル/' },
 					{ match: '暮らし・家電', to: '/category/ライフスタイル/' },
 					{ match: 'グルメ', to: '/category/旅行/' },
