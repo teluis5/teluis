@@ -748,6 +748,8 @@ ANAのボーイング767-300ER型機で運航されている、大人気の特�
 
 朝7時の初回予想から、昼12時の補正、18時の再補正、22時のナイトステイ確定まで、最新ダイヤを随時反映しています。
 
+## ちいかわジェットの運航状況と翌日のフライト予測
+
 <div style="background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); border-radius: 10px; padding: 1.25rem; margin: 1.5rem 0; color: #ffffff; box-shadow: 0 4px 12px rgba(15, 23, 42, 0.15);">
   <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.5rem;">
     <span style="background: #f59e0b; color: #000; font-size: 0.75rem; font-weight: 800; padding: 0.2rem 0.6rem; border-radius: 9999px;">🎯 初便的中率 96.0% (25戦24勝)</span>
@@ -795,6 +797,13 @@ ANAの国内線予約画面で、機材欄に「76P」または「763」と表�
 // 既存の日次記事を更新・補正
 function updateExistingArticle(articleFile, dateInfo, parsed, predictions, fleetDb) {
   let content = fs.readFileSync(articleFile, 'utf-8');
+
+  // 過去に生成された記事も、最初の運航セクションの親見出しを補う。
+  const badgeMarker = '{/* CHIIKAWA_DAILY_BADGE_START */}';
+  const badgeIndex = content.indexOf(badgeMarker);
+  if (badgeIndex !== -1 && !/^##\s+.+/m.test(content.slice(0, badgeIndex))) {
+    content = content.slice(0, badgeIndex) + '## ちいかわジェットの運航状況と翌日のフライト予測\n\n' + content.slice(badgeIndex);
+  }
 
   // 各セクションの置換
   const badgeMd = buildBadgeSection(dateInfo, parsed);
